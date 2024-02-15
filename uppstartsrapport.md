@@ -10,4 +10,4 @@ Repository: https://github.com/Lucys-Github/grupparbete.git
 
 Sprint backlog: https://github.com/users/Lucys-Github/projects/2/views/1
 
-Product backlog: https://github.com/Lucys-Github/grupparbete/wiki/Sprint-backlog-(sprint-1)
+Product backlog: https://github.com/Lucys-Github/grupparbete/wiki/product-backlog
