@@ -1,9 +1,10 @@
-	Lucia M
+Medlemmar:
+ 	Lucia M
  	Amanda R
  	Andrei PH
  	Emil L
 
-  E-handel för coola kläder. coolerclothes.com
+E-handel för coola kläder. coolerclothes.com
 
 Repository: https://github.com/Lucys-Github/grupparbete.git
 
