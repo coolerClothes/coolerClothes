@@ -1,5 +1,5 @@
 <template>
     <div>
-<h1>about</h1>
+<h1>search view</h1>
     </div>
 </template>

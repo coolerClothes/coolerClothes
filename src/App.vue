@@ -3,7 +3,9 @@
 
 <template>
   <div>
-    <h1>hello</h1>
+    <nav>hello</nav>
+    <li><router-link to="/about">about</router-link></li>
+    <li><router-link to="/">home</router-link></li>
     <router-view></router-view>
   </div>
 </template>
