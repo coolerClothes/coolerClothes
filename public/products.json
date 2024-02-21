@@ -1,7 +1,7 @@
 {
   "1": {
     "title": "Plain white sweater",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Sweaters",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -31,7 +31,7 @@
   },
   "2": {
     "title": "Ripped blue jeans",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Pants",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -61,7 +61,7 @@
   },
   "3": {
     "title": "Orange bomberjacket",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Jackets",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -91,7 +91,7 @@
   },
   "4": {
     "title": "Neon Airs",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Shoes",
     "price": "500",
     "sizes": ["36", "37", "38", "39", "40", "41", "42"],
@@ -121,7 +121,7 @@
   },
   "5": {
     "title": "Peace T",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Tops",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -151,7 +151,7 @@
   },
   "6": {
     "title": "Knitted poncho",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Sweaters",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -181,7 +181,7 @@
   },
   "7": {
     "title": "Grey Sweatpants",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Pants",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -211,7 +211,7 @@
   },
   "8": {
     "title": "Outcast T",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Tops",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -241,7 +241,7 @@
   },
   "9": {
     "title": "Biker Leather Jacket",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Jackets",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
@@ -271,7 +271,7 @@
   },
   "10": {
     "title": "Cobbles Classic T",
-    "brand": "",
+    "brand": "COOLERclothes",
     "category": "Tops",
     "price": "500",
     "sizes": ["xs", "s", "m", "l", "xl"],
