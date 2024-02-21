@@ -23,3 +23,14 @@ export default {
   },
 };
 </script>
+
+<!-- 
+  <div class="grid grid-cols-5 gap-4 p-4">
+    <Card
+      class="col-span-1"
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+      :cardImgSrc="product.imgSrc"
+    />
+  </div> -->
