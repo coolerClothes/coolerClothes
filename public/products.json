@@ -1,0 +1,102 @@
+{
+  "1": {
+    "title": "Plain white sweater",
+    "brand": "",
+    "category": "Sweaters",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/mediamodifier-7cERndkOyDw-unsplash.jpg",
+    "alt": "Plain round neck white sweater on a grey surface, surounded by decorations",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "2": {
+    "title": "Ripped blue jeans",
+    "brand": "",
+    "category": "Pants",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/alicia-petresc-BciCcl8tjVU-unsplash.jpg",
+    "alt": "Model posing while wearing high rise blue jeans, ripped on the left knee, with decorative patches throughout",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "3": {
+    "title": "Orange bomberjacket",
+    "brand": "",
+    "category": "Jackets",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/tobias-tullius-Fg15LdqpWrs-unsplash.jpg",
+    "alt": "Girl's arm holding a hanger with a muted orange bomber jacket",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "4": {
+    "title": "Neon Airs",
+    "brand": "",
+    "category": "Shoes",
+    "price": "500",
+    "sizes": ["36", "37", "38", "39", "40", "41", "42"],
+    "imgSrc": "src/assets/img/originals/erik-mclean--iJgjj33eEk-unsplash.jpg",
+    "alt": "White and light blue high booted sneakers with neon orange shoelaces",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "5": {
+    "title": "Peace T",
+    "brand": "",
+    "category": "Tops",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/ian-dooley-wzRKn-AjKf4-unsplash.jpg",
+    "alt": "Front view of a model posing and wearing a black t-shirt with the print of a skelleton hand doing the 'peace' sign",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "6": {
+    "title": "Knitted poncho",
+    "brand": "",
+    "category": "Sweaters",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/milada-vigerova-p8Drpg_duLw-unsplash.jpg",
+    "alt": "Delicate beige knitted poncho with fluffy frayed ends",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "7": {
+    "title": "Grey Sweatpants",
+    "brand": "",
+    "category": "Pants",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/engin-akyurt-oXYGKCYhQOI-unsplash.jpg",
+    "alt": "Side view of a model posing grey sweatpants with red converse in front of a white background",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "8": {
+    "title": "Outcast T",
+    "brand": "",
+    "category": "Tops",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/taylor-dG4Eb_oC5iM-unsplash.jpg",
+    "alt": "Model posing, wearing a white t-shirt with the print of a old-fashioned charicature and a red sign with white letters that says 'outcast'",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "9": {
+    "title": "Biker Leather Jacket",
+    "brand": "",
+    "category": "Jackets",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/lea-ochel-nsRBbE6-YLs-unsplash.jpg",
+    "alt": "Classic black leather jacket on a hanger, laying flat on a white surface",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "10": {
+    "title": "Cobbles Classic T",
+    "brand": "",
+    "category": "Tops",
+    "price": "500",
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/img/originals/sincerely-media-9ShY-Tq70Mc-unsplash.jpg",
+    "alt": "Back view of a model walking away, wearing a t-shirt with a line drawing of a sunset at sea, that says 'Cobbles Classic'",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+}

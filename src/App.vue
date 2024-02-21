@@ -1,3 +1,4 @@
+
 <script>
 </script>
 
@@ -9,6 +10,7 @@
     <li><router-link to="/product">product pages</router-link></li>
   </ul>
     <router-view></router-view>
+
   </div>
 </template>
 
