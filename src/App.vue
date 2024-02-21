@@ -19,13 +19,6 @@ fetchProducts();
 </script>
 
 <template>
-  <div>
-     <router-link to="/">home page </router-link>
-    <router-link to="/search">search result </router-link>
-    <router-link to="/product">product pages </router-link>
-    <br>
-    <filterFilter></filterFilter>
-    <br>
   <div class="flex flex-col h-screen justify-around">
     <ul>
       router links:
@@ -34,7 +27,8 @@ fetchProducts();
       <li><router-link to="/product">product pages</router-link></li>
     </ul>
     <router-view></router-view>
-    <Footer />
+    <filterFilter></filterFilter>
+    <Footer></Footer>
   </div>
 </template>
 
