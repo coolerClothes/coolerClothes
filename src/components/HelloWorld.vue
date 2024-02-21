@@ -1,11 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
+import Card from "./Card.vue";
 
 defineProps({
   msg: String,
-})
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
@@ -31,8 +32,38 @@ const count = ref(0)
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
-</template>
 
+  <div class="grid grid-cols-5 gap-4 p-4">
+    <Card
+      class="col-span-1"
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+      :cardImgSrc="product.imgSrc"
+    />
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      products: [],
+    };
+  },
+  created() {
+    this.fetchProducts();
+  },
+  methods: {
+    fetchProducts() {
+      fetch("../products.json")
+        .then((response) => response.json())
+        .then((result) => {
+          this.products = result;
+        });
+    },
+  },
+};
+</script>
 <style scoped>
 .read-the-docs {
   color: #888;
