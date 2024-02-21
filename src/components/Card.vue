@@ -1,3 +1,16 @@
+<!-- MEANT TO BE INSTANCIATED INSIDE A GRID, example below
+
+
+  <div class="grid grid-cols-5 gap-4 p-4">
+    <Card
+      class="col-span-1"
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+      :cardImgSrc="product.imgSrc"
+    />
+  </div> -->
+
 <template>
   <div id="card-background" class="rounded shadow overflow-hidden">
     <img :src="cardImgSrc" class="w-full h-32 sm:h-48 object-cover" />
@@ -23,14 +36,3 @@ export default {
   },
 };
 </script>
-
-<!-- 
-  <div class="grid grid-cols-5 gap-4 p-4">
-    <Card
-      class="col-span-1"
-      v-for="product in products"
-      :key="product.id"
-      :product="product"
-      :cardImgSrc="product.imgSrc"
-    />
-  </div> -->
