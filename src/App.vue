@@ -1,6 +1,6 @@
 <script setup>
 import { useProductsStore } from "./store";
-
+import Footer from "./components/Footer.vue";
 const store = useProductsStore();
 
 const fetchProducts = async () => {
@@ -26,7 +26,15 @@ fetchProducts();
     <br>
     <filterFilter></filterFilter>
     <br>
+  <div class="flex flex-col h-screen justify-around">
+    <ul>
+      router links:
+      <li><router-link to="/">home page</router-link></li>
+      <li><router-link to="/search">search result</router-link></li>
+      <li><router-link to="/product">product pages</router-link></li>
+    </ul>
     <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
