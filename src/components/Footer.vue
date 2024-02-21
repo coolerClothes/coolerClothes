@@ -1,5 +1,8 @@
 <template>
-  <div id="footer-background" class="flex flex-col items-center w-screen">
+  <div
+    id="footer-background"
+    class="flex flex-col items-center justify-center w-screen bg-gray-300 h-48"
+  >
     <div id="socials">
       <p>Follow our journey!</p>
 
