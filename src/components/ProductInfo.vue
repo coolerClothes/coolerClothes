@@ -1,0 +1,80 @@
+<template>
+  <div
+    id="gallery-container"
+    class="px-4 col-span-7 bg-gray-300 overflow-hidden flex flex-col rounded h-auto justify-around"
+  >
+    <img
+      src="/src/assets/products/accessories/1.jpg"
+      class="h-56 object-contain"
+    />
+
+    <div id="gallery-row" class="flex justify-around">
+      <img
+        src="/src/assets/products/accessories/1.jpg"
+        class="h-20 object-cover"
+      />
+      <img
+        src="/src/assets/products/accessories/1.jpg"
+        class="h-20 object-cover"
+      />
+      <img
+        src="/src/assets/products/accessories/1.jpg"
+        class="h-20 object-cover"
+      />
+      <img
+        src="/src/assets/products/accessories/1.jpg"
+        class="h-20 object-cover"
+      />
+    </div>
+  </div>
+
+  <div id="product-info-card" class="col-span-3 p-4 bg-slate-300 rounded">
+    <div id="titles-and-stock">
+      <h3>Product name</h3>
+      <span class="rounded p-1 bg-slate-100">in stock</span>
+      <h4>Brand</h4>
+    </div>
+    <!-- titles and stock -->
+
+    <div id="price-and-disclamer">
+      <h2>Price</h2>
+      <span id="small-print">Priser ink. moms. Frakt tillkommer.</span>
+    </div>
+    <!-- price and disclamer -->
+
+    <span id="product-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+      obcaecati maiores in perferendis distinctio dolorem ad aut doloribus sint
+      cum hic cupiditate dolore, ex voluptate sequi, beatae adipisci magni nemo.
+    </span>
+    <input
+      type="text"
+      name="Size"
+      list="sizeList"
+      class="rounded w-full my-1.5 text-center"
+    />
+    <datalist id="sizeList">
+      <option value="xs"></option>
+      <option value="s"></option>
+      <option value="m"></option>
+      <option value="l"></option>
+      <option value="xl"></option>
+    </datalist>
+    <button
+      label="Add to cart"
+      class="w-full bg-black text-white rounded p-0.5"
+    >
+      Add to cart
+    </button>
+  </div>
+</template>
+<script>
+/* export default {
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
+}; */
+</script>
