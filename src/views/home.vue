@@ -23,7 +23,7 @@
             <p class="text-lg">Dummy Text</p>
         </div>
     </div>
-    <div class="h-[100vh]"></div>
+    <div class="h-[80vh]"></div>
     <div class="px-24 my-4 overflow-x-hidden">
         <div class="grid grid-cols-5 gap-4 p-4">
             <Card

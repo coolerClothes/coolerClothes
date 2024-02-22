@@ -1,34 +1,34 @@
 <script setup>
-import { useProductsStore } from "./store";
-import Footer from "./components/Footer.vue";
-const store = useProductsStore();
+    import { useProductsStore } from './store'
+    import Footer from './components/Footer.vue'
+    const store = useProductsStore()
 
-const fetchProducts = async () => {
-  try {
-    await fetch("../public/products.json")
-      .then((response) => response.json())
-      .then((result) => {
-        store.getProducts(result);
-      });
-  } catch (error) {
-    console.log(error);
-  }
-};
+    const fetchProducts = async () => {
+        try {
+            await fetch('../products.json')
+                .then((response) => response.json())
+                .then((result) => {
+                    store.getProducts(result)
+                })
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
-fetchProducts();
+    fetchProducts()
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen justify-around">
-    <ul>
-      router links:
-      <li><router-link to="/">home page</router-link></li>
-      <li><router-link to="/search">search result</router-link></li>
-      <li><router-link to="/product">product pages</router-link></li>
-    </ul>
-    <router-view></router-view>
-    <Footer />
-  </div>
+    <div class="flex flex-col h-screen justify-around">
+        <ul>
+            router links:
+            <li><router-link to="/">home page</router-link></li>
+            <li><router-link to="/search">search result</router-link></li>
+            <li><router-link to="/product">product pages</router-link></li>
+        </ul>
+        <router-view></router-view>
+        <Footer />
+    </div>
 </template>
 
 <style scoped></style>
