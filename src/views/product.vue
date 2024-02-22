@@ -1,20 +1,17 @@
-<script>
+<script setup>
+import { ref, watch } from "vue";
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
 
-export default {
-  components: {
-    ProductInfo,
-    Card,
-  },
-  setup() {
-    const store = useProductsStore();
-    return {
-      products: store.productsCatalogue,
-    };
-  },
-};
+const store = useProductsStore();
+const products = ref(store.productsCatalogue);
+watch(
+  () => store.productsCatalogue,
+  (newProductsCatalogue) => {
+    products.value = newProductsCatalogue;
+  }
+);
 </script>
 <template>
   <div class="px-24 my-4 overflow-x-hidden">
