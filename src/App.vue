@@ -5,7 +5,7 @@ const store = useProductsStore();
 
 const fetchProducts = async () => {
   try {
-    await fetch("../public/products.json")
+    await fetch("../products.json")
       .then((response) => response.json())
       .then((result) => {
         store.getProducts(result);
