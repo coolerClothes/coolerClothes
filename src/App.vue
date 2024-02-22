@@ -26,8 +26,9 @@ fetchProducts();
       <li><router-link to="/search">search result</router-link></li>
       <li><router-link to="/product">product pages</router-link></li>
     </ul>
+    <filterFilter></filterFilter>
     <router-view></router-view>
-    <Footer />
+    <Footer></Footer>
   </div>
 </template>
 
