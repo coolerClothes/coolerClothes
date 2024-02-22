@@ -19,7 +19,7 @@ fetchProducts();
 </script>
 
 <template>
-  <div class="flex flex-col h-screen justify-around">
+  <div class="flex flex-col justify-around overflow-x-hidden">
     <ul>
       router links:
       <li><router-link to="/">home page</router-link></li>
