@@ -8,7 +8,7 @@
         "imgSrc": "src/assets/products/capes/1.jpg",
         "alt": "Black Ornate Cloak",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "bestSeller": false,
+        "bestSeller": true,
         "inStock": true,
         "moreImgs": [
             {
@@ -248,7 +248,7 @@
         "imgSrc": "src/assets/products/jackets/4.jpg",
         "alt": "Rainbow Bomber Jacket",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "bestSeller": false,
+        "bestSeller": true,
         "inStock": true,
         "moreImgs": [
             {
@@ -515,10 +515,10 @@
         "category": "hoodies",
         "price": "500",
         "sizes": ["xs", "s", "m", "l", "xl"],
-        "imgSrc": "src/assets/products/hoodies/6.jpg",
+        "imgSrc": "src/assets/products/hoodies/7.jpg",
         "alt": "Plumeria",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "bestSeller": false,
+        "bestSeller": true,
         "inStock": true,
         "moreImgs": [
             {
@@ -545,10 +545,10 @@
         "category": "hoodies",
         "price": "500",
         "sizes": ["xs", "s", "m", "l", "xl"],
-        "imgSrc": "src/assets/products/hoodies/6.jpg",
+        "imgSrc": "src/assets/products/hoodies/8.jpg",
         "alt": "Big City",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "bestSeller": false,
+        "bestSeller": true,
         "inStock": true,
         "moreImgs": [
             {

@@ -20,9 +20,9 @@ fetchProducts();
 </script>
 
 <template>
+
   <Navbar />
   <div class="flex flex-col min-h-screen justify-around overflow-x-hidden">
-
     <ul>
       router links:
       <li><router-link to="/">home page</router-link></li>
