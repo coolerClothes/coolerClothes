@@ -1,10 +1,20 @@
-<script setup>
+<script>
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
 
-const store = useProductsStore();
-const products = store.productsCatalogue;
+export default {
+  components: {
+    ProductInfo,
+    Card,
+  },
+  setup() {
+    const store = useProductsStore();
+    return {
+      products: store.productsCatalogue,
+    };
+  },
+};
 </script>
 <template>
   <div class="px-24 my-4 overflow-x-hidden">
