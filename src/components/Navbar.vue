@@ -17,7 +17,7 @@ const handleCartMenuActivation = () => {
 };
 
 const handleSearch = () => {
-  router.push({ path: "/search/" + searchInput.value });
+  router.push({ path: "/search/all/" + searchInput.value });
   console.log(searchInput.value);
 };
 </script>
@@ -109,12 +109,12 @@ const handleSearch = () => {
     </div>
     <div id="navbar-bottom-container" class="h-9 max-md:hidden">
       <ul class="flex gap-5 h-full justify-center items-center">
-        <li><router-link to="/capes">Capes</router-link></li>
-        <li><router-link to="/jackets">Jackets</router-link></li>
-        <li><router-link to="/hoodies">Hoodies</router-link></li>
-        <li><router-link to="/tshirts">T-Shirts</router-link></li>
-        <li><router-link to="/pants">Pants</router-link></li>
-        <li><router-link to="/accessories">Accessories</router-link></li>
+        <li><router-link to="/search/capes">Capes</router-link></li>
+        <li><router-link to="/search/jackets">Jackets</router-link></li>
+        <li><router-link to="/search/hoodies">Hoodies</router-link></li>
+        <li><router-link to="/search/tshirts">T-Shirts</router-link></li>
+        <li><router-link to="/search/pants">Pants</router-link></li>
+        <li><router-link to="/search/accessories">Accessories</router-link></li>
       </ul>
     </div>
   </div>

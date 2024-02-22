@@ -41,9 +41,15 @@ const handleCategoriesClick = () => {
               : ' scale-y-0 opacity-0  ')
           "
         >
-          <li class="mt-2"><router-link to="/capes">Capes</router-link></li>
-          <li class="mt-2"><router-link to="/jackets">Jackets</router-link></li>
-          <li class="mt-2"><router-link to="/hoodies">Hoodies</router-link></li>
+          <li class="mt-2">
+            <router-link to="/search/capes">Capes</router-link>
+          </li>
+          <li class="mt-2">
+            <router-link to="/search/jackets">Jackets</router-link>
+          </li>
+          <li class="mt-2">
+            <router-link to="/search/hoodies">Hoodies</router-link>
+          </li>
           <li class="mt-2">
             <router-link to="/tshirts">T-Shirts</router-link>
           </li>
