@@ -8,7 +8,7 @@ const routes = [
         path: "/", name: "Home", component: Home
     },
     {
-        path: "/search/:category/:searchquery", name: "Search", component: Search
+        path: "/search/:category/:searchquery?", name: "Search", component: Search,
     },
     {
         path: "/:product", name: "Product", component: Product
