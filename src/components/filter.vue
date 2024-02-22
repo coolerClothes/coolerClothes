@@ -3,7 +3,7 @@
 
 <template>
     <div>
-      <router-link to="/search/Capes">Capes </router-link>
+      <router-link to="/search/capes">Capes </router-link>
       <router-link to="/search/jackets">Jackets </router-link>
       <router-link to="/search/hoodies">Hoodies </router-link>
       <router-link to="/search/shirts">Shirts </router-link>
