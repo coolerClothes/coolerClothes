@@ -6,7 +6,7 @@ const store = useProductsStore();
 
 const fetchProducts = async () => {
   try {
-    await fetch("../public/products.json")
+    await fetch("../products.json")
       .then((response) => response.json())
       .then((result) => {
         store.getProducts(result);
@@ -21,15 +21,17 @@ fetchProducts();
 
 <template>
   <Navbar />
-  <div class="flex flex-col h-screen justify-around">
+  <div class="flex flex-col min-h-screen justify-around overflow-x-hidden">
+
     <ul>
       router links:
       <li><router-link to="/">home page</router-link></li>
       <li><router-link to="/search">search result</router-link></li>
       <li><router-link to="/product">product pages</router-link></li>
     </ul>
+    <filterFilter></filterFilter>
     <router-view></router-view>
-    <Footer />
+    <Footer></Footer>
   </div>
 </template>
 
