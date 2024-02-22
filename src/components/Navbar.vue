@@ -1,7 +1,38 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import SideMenu from "./SideMenu.vue";
+import CartMenu from "./CartMenu.vue";
+import { useRouter } from "vue-router";
+const sideMenuActive = ref(false);
+const cartMenuActive = ref(false);
+const searchInput = ref("");
+
+const router = useRouter();
+const handleSideMenuActivation = () => {
+  sideMenuActive.value = !sideMenuActive.value;
+};
+
+const handleCartMenuActivation = () => {
+  cartMenuActive.value = !cartMenuActive.value;
+};
+
+const handleSearch = () => {
+  router.push({ path: "/search/" + searchInput.value });
+  console.log(searchInput.value);
+};
+</script>
 
 <template>
   <div id="navbar-container" class="bg-[#6B7280]">
+    <SideMenu
+      :side-menu-active="sideMenuActive"
+      @handle-side-menu-activation="handleSideMenuActivation"
+    />
+
+    <CartMenu
+      :cart-menu-active="cartMenuActive"
+      @handle-cart-menu-activation="handleCartMenuActivation"
+    />
     <div
       id="navbar-top-container"
       class="flex items-center h-20 border-b border-black"
@@ -14,7 +45,12 @@
           id="left-side-mobile"
           class="flex max-sm:gap-3 gap-6 w-full ml-5 justify-start md:hidden"
         >
-          <img src="/src/assets/icons/hamburger-icon.svg" alt="" class="h-6" />
+          <img
+            src="/src/assets/icons/hamburger-icon.svg"
+            alt=""
+            class="h-6 cursor-pointer"
+            @click="handleSideMenuActivation"
+          />
           <img
             src="/src/assets/icons/search-icon-black.svg"
             alt=""
@@ -28,11 +64,13 @@
             type="text"
             class="w-64 h-8 rounded-full pl-10"
             placeholder="Search"
+            v-model="searchInput"
+            @keyup.enter="handleSearch"
           />
           <img
             src="/src/assets/icons/search-icon.svg"
             alt=""
-            class="absolute top-1 left-2 h-6"
+            class="absolute transition-all z-10 duration-500 pl-2 top-1 h-6"
           />
         </div>
         <div id="logo-container-mobile" class="md:hidden mx-5">
@@ -59,7 +97,7 @@
           />
           <h2 class="pl-1 max-md:hidden">Favorites</h2>
         </div>
-        <div class="flex">
+        <div class="flex cursor-pointer" @click="handleCartMenuActivation">
           <img
             src="/src/assets/icons/cart-icon.svg"
             alt="Shopping bag icon"
