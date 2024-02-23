@@ -47,12 +47,13 @@ export default {
   },
 }; */
 </script>
+
 <template>
   <div class="px-24 my-4 overflow-x-hidden">
-    <!-- <h1 class="col-span-10">product page view. {{ $route.params.product }}</h1> -->
-
     <!-- has to instanciate with only one object, which has to passed to the page -->
-    <!-- <ProductInfo /> -->
+    <ProductInfo :product="currentProduct" :galleryImgSrc="galleryImgSrc" />
+
+    <!-- grid for the cards -->
     <div class="grid grid-cols-5 gap-4 p-4">
       <Card
         class="col-span-1"
