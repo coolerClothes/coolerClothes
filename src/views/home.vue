@@ -1,61 +1,60 @@
-<script>
-    import Card from '../components/Card.vue'
-    import { useProductsStore } from '../store'
+<script setup>
+import { ref, watch } from "vue";
+import Card from "../components/Card.vue";
+import { useProductsStore } from "../store";
 
-    export default {
-        components: {
-            Card
-        },
-        setup() {
-            const store = useProductsStore()
-            return {
-                products: store.productsCatalogue
-            }
-        }
-    }
+const store = useProductsStore();
+const products = ref([]);
+
+const filterForBestSellers = (productsCatalogue) => {
+  if (store.productsCatalogue) {
+    const productsArray = Object.values(productsCatalogue);
+    const filteredProducts = productsArray.filter(
+      (product) => product.bestSeller == true
+    );
+    products.value = filteredProducts;
+  }
+};
+
+watch(
+  () => store.productsCatalogue,
+  (newProductsCatalogue) => {
+    filterForBestSellers(newProductsCatalogue);
+  }
+);
+
+filterForBestSellers(store.productsCatalogue);
 </script>
-<!-- <script> ONLY BEST SELLERS VERSION
-    import Card from '../components/Card.vue'
-    import { useProductsStore } from '../store'
-
-    export default {
-        components: {
-            Card
-        },
-        setup() {
-            const store = useProductsStore();
-            const bestSellerProducts = store.productsCatalogue.filter(product => product.bestSeller === true);
-
-            return {
-                bestSellerProducts,
-            };
-        },
-    };
-</script> -->
 
 <template>
-    <div
-        class="hero bg-cover bg-center text-white h-screen flex flex-col justify-center items-center bg-hero"
-    >
-        <h1 class="text-4xl mb-2">Big Dummy Text</h1>
-        <p class="text-lg">Dummy Text</p>
+  <div
+    class="hero bg-cover bg-center text-white flex flex-col justify-center items-center bg-hero h-[56vh]"
+  >
+    <div>
+      <h1 class="text-4xl mb-2">Big Dummy Text</h1>
+      <p class="text-lg">Dummy Text</p>
     </div>
-
+  </div>
+  <div class="mt-[40px]">
+    <h2 class="px-24 ml-4 text-4xl mb-2">Best sellers</h2>
+  </div>
+  <div class="px-24 my-4 overflow-x-hidden">
     <div class="grid grid-cols-5 gap-4 p-4">
-        <Card
-            class="col-span-1"
-            v-for="product in products"
-            :key="product.id"
-            :product="product"
-            :cardImgSrc="product.imgSrc"
-        />
+      <Card
+        class="col-span-1"
+        v-for="product in products"
+        :key="product.id"
+        :product="product"
+        :cardImgSrc="product.imgSrc"
+      />
     </div>
+  </div>
 </template>
 
 <style scoped>
-    .bg-hero {
-        background-image: url('../src/assets/hero.png');
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-    }
+.bg-hero {
+  background-image: url("../src/assets/hero.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
 </style>

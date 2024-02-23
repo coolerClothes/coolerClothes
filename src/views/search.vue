@@ -1,33 +1,48 @@
 <script>
 import {useProductsStore} from "../store"
 import Card from "../components/Card.vue"
+import { ref, watch} from "vue";
+import {useRoute} from "vue-router"
+
 export default {
   components: {
     Card,
   },
   setup() {
     const store = useProductsStore();
+    const route = useRoute();
+    const category = ref(route.params.category);
+    const products = ref(store.productsCatalogue);
+    watch(
+        () => store.productsCatalogue,
+        (newProductsCatalogue) => {
+            products.value = newProductsCatalogue
+        });
+    watch(() => route.params.category, (newCategory) => {
+      category.value = newCategory;
+    });
+
     return {
-      products: store.productsCatalogue,
-    };
-  },
-};
+                products: store.productsCatalogue,
+                category
+            }
+
+}}
+
 
 </script>
 
 <template>
-<!--     <div>
- -->     <!--    <div v-for="product in store.productsCatalogue" :key="product.id">
-            <li v-if="product.category = $route.params.category">{{ product.title}}: {{product.category}}</li></div>
-        <h1>Category: {{$route.params.category}}</h1> -->
-<!--         <div class="px-24 my-4 overflow-x-hidden">
- -->    <!-- <h1 class="col-span-10">product page view. {{ $route.params.product }}</h1> -->
-    <div class="grid grid-cols-5 gap-4 p-4">
-    <div v-for="product in store.productsCatalogue" :key="product.id" :product="product" :cardImgSrc="product.imgSrc">
-        <div v-if="product.category === $route.params.category">
-      <Card class="col-span-1" v-if="product.category === $route.params.category"></Card>
-    </div>
-    </div>
-    </div>
+ <div class="grid grid-cols-5 gap-4 p-4">
+    <Card
+    v-for="product in products"
+      class="col-span-1"
+      :key="product.id"
+      :product="product"
+      :cardImgSrc="product.imgSrc"
+      :searchCategory="category"
+      :categorySearch="true"
+    />
+  </div>
 
 </template>
