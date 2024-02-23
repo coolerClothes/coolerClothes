@@ -1,17 +1,51 @@
-<script setup>
+<script>
 import { ref, watch } from "vue";
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
 
-const store = useProductsStore();
-const products = ref(store.productsCatalogue);
-watch(
-  () => store.productsCatalogue,
-  (newProductsCatalogue) => {
-    products.value = newProductsCatalogue;
-  }
-);
+export default {
+  components: {
+    ProductInfo,
+    Card,
+  },
+  setup() {
+    const store = useProductsStore();
+    const products = ref(store.productsCatalogue);
+    const currentProduct = ref(route.params.product);
+    const galleryImgSrc = ref(route.params.galleryImgSrc);
+    watch(
+      () => store.productsCatalogue,
+      (newProductsCatalogue) => {
+        products.value = newProductsCatalogue;
+      },
+      () => route.params.product,
+      (currentProduct) => {
+        currentProduct.value = currentProduct;
+      },
+      () => route.params.galleryImgSrc,
+      (currentImg) => {
+        galleryImgSrc = currentImg;
+      }
+    );
+
+    return { currentProduct, galleryImgSrc };
+  },
+};
+
+/* Removed the code bellow because I tried to specify the product to be displayed through the route parameters instead , to no avail */
+
+/* export default {
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+    galleryImgSrc: {
+      type: String,
+    },
+  },
+}; */
 </script>
 <template>
   <div class="px-24 my-4 overflow-x-hidden">
