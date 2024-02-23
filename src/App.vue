@@ -1,6 +1,7 @@
 <script setup>
 import { useProductsStore } from "./store";
 import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 const store = useProductsStore();
 
 const fetchProducts = async () => {
@@ -19,7 +20,9 @@ fetchProducts();
 </script>
 
 <template>
-  <div class="flex flex-col justify-around overflow-x-hidden">
+
+  <Navbar />
+  <div class="flex flex-col min-h-screen justify-around overflow-x-hidden">
     <ul>
       router links:
       <li><router-link to="/">home page</router-link></li>

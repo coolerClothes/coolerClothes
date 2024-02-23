@@ -1,54 +1,41 @@
-<script>
+<script setup>
+    import { ref, watch } from 'vue'
     import Card from '../components/Card.vue'
     import { useProductsStore } from '../store'
 
-    export default {
-        components: {
-            Card
-        },
-        setup() {
-            const store = useProductsStore()
-            return {
-                products: store.productsCatalogue
-            }
+    const store = useProductsStore()
+    const products = ref(store.productsCatalogue)
+
+    watch(
+        () => store.productsCatalogue,
+        (newProductsCatalogue) => {
+            products.value = newProductsCatalogue
         }
-    }
+    )
 </script>
-<!-- <script> ONLY BEST SELLERS VERSION
-    import Card from '../components/Card.vue'
-    import { useProductsStore } from '../store'
-
-    export default {
-        components: {
-            Card
-        },
-        setup() {
-            const store = useProductsStore();
-            const bestSellerProducts = store.productsCatalogue.filter(product => product.bestSeller === true);
-
-            return {
-                bestSellerProducts,
-            };
-        },
-    };
-</script> -->
 
 <template>
     <div
-        class="hero bg-cover bg-center text-white h-screen flex flex-col justify-center items-center bg-hero"
+        class="hero bg-cover bg-center text-white flex flex-col justify-center items-center bg-hero h-[56vh]"
     >
-        <h1 class="text-4xl mb-2">Big Dummy Text</h1>
-        <p class="text-lg">Dummy Text</p>
+        <div>
+            <h1 class="text-4xl mb-2">Big Dummy Text</h1>
+            <p class="text-lg">Dummy Text</p>
+        </div>
     </div>
-
-    <div class="grid grid-cols-5 gap-4 p-4">
-        <Card
-            class="col-span-1"
-            v-for="product in products"
-            :key="product.id"
-            :product="product"
-            :cardImgSrc="product.imgSrc"
-        />
+    <div class="mt-[40px]">
+        <h2 class="px-24 ml-4 text-4xl mb-2">Best sellers</h2>
+    </div>
+    <div class="px-24 my-4 overflow-x-hidden">
+        <div class="grid grid-cols-5 gap-4 p-4">
+            <Card
+                class="col-span-1"
+                v-for="product in products"
+                :key="product.id"
+                :product="product"
+                :cardImgSrc="product.imgSrc"
+            />
+        </div>
     </div>
 </template>
 
