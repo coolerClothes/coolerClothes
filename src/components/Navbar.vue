@@ -112,7 +112,7 @@ const handleSearch = () => {
         <li><router-link to="/search/capes">Capes</router-link></li>
         <li><router-link to="/search/jackets">Jackets</router-link></li>
         <li><router-link to="/search/hoodies">Hoodies</router-link></li>
-        <li><router-link to="/search/tshirts">T-Shirts</router-link></li>
+        <li><router-link to="/search/shirts">T-Shirts</router-link></li>
         <li><router-link to="/search/pants">Pants</router-link></li>
         <li><router-link to="/search/accessories">Accessories</router-link></li>
       </ul>
