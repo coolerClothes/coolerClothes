@@ -11,7 +11,7 @@ const routes = [
         path: "/search/:category/:searchquery?", name: "Search", component: Search,
     },
     {
-        path: "/:product", name: "Product", component: Product
+        path: "/products/:product", name: "Product", component: Product
     }
 ]
 

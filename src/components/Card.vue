@@ -12,7 +12,7 @@
   </div> -->
 
 <template>
-  <div id="card-background" class="rounded shadow overflow-hidden">
+  <div id="card-background" class="rounded shadow overflow-hidden" v-if="show">
     <img :src="cardImgSrc" class="w-full h-32 sm:h-48 object-cover" />
     <div id="product-info" class="grid grid-cols-3 grid-rows-2 p-4">
       <h3 class="col-span-2 row-span-1">{{ product.title }}</h3>
@@ -25,6 +25,21 @@
 </template>
 <script>
 export default {
+  computed:{
+    show(){
+      if (this.categorySearch === true){
+        if (this.product.category === this.searchCategory){
+          return true
+        }
+        else {
+          return false
+        }
+      }
+      else {
+        return true
+      }
+    }
+  },
   props: {
     product: {
       type: Object,
@@ -33,6 +48,12 @@ export default {
     cardImgSrc: {
       type: String,
     },
+    searchCategory:{
+      type: String,
+    },
+    categorySearch:{
+      type: Boolean,
+    }
   },
 };
 </script>
