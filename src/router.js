@@ -15,10 +15,9 @@ const routes = [
     component: Search,
   },
   {
-    path: "/products/:product/:galleryImgSrc",
+    path: "/products/:product",
     name: "Product",
     component: Product,
-    props: true,
   },
 ];
 
