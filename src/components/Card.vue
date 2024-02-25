@@ -13,7 +13,7 @@
 
 <template>
   <div id="card-background" class="rounded shadow overflow-hidden" v-if="show">
-    <RouterLink :to="`/product/${product.title}/${cardImgSrc}`">
+    <RouterLink :to="`/products/${product.title}`">
       <!-- The card links to the product page, that in turn pass these props to the productInfo component on call -->
       <img :src="cardImgSrc" class="w-full h-32 sm:h-48 object-cover" />
     </RouterLink>
