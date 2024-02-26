@@ -1,55 +1,52 @@
-<script>
+<script setup>
 import { ref, watch } from "vue";
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
 import { useRoute } from "vue-router";
 
-export default {
-  components: {
-    ProductInfo,
-    Card,
+const route = useRoute();
+const store = useProductsStore();
+const products = ref(store.productsCatalogue);
+const currentID = ref(route.params.productID);
+const currentProduct = ref(null);
+
+if (products.value !== null || undefined) {
+  currentProduct.value = Object.values(products.value).find(
+    (product) => product.id == route.params.productID
+  );
+  console.log(currentProduct.value);
+}
+
+watch(
+  () => store.productsCatalogue,
+  (newProductsCatalogue) => {
+    products.value = newProductsCatalogue;
+    currentProduct.value = Object.values(newProductsCatalogue).find(
+      (product) => product.id == route.params.productID
+    );
+    console.log(currentID);
+    console.log(currentProduct.value);
   },
 
-  setup() {
-    const route = useRoute();
-    const store = useProductsStore();
-    const products = ref(store.productsCatalogue);
-    const currentID = ref(route.params.productID);
-    const currentProduct = ref([]);
-    function getProduct() {
-      currentProduct.value = Object.values(products).find(
-        (product) => product.id == currentID
-      );
-      console.log(currentProduct);
-    }
-    getProduct();
-    watch(
-      () => store.productsCatalogue,
-      (newProductsCatalogue) => {
-        products.value = newProductsCatalogue;
-        currentProduct.value = Object.values(newProductsCatalogue).find(
-          (product) => product.id == currentID
-        );
-        console.log(currentProduct);
-      },
-      () => route.params.productID,
-      (currentID) => {
-        currentID.value = currentID;
-      }
+  () => route.params.currentID,
+  //not working
+  (newValue) => {
+    currentID.value = route.params.productID;
+    currentProduct.value = Object.values(products.value).find(
+      (product) => product.id == newID
     );
-    return {
-      products: store.productsCatalogue,
-      currentID,
-    };
-  },
-};
+    console.log(newValue);
+  }
+);
 </script>
 
 <template>
   <div class="px-24 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
-    <ProductInfo :product="currentProduct" v-if="currentProduct" />
+    <div v-if="currentProduct !== null">
+      <ProductInfo :product="currentProduct" />
+    </div>
 
     <!-- grid for the cards -->
     <div class="grid grid-cols-5 gap-4 p-4">
