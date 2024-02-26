@@ -1,16 +1,32 @@
 <template>
-  <div id="component-container" class="grid grid-cols-10 space-x-4">
+  <div
+    id="component-container"
+    class="sm:flex sm:flex-col md:grid grid-cols-10 md:space-x-4 space-y-4 md:space-y-0"
+  >
     <div
       id="gallery-container"
-      class="px-4 py-4 space-y-4 col-span-7 bg-gray-300 flex flex-col rounded h-auto justify-around"
+      class="p-4 lg:space-y-2 col-span-5 lg:col-span-7 bg-gray-300 flex flex-col rounded max-h-1/3 md:h-auto md:max-h-screen justify-around items-center"
     >
-      <img :src="galleryImgSrc" class="h-64 object-contain" />
+      <!-- <div class="imgContainer ">
+      </div> -->
+      <img :src="galleryImgSrc" class="max-h-80 overflow-hidden object-cover" />
 
-      <div id="gallery-row" class="flex justify-around">
-        <img :src="galleryImgSrc" class="h-20 object-cover" />
-        <img :src="galleryImgSrc" class="h-20 object-cover" />
-        <img :src="galleryImgSrc" class="h-20 object-cover" />
-        <img :src="galleryImgSrc" class="h-20 object-cover" />
+      <div
+        id="gallery-row"
+        class="flex justify-around h-fit max-h-1/3 space-x-2"
+      >
+        <div class="imgContainer overflow-hidden">
+          <img :src="galleryImgSrc" class="object-contain rounded" />
+        </div>
+        <div class="imgContainer overflow-hidden">
+          <img :src="galleryImgSrc" class="object-contain rounded" />
+        </div>
+        <div class="imgContainer overflow-hidden">
+          <img :src="galleryImgSrc" class="object-contain rounded" />
+        </div>
+        <div class="imgContainer overflow-hidden">
+          <img :src="galleryImgSrc" class="object-contain rounded" />
+        </div>
       </div>
       <!-- gallery row -->
     </div>
@@ -18,7 +34,7 @@
 
     <div
       id="product-info-card"
-      class="col-span-3 p-4 bg-slate-300 space-y-4 rounded"
+      class="h-fit col-span-5 lg:col-span-3 p-4 bg-slate-300 space-y-4 rounded"
     >
       <div id="titles-and-stock" class="relative">
         <h3>{{ product.title }}</h3>
