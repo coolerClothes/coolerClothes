@@ -42,7 +42,7 @@ watch(
 </script>
 
 <template>
-  <div class="lg:px-24 px-4 my-4 overflow-x-hidden">
+  <div class="xl:px-24 px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo
@@ -53,7 +53,7 @@ watch(
 
     <!-- grid for the cards -->
     <div
-      class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4"
     >
       <Card
         class="col-span-1"
