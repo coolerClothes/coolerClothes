@@ -1,8 +1,11 @@
 <template>
-  <div id="component-container" class="grid grid-cols-10 space-x-4">
+  <div
+    id="component-container"
+    class="sm:flex sm:flex-col md:grid grid-cols-10 md:space-x-4 space-y-4 md:space-y-0"
+  >
     <div
       id="gallery-container"
-      class="px-4 py-4 space-y-2 col-span-7 bg-gray-300 flex flex-col rounded h-auto max-h-screen justify-around items-center"
+      class="p-4 lg:space-y-2 col-span-5 lg:col-span-7 bg-gray-300 flex flex-col rounded max-h-1/3 md:h-auto md:max-h-screen justify-around items-center"
     >
       <!-- <div class="imgContainer ">
       </div> -->
@@ -31,7 +34,7 @@
 
     <div
       id="product-info-card"
-      class="h-fit col-span-3 p-4 bg-slate-300 space-y-4 rounded"
+      class="h-fit col-span-5 lg:col-span-3 p-4 bg-slate-300 space-y-4 rounded"
     >
       <div id="titles-and-stock" class="relative">
         <h3>{{ product.title }}</h3>
