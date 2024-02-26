@@ -45,7 +45,10 @@ watch(
   <div class="px-24 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
-      <ProductInfo :product="currentProduct" />
+      <ProductInfo
+        :product="currentProduct"
+        :galleryImgSrc="currentProduct.imgSrc"
+      />
     </div>
 
     <!-- grid for the cards -->
