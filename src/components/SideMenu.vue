@@ -16,7 +16,7 @@ const handleCategoriesClick = () => {
   <div
     id="side-menu-container"
     :class="
-      'fixed flex h-full w-full z-50 transition-all duration-300' +
+      'fixed flex h-full w-full z-50 text-black transition-all duration-300' +
       (sideMenuActive ? 'translate-x-0' : ' -translate-x-full')
     "
   >
