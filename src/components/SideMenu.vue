@@ -51,11 +51,13 @@ const handleCategoriesClick = () => {
             <router-link to="/search/hoodies">Hoodies</router-link>
           </li>
           <li class="mt-2">
-            <router-link to="/tshirts">T-Shirts</router-link>
+            <router-link to="/search/shirts">T-Shirts</router-link>
           </li>
-          <li class="mt-2"><router-link to="/pants">Pants</router-link></li>
           <li class="mt-2">
-            <router-link to="/accessories">Accessories</router-link>
+            <router-link to="/search/pants">Pants</router-link>
+          </li>
+          <li class="mt-2">
+            <router-link to="/search/accessories">Accessories</router-link>
           </li>
         </ul>
       </div>
