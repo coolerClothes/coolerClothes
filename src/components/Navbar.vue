@@ -23,7 +23,7 @@ const handleSearch = () => {
 </script>
 
 <template>
-  <div id="navbar-container" class="bg-[#6B7280]">
+  <div id="navbar-container" class="fixed w-full bg-[#1c1c1c] text-[#f5f5f5]">
     <SideMenu
       :side-menu-active="sideMenuActive"
       @handle-side-menu-activation="handleSideMenuActivation"
@@ -33,14 +33,23 @@ const handleSearch = () => {
       :cart-menu-active="cartMenuActive"
       @handle-cart-menu-activation="handleCartMenuActivation"
     />
-    <div
-      id="navbar-top-container"
-      class="flex items-center h-20 border-b border-black"
-    >
+    <div id="navbar-top-container" class="flex items-center">
       <div id="navbar-left" class="flex-1 flex justify-center">
-        <div id="logo-container" class="max-md:hidden">
-          <img src="/src/assets/icons/tempLogo-icon.svg" alt="" />
+        <div id="input-container" class="relative max-md:hidden">
+          <input
+            type="text"
+            class="w-64 h-8 rounded-full pl-10 text-black"
+            placeholder="Search"
+            v-model="searchInput"
+            @keyup.enter="handleSearch"
+          />
+          <img
+            src="/src/assets/icons/search-icon.svg"
+            alt=""
+            class="absolute transition-all z-10 duration-500 pl-2 top-1 h-6"
+          />
         </div>
+
         <div
           id="left-side-mobile"
           class="flex max-sm:gap-3 gap-6 w-full ml-5 justify-start md:hidden"
@@ -59,22 +68,13 @@ const handleSearch = () => {
         </div>
       </div>
       <div id="navbar-center" class="flex flex-1 justify-center">
-        <div id="input-container" class="relative max-md:hidden">
-          <input
-            type="text"
-            class="w-64 h-8 rounded-full pl-10"
-            placeholder="Search"
-            v-model="searchInput"
-            @keyup.enter="handleSearch"
-          />
-          <img
-            src="/src/assets/icons/search-icon.svg"
-            alt=""
-            class="absolute transition-all z-10 duration-500 pl-2 top-1 h-6"
-          />
-        </div>
-        <div id="logo-container-mobile" class="md:hidden mx-5">
-          <img src="/src/assets/icons/tempLogo-icon.svg" alt="" />
+        <div id="logo-container" class="mx-5">
+          <router-link to="/"
+            ><img
+              src="/src/assets/logo.png"
+              alt="Cooler Clothes logo"
+              class="max-h-24"
+          /></router-link>
         </div>
       </div>
       <div
@@ -107,7 +107,7 @@ const handleSearch = () => {
         </div>
       </div>
     </div>
-    <div id="navbar-bottom-container" class="h-9 max-md:hidden">
+    <div id="navbar-bottom-container" class="h-9 max-md:hidden bg-[#0c0c0c]">
       <ul class="flex gap-5 h-full justify-center items-center">
         <li><router-link to="/search/capes">Capes</router-link></li>
         <li><router-link to="/search/jackets">Jackets</router-link></li>
