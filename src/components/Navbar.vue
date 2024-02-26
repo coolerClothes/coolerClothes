@@ -23,7 +23,7 @@ const handleSearch = () => {
 </script>
 
 <template>
-  <div id="navbar-container" class="fixed w-full bg-[#1c1c1c] text-[#f5f5f5]">
+  <div id="navbar" class="z-50 text-[#f5f5f5] top-0 sticky">
     <SideMenu
       :side-menu-active="sideMenuActive"
       @handle-side-menu-activation="handleSideMenuActivation"
@@ -33,7 +33,8 @@ const handleSearch = () => {
       :cart-menu-active="cartMenuActive"
       @handle-cart-menu-activation="handleCartMenuActivation"
     />
-    <div id="navbar-top-container" class="flex items-center">
+
+    <div id="navbar-top-container" class="flex items-center bg-[#1c1c1c]">
       <div id="navbar-left" class="flex-1 flex justify-center">
         <div id="input-container" class="relative max-md:hidden">
           <input
@@ -73,7 +74,7 @@ const handleSearch = () => {
             ><img
               src="/src/assets/logo.png"
               alt="Cooler Clothes logo"
-              class="max-h-24"
+              class="max-h-24 max-sm:my-3"
           /></router-link>
         </div>
       </div>
@@ -114,7 +115,9 @@ const handleSearch = () => {
         <li><router-link to="/search/hoodies">Hoodies</router-link></li>
         <li><router-link to="/search/shirts">T-Shirts</router-link></li>
         <li><router-link to="/search/pants">Pants</router-link></li>
-        <li><router-link to="/search/accessories">Accessories</router-link></li>
+        <li>
+          <router-link to="/search/accessories">Accessories</router-link>
+        </li>
       </ul>
     </div>
   </div>
