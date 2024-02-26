@@ -23,7 +23,7 @@ const handleSearch = () => {
 </script>
 
 <template>
-  <div id="navbar-container" class="bg-[#1c1c1c] text-[#f5f5f5]">
+  <div id="navbar-container" class="fixed w-full bg-[#1c1c1c] text-[#f5f5f5]">
     <SideMenu
       :side-menu-active="sideMenuActive"
       @handle-side-menu-activation="handleSideMenuActivation"
