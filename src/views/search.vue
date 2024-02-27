@@ -12,36 +12,48 @@ export default {
     const store = useProductsStore();
     const route = useRoute();
     const category = ref(route.params.category);
-    const searchquery = ref(route.params.searchquery.toLowerCase());
+    const searchQuery = ref(route.params.searchquery);
     const products = ref(store.productsCatalogue);
     const productsArray = ref([]);
- 
-        const filteredArray = computed(() =>
+
+    /* new product array with only products that match searchquery*/
+    const filteredArray = computed(() =>
       productsArray.value.filter(matchesSearchQuery)
     );
 
+    /* checks if products in productsArray have at least one value that includes the searchquery*/
     function matchesSearchQuery(product) {
         return Object.values(product).some((value) =>
-        typeof value === "string" && value.toLowerCase().includes(searchquery.value)
-      );
-    }
+        typeof value === "string" &&
+        /* filtering out product description values from search by using length */
+        value.length < 40 &&
+        searchQuery.value.some((splitOfQuery) =>
+      value.toLowerCase().includes(splitOfQuery.toLowerCase())
+    )
+    )
+    };
 
+    /* watch for if products are fetched from Pinia */
     watch(
         () => store.productsCatalogue,
         (newProductsCatalogue) => {
             products.value = newProductsCatalogue;
-            productsArray.value = Object.values(products.value);
-      console.log(productsArray.value)
-      console.log (filteredArray.value)
-        });
+            if(products.value){
+              /* Products object turned into an array*/
+              productsArray.value = Object.values(products.value);
+            }
+    }, {immediate: true});
 
+    /* watchers for route changes */
     watch(() => route.params.category, (newCategory) => {
       category.value = newCategory;
-    });
+    },{ immediate: true });
 
     watch(() => route.params.searchquery, (newSearchQuery) => {
-      searchquery.value = newSearchQuery;
-    });
+      searchQuery.value = newSearchQuery;
+      /* split to make an array of multiple word searchqueries */
+      searchQuery.value = searchQuery.value.toLowerCase().split(" ");
+    },{ immediate: true });
 
     return {
                 products: store.productsCatalogue,
