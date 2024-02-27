@@ -15,7 +15,6 @@ if (products.value !== null || undefined) {
   currentProduct.value = Object.values(products.value).find(
     (product) => product.id == route.params.productID
   );
-  console.log(currentProduct.value);
 }
 
 watch(
@@ -25,8 +24,6 @@ watch(
     currentProduct.value = Object.values(newProductsCatalogue).find(
       (product) => product.id == route.params.productID
     );
-    console.log(currentID.value);
-    console.log(currentProduct.value);
   }
 );
 watch(
@@ -36,7 +33,6 @@ watch(
     currentProduct.value = Object.values(products.value).find(
       (product) => product.id == newValue
     );
-    console.log(newValue);
   }
 );
 </script>
