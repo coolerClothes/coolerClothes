@@ -31,12 +31,10 @@
 export default {
   computed: {
     show() {
-      if (this.categorySearch === true) {
-        if (this.product.category === this.searchCategory) {
-          return true;
-        } else {
-          return false;
-        }
+      if (this.searchCategory !== "all") {
+          if (this.product.category === this.searchCategory ){
+            return true;
+          }
       } else {
         return true;
       }
