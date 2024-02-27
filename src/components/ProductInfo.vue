@@ -5,7 +5,7 @@
   >
     <div
       id="gallery-container"
-      class="p-4 space-y-2 col-span-5 lg:col-span-7 bg-gray-300 flex flex-col rounded lg:h-auto lg:max-h-screen justify-around items-center"
+      class="p-4 space-y-2 col-span-5 lg:col-span-7 bg-[#1c1c1c] flex flex-col lg:h-auto lg:max-h-screen justify-around items-center"
     >
       <!-- <div class="imgContainer ">
       </div> -->
@@ -34,41 +34,44 @@
 
     <div
       id="product-info-card"
-      class="h-fit col-span-5 lg:col-span-3 p-4 bg-slate-300 space-y-4 rounded"
+      class="h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
     >
       <div id="titles-and-stock" class="relative">
-        <h3>{{ product.title }}</h3>
-        <span class="rounded p-1 bg-slate-100 absolute top-1/4 right-0"
+        <h3 class="text-xl font-bold">{{ product.title }}</h3>
+        <span
+          class="rounded p-1 bg-slate-100 absolute top-1/4 right-0 text-black"
           >in stock</span
         >
-        <h4>{{ product.brand }}</h4>
+        <h4 class="text-[#a3a3a3]">{{ product.brand }}</h4>
       </div>
       <!-- titles and stock -->
 
       <div id="price-and-disclamer">
-        <h2>{{ product.price }}</h2>
-        <span id="small-print">Priser ink. moms. Frakt tillkommer.</span>
+        <h2 class="text-2xl">{{ product.price }}kr</h2>
+        <span id="small-print" class="text-sm italic text-[#a3a3a3]"
+          >Priser ink. moms. Frakt tillkommer.</span
+        >
       </div>
       <!-- price and disclamer -->
       <div id="description-container">
-        <span id="product-description">
+        <span id="product-description" class="text-sm">
           {{ product.description }}
         </span>
       </div>
       <!-- desrciption container -->
-      <form id="add-to-cart">
+      <form id="add-to-cart" class="space-y-2">
         <input
           type="text"
           name="Size"
           list="sizeList"
-          class="rounded w-full my-1.5 text-center"
+          class="rounded w-full my-1.5 text-center text-black"
         />
         <datalist id="sizeList">
           <option v-for="size in product.sizes" :value="size"></option>
         </datalist>
         <button
           label="Add to cart"
-          class="w-full bg-black text-white rounded p-0.5"
+          class="w-full bg-[#FF007A] text-white rounded-full p-0.5"
         >
           Add to cart
         </button>

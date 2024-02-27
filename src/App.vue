@@ -20,9 +20,10 @@ fetchProducts();
 </script>
 
 <template>
-
   <Navbar />
-  <div class="flex flex-col min-h-screen justify-around overflow-x-hidden">
+  <div
+    class="flex flex-col min-h-screen justify-around overflow-x-hidden bg-[#141414] text-white"
+  >
     <router-view></router-view>
     <Footer></Footer>
   </div>

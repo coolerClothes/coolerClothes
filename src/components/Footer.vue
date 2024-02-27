@@ -8,11 +8,14 @@
     <div id="socials" class="py-4 space-y-2">
       <p class="text-center text-white font-thin">Follow our journey!</p>
 
-      <div id="icons-container" class="flex flex-row space-x-3">
+      <div id="icons-container" class="flex flex-row items-center space-x-3">
         <!-- instagram Icon -->
         <a href="https://www.instagram.com/" target="_blank">
+          <!--
+            Instagram's gradient
+            linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   -->
           <svg
-            class="h-8 w-8"
+            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#ca0548]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -25,10 +28,27 @@
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
           </svg>
         </a>
+        <!-- twitter icon because I couldn't find tiktok's  -->
+        <a href="https://twitter.com/" target="_blank">
+          <svg
+            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#02ffe3]"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+            />
+          </svg>
+        </a>
+
         <!-- youtube icon -->
         <a href="https://www.youtube.com/" target="_blank">
           <svg
-            class="h-8 w-8"
+            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#de0000]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -45,7 +65,7 @@
         <!-- facebook icon -->
         <a href="https://facebook.com/" target="_blank">
           <svg
-            class="h-8 w-8"
+            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-blue-600"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -55,22 +75,6 @@
           >
             <path
               d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-            />
-          </svg>
-        </a>
-        <!-- twitter icon because I couldn't find tiktok's  -->
-        <a href="https://twitter.com/" target="_blank">
-          <svg
-            class="h-8 w-8"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
             />
           </svg>
         </a>
@@ -90,7 +94,7 @@
         ><img
           src="/src/assets/logo.png"
           alt="Cooler Clothes logo"
-          class="max-h-16"
+          class="max-h-24"
       /></router-link>
     </div>
   </div>

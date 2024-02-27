@@ -51,13 +51,11 @@ filterForBestSellers(store.productsCatalogue);
   </div>
   <!-- bg-hero -->
 
-  <div class="mt-[40px]">
-    <h2 class="md:px-24 ml-4 text-4xl mb-2">Best sellers</h2>
-  </div>
-  <div class="xl:px-24 my-2 lg:my-4 overflow-x-hidden">
+  <div class="xl:px-24 px-8 my-2 lg:my-4 overflow-x-hidden">
     <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 p-4"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 py-2 md:py-4 lg:py-12"
     >
+      <h2 class="text-4xl col-span-full">Best sellers</h2>
       <Card
         class="col-span-1"
         v-for="product in products"
