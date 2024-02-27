@@ -15,25 +15,14 @@ export default {
     const searchquery = ref(route.params.searchquery.toLowerCase());
     const products = ref(store.productsCatalogue);
     const productsArray = ref([]);
-
-
-    const valuesToLowerCase = () => {
-  productsArray.value.forEach(product => {
-    for (const key in product) {
-        if (typeof product[key] === 'string') {
-        product[key] = product[key].toLowerCase();
-        };
-      };
-        })};
-
-
+ 
         const filteredArray = computed(() =>
       productsArray.value.filter(matchesSearchQuery)
     );
 
     function matchesSearchQuery(product) {
         return Object.values(product).some((value) =>
-        typeof value === "string" && value.includes(searchquery.value)
+        typeof value === "string" && value.toLowerCase().includes(searchquery.value)
       );
     }
 
@@ -42,8 +31,7 @@ export default {
         (newProductsCatalogue) => {
             products.value = newProductsCatalogue;
             productsArray.value = Object.values(products.value);
-            valuesToLowerCase();
-            console.log(productsArray.value)
+      console.log(productsArray.value)
       console.log (filteredArray.value)
         });
 
