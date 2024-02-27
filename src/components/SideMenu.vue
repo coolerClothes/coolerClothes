@@ -6,7 +6,7 @@ const props = defineProps({
   sideMenuActive: { required: true, type: Boolean },
 });
 
-const categoriesExpanded = ref(false);
+const categoriesExpanded = ref(true);
 
 const handleCategoriesClick = () => {
   categoriesExpanded.value = !categoriesExpanded.value;
@@ -16,7 +16,7 @@ const handleCategoriesClick = () => {
   <div
     id="side-menu-container"
     :class="
-      'fixed flex h-full w-full z-50 transition-all duration-300' +
+      'fixed flex h-full w-full z-50 text-black transition-all duration-300' +
       (sideMenuActive ? 'translate-x-0' : ' -translate-x-full')
     "
   >
@@ -42,20 +42,46 @@ const handleCategoriesClick = () => {
           "
         >
           <li class="mt-2">
-            <router-link to="/search/capes">Capes</router-link>
+            <router-link
+              to="/search/capes"
+              @click="emit('handle-side-menu-activation')"
+              >Capes</router-link
+            >
           </li>
           <li class="mt-2">
-            <router-link to="/search/jackets">Jackets</router-link>
+            <router-link
+              to="/search/jackets"
+              @click="emit('handle-side-menu-activation')"
+              >Jackets</router-link
+            >
           </li>
           <li class="mt-2">
-            <router-link to="/search/hoodies">Hoodies</router-link>
+            <router-link
+              to="/search/hoodies"
+              @click="emit('handle-side-menu-activation')"
+              >Hoodies</router-link
+            >
           </li>
           <li class="mt-2">
-            <router-link to="/tshirts">T-Shirts</router-link>
+            <router-link
+              to="/search/shirts"
+              @click="emit('handle-side-menu-activation')"
+              >T-Shirts</router-link
+            >
           </li>
-          <li class="mt-2"><router-link to="/pants">Pants</router-link></li>
           <li class="mt-2">
-            <router-link to="/accessories">Accessories</router-link>
+            <router-link
+              to="/search/pants"
+              @click="emit('handle-side-menu-activation')"
+              >Pants</router-link
+            >
+          </li>
+          <li class="mt-2">
+            <router-link
+              to="/search/accessories"
+              @click="emit('handle-side-menu-activation')"
+              >Accessories</router-link
+            >
           </li>
         </ul>
       </div>
