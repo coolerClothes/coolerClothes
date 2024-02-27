@@ -5,7 +5,7 @@
   >
     <div
       id="gallery-container"
-      class="p-4 lg:space-y-2 col-span-5 lg:col-span-7 bg-gray-300 flex flex-col rounded max-h-1/3 md:h-auto md:max-h-screen justify-around items-center"
+      class="p-4 space-y-2 col-span-5 lg:col-span-7 bg-gray-300 flex flex-col rounded lg:h-auto lg:max-h-screen justify-around items-center"
     >
       <!-- <div class="imgContainer ">
       </div> -->
@@ -56,7 +56,7 @@
         </span>
       </div>
       <!-- desrciption container -->
-      <form>
+      <form id="add-to-cart">
         <input
           type="text"
           name="Size"

@@ -18,10 +18,16 @@
       <img :src="cardImgSrc" class="w-full h-32 sm:h-48 object-cover" />
     </RouterLink>
 
-    <div id="product-info" class="grid grid-cols-3 grid-rows-2 p-4">
-      <h3 class="col-span-2 row-span-1">{{ product.title }}</h3>
-      <h4 class="col-span-2 row-span-1">{{ product.brand }}</h4>
-      <h2 class="col-span-1 row-span-2 text-right">SEK{{ product.price }}</h2>
+    <div
+      id="product-info"
+      class="flex flex-row items-center px-1 py-2 space-x-1 justify-around"
+    >
+      <div id="title-brand">
+        <h3 class="">{{ product.title }}</h3>
+        <h4 class="">{{ product.brand }}</h4>
+      </div>
+      <!-- end title-brand -->
+      <h2 class="">SEK{{ product.price }}</h2>
     </div>
     <!-- product-info -->
   </div>

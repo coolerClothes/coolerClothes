@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref, watch, reactive } from "vue";
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
@@ -15,7 +15,6 @@ if (products.value !== null || undefined) {
   currentProduct.value = Object.values(products.value).find(
     (product) => product.id == route.params.productID
   );
-  console.log(currentProduct.value);
 }
 
 watch(
@@ -25,24 +24,21 @@ watch(
     currentProduct.value = Object.values(newProductsCatalogue).find(
       (product) => product.id == route.params.productID
     );
-    console.log(currentID);
-    console.log(currentProduct.value);
-  },
-
-  () => route.params.currentID,
-  //not working
+  }
+);
+watch(
+  () => route.params.productID,
   (newValue) => {
     currentID.value = route.params.productID;
     currentProduct.value = Object.values(products.value).find(
-      (product) => product.id == newID
+      (product) => product.id == newValue
     );
-    console.log(newValue);
   }
 );
 </script>
 
 <template>
-  <div class="lg:px-24 px-4 my-4 overflow-x-hidden">
+  <div class="xl:px-24 px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo
@@ -53,7 +49,7 @@ watch(
 
     <!-- grid for the cards -->
     <div
-      class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4"
     >
       <Card
         class="col-span-1"
