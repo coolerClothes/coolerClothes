@@ -1,23 +1,22 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div
     id="footer-background"
-    class="flex flex-col items-center justify-center w-screen bg-gray-300"
+    class="flex flex-col items-center justify-center w-screen bg-[#0c0c0c] text-[#a3a3a3]"
   >
     <div id="socials" class="py-4 space-y-2">
-      <p class="text-center">Follow our journey!</p>
+      <p class="text-center text-white font-thin">Follow our journey!</p>
 
       <div id="icons-container" class="flex flex-row space-x-3">
         <!-- instagram Icon -->
         <a href="https://www.instagram.com/" target="_blank">
           <svg
-            class="h-8 w-8 text-black"
+            class="h-8 w-8"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1"
             stroke-linecap="round"
             stroke-linejoin="round"
           >
@@ -29,11 +28,11 @@
         <!-- youtube icon -->
         <a href="https://www.youtube.com/" target="_blank">
           <svg
-            class="h-8 w-8 text-black"
+            class="h-8 w-8"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1"
             stroke-linecap="round"
             stroke-linejoin="round"
           >
@@ -46,11 +45,11 @@
         <!-- facebook icon -->
         <a href="https://facebook.com/" target="_blank">
           <svg
-            class="h-8 w-8 text-black"
+            class="h-8 w-8"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1"
             stroke-linecap="round"
             stroke-linejoin="round"
           >
@@ -62,11 +61,11 @@
         <!-- twitter icon because I couldn't find tiktok's  -->
         <a href="https://twitter.com/" target="_blank">
           <svg
-            class="h-8 w-8 text-black"
+            class="h-8 w-8"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1"
             stroke-linecap="round"
             stroke-linejoin="round"
           >
@@ -81,14 +80,20 @@
     <!-- socials -->
     <div
       id="copyright"
-      class="flex flex-col items-center w-full py-4 space-y-2 bg-gray-500"
+      class="flex flex-col items-center w-full py-4 lg:py-6 space-y-2 lg:space-y-4 bg-[#1c1c1c]"
     >
-      <p>
+      <p class="text-center px-12 text-sm italic">
         The content of this site is copyright protected and is the property of
         Team 6, ITHS.
       </p>
-      <h1>COOLERclothes</h1>
+      <router-link to="/"
+        ><img
+          src="/src/assets/logo.png"
+          alt="Cooler Clothes logo"
+          class="max-h-16"
+      /></router-link>
     </div>
   </div>
   <!-- footer-background -->
 </template>
+<style scoped></style>

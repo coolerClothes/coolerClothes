@@ -28,18 +28,36 @@ filterForBestSellers(store.productsCatalogue);
 
 <template>
   <div
-    class="hero bg-cover bg-center text-white flex flex-col justify-center items-center bg-hero h-[56vh]"
+    id="bg-hero"
+    class="hero bg-cover bg-[center_top_30%] text-white justify-center items-center h-[56vh]"
   >
-    <div>
-      <h1 class="text-4xl mb-2">Big Dummy Text</h1>
-      <p class="text-lg">Dummy Text</p>
+    <div
+      id="hero-text-background"
+      class="flex flex-col bg-black/55 h-full items-center justify-center text-center space-y-2 tracking-tighter"
+    >
+      <div
+        id="huge-neons"
+        class="flex flex-col uppercase text-7xl font-extrabold drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.9)] tracking-[-.25rem]"
+      >
+        <!-- don't know why the drop shadow isn't working -->
+        <span class="text-[#FF007A]">sale</span>
+        <span class="text-[#00E0FF]">sale</span>
+        <span class="text-[#FF007A]">sale</span>
+      </div>
+      <!-- huge neons -->
+      <span class="text-xl font-semibold uppercase">Discount up to 66%</span>
     </div>
+    <!-- hero text background -->
   </div>
+  <!-- bg-hero -->
+
   <div class="mt-[40px]">
-    <h2 class="px-24 ml-4 text-4xl mb-2">Best sellers</h2>
+    <h2 class="md:px-24 ml-4 text-4xl mb-2">Best sellers</h2>
   </div>
-  <div class="px-24 my-4 overflow-x-hidden">
-    <div class="grid grid-cols-5 gap-4 p-4">
+  <div class="xl:px-24 my-2 lg:my-4 overflow-x-hidden">
+    <div
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 p-4"
+    >
       <Card
         class="col-span-1"
         v-for="product in products"
@@ -52,9 +70,8 @@ filterForBestSellers(store.productsCatalogue);
 </template>
 
 <style scoped>
-.bg-hero {
-  background-image: url("../src/assets/hero.png");
-  background-size: 100% auto;
+#bg-hero {
+  background-image: url("src/assets/hero-slides/_bb005c35-e495-4702-ac13-34e16eff49e9.jpeg");
   background-repeat: no-repeat;
 }
 </style>
