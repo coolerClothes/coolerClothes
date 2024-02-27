@@ -31,14 +31,17 @@
 export default {
   computed: {
     show() {
-      if (this.searchCategory !== "all") {
-          if (this.product.category === this.searchCategory ){
-            return true;
-          }
-      } else {
-        return true;
-      }
-    },
+      if (this.categorySearch === true) {
+        if (this.searchCategory !== "all") {
+            if (this.product.category === this.searchCategory ){
+              return true;
+            }
+        } 
+        else {
+        return true;}}
+      else {
+        return true;}
+    }
   },
   props: {
     product: {
