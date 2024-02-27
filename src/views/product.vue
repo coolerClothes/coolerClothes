@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref, watch, reactive } from "vue";
 import ProductInfo from "../components/ProductInfo.vue";
 import Card from "../components/Card.vue";
 import { useProductsStore } from "../store";
@@ -25,16 +25,16 @@ watch(
     currentProduct.value = Object.values(newProductsCatalogue).find(
       (product) => product.id == route.params.productID
     );
-    console.log(currentID);
+    console.log(currentID.value);
     console.log(currentProduct.value);
-  },
-
-  () => route.params.currentID,
-  //not working
+  }
+);
+watch(
+  () => route.params.productID,
   (newValue) => {
     currentID.value = route.params.productID;
     currentProduct.value = Object.values(products.value).find(
-      (product) => product.id == newID
+      (product) => product.id == newValue
     );
     console.log(newValue);
   }
