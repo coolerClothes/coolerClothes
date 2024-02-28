@@ -21,17 +21,9 @@ export default {
       productsArray.value.filter(matchesSearchQuery)
     );
 
-    /* checks if products in productsArray have at least one value that includes the searchquery*/
     function matchesSearchQuery(product) {
-        return Object.values(product).some((value) =>
-        typeof value === "string" &&
-        /* filtering out product description values from search by using length */
-        value.length < 40 &&
-        searchQuery.value.some((splitOfQuery) =>
-      value.toLowerCase().includes(splitOfQuery.toLowerCase())
-    )
-    )
-    };
+      return searchQuery.value.every(word => product.title.toLowerCase().includes(word));
+     }
 
     /* watch for if products are fetched from Pinia */
     watch(
@@ -66,7 +58,8 @@ export default {
 </script>
 
 <template>
- <div class="grid grid-cols-5 gap-4 p-4">
+  <div
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4">
     <Card
     v-for="product in filteredArray"
       class="col-span-1"
