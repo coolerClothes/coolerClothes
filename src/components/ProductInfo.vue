@@ -94,7 +94,7 @@
       </div>
       <!-- counter container -->
 
-      <form id="add-to-cart" class="space-y-2">
+      <div id="add-to-cart" class="space-y-2">
         <div
           id="size-and-amount-container"
           class="flex flex-row justify-around items-center"
@@ -112,13 +112,13 @@
         </div>
         <!-- size and amount container -->
         <button
-          type="submit"
+          @click="console.log(cartItem)"
           label="Add to cart"
           class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
         >
           Add to cart
         </button>
-      </form>
+      </div>
     </div>
     <!-- product info card -->
   </div>
@@ -126,8 +126,32 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import { useCartStore } from "../store";
 
 const count = ref(1);
+const selectedSize = ref("");
+
+/* 2 PROBLEMS :
+
+1) when I click on the button it passes count and selectedSize onto the URL for some odd reason
+
+2)I can't manage to access "product" as it was passed and defined in the script bellow (options API), and haven't managed to define the prop it with Composition instead this far. 
+*/
+
+/* 
+const product = { type: Object, required: true };
+const galleryImgSrc = ref("");
+const item = ref();
+
+const cartItem = {
+  itemAmount: count,
+  itemImgSrc: item.imgSrc,
+  itemTitle: item.title,
+  itemSize: selectedSize,
+  itemPrice: item.price,
+  itemBrand: item.brand,
+}; */
+
 const increase = () => {
   count.value++;
 };
