@@ -36,10 +36,22 @@
     >
       <div id="titles-and-stock" class="relative">
         <h3 class="text-xl font-bold">{{ product.title }}</h3>
-        <span
-          class="rounded p-1 bg-slate-100 absolute top-1/4 right-0 text-black"
-          >in stock</span
-        >
+        <div class="absolute bottom-1/4 right-0 flex flex-row">
+          <span class="flex items-center p-1 text-white"
+            ><svg
+              class="h-4 w-4 text-emerald-500 mr-1"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            in stock</span
+          >
+        </div>
         <h4 class="text-[#a3a3a3]">{{ product.brand }}</h4>
       </div>
       <!-- titles and stock -->
@@ -58,35 +70,35 @@
       </div>
       <!-- desrciption container -->
 
+      <div
+        id="counter-container"
+        class="flex w-full items-center justify-around"
+      >
+        <button
+          name="decrease"
+          @click="decrease()"
+          label="-"
+          class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+        >
+          -
+        </button>
+        <span class="">{{ count }}</span>
+        <button
+          name="increase"
+          @click="increase()"
+          label="+"
+          class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+        >
+          +
+        </button>
+      </div>
+      <!-- counter container -->
+
       <form id="add-to-cart" class="space-y-2">
         <div
           id="size-and-amount-container"
           class="flex flex-row justify-around items-center"
         >
-          <div
-            id="counter-container"
-            class="flex w-full items-center justify-around"
-          >
-            <button
-              name="decrease"
-              @click="decrease()"
-              label="-"
-              class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
-            >
-              -
-            </button>
-            <span class="">{{ count }}</span>
-            <button
-              name="increase"
-              @click="increase()"
-              label="+"
-              class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
-            >
-              +
-            </button>
-          </div>
-          <!-- counter container -->
-
           <input
             type="text"
             name="Size"
