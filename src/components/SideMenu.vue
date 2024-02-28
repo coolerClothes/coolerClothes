@@ -16,12 +16,12 @@ const handleCategoriesClick = () => {
   <div
     id="side-menu-container"
     :class="
-      'fixed flex h-full w-full z-50 text-black transition-all duration-300' +
+      'fixed flex h-full w-full z-50 text-[#f5f5f5] transition-all duration-300' +
       (sideMenuActive ? 'translate-x-0' : ' -translate-x-full')
     "
   >
-    <div id="side-menu" class="h-full w-[70%] max-w-[400px] bg-white">
-      <div id="top" class="flex justify-end items-center border-b">
+    <div id="side-menu" class="h-full w-[70%] max-w-[400px] bg-[#1c1c1c]">
+      <div id="top" class="flex justify-end items-center border-b border-black">
         <img
           src="/src/assets/icons/close-icon.svg"
           alt="X icon"
