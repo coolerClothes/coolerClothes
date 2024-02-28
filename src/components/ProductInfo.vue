@@ -7,8 +7,6 @@
       id="gallery-container"
       class="p-4 space-y-2 col-span-5 lg:col-span-7 bg-[#1c1c1c] flex flex-col lg:h-auto lg:max-h-screen justify-around items-center"
     >
-      <!-- <div class="imgContainer ">
-      </div> -->
       <img :src="galleryImgSrc" class="max-h-80 overflow-hidden object-cover" />
 
       <div
@@ -59,19 +57,50 @@
         </span>
       </div>
       <!-- desrciption container -->
+
       <form id="add-to-cart" class="space-y-2">
-        <input
-          type="text"
-          name="Size"
-          list="sizeList"
-          class="rounded w-full my-1.5 text-center text-black"
-        />
-        <datalist id="sizeList">
-          <option v-for="size in product.sizes" :value="size"></option>
-        </datalist>
+        <div
+          id="size-and-amount-container"
+          class="flex flex-row justify-around items-center"
+        >
+          <div
+            id="counter-container"
+            class="flex w-full items-center justify-around"
+          >
+            <button
+              name="decrease"
+              @click="decrease()"
+              label="-"
+              class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+            >
+              -
+            </button>
+            <span class="">{{ count }}</span>
+            <button
+              name="increase"
+              @click="increase()"
+              label="+"
+              class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+            >
+              +
+            </button>
+          </div>
+          <!-- counter container -->
+
+          <input
+            type="text"
+            name="Size"
+            list="sizeList"
+            class="h-8 rounded-lg my-1.5 text-center bg-[#a3a3a3] text-black"
+          />
+          <datalist id="sizeList">
+            <option v-for="size in product.sizes" :value="size"></option>
+          </datalist>
+        </div>
+        <!-- size and amount container -->
         <button
           label="Add to cart"
-          class="w-full bg-[#FF007A] text-white rounded-full p-0.5"
+          class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
         >
           Add to cart
         </button>
@@ -81,6 +110,18 @@
   </div>
   <!-- component container -->
 </template>
+<script setup>
+import { ref } from "vue";
+
+const count = ref(1);
+const increase = () => {
+  count.value++;
+};
+const decrease = () => {
+  count.value--;
+};
+</script>
+
 <script>
 export default {
   props: {
