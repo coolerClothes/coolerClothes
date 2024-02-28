@@ -101,6 +101,7 @@
         >
           <input
             type="text"
+            v-model="selectedSize"
             name="Size"
             list="sizeList"
             class="h-8 rounded-lg my-1.5 text-center bg-[#a3a3a3] text-black"
@@ -111,6 +112,7 @@
         </div>
         <!-- size and amount container -->
         <button
+          type="submit"
           label="Add to cart"
           class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
         >
