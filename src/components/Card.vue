@@ -15,12 +15,14 @@
   <div
     id="card-background"
     class="flex flex-col rounded shadow overflow-hidden bg-[#1c1c1c]"
-    v-if="show"
-  >
+    v-if="show">
+  <div>
     <RouterLink :to="`/products/${product.id}`">
       <!-- The card links to the product page, that in turn pass these props to the productInfo component on call -->
       <img :src="cardImgSrc" class="w-full h-32 sm:h-48 lg:h-56 object-cover" />
-    </RouterLink>
+   </RouterLink>
+   <div><img src="/src/assets/icons/favorite-icon.svg" alt="red heart" @click="addToFavorites(product)"></div>
+  </div>
 
     <div
       id="product-info"
@@ -55,6 +57,15 @@ export default {
         return true;
       }
     },
+  },
+  setup() {
+    const addToFavorites = (product) => {
+      const favoritesArray = JSON.parse(localStorage.getItem("favoritesArray"))||[];
+     favoritesArray.push(product.title)
+    localStorage.setItem("favoritesArray", JSON.stringify(favoritesArray));
+    }
+
+    return {addToFavorites}
   },
   props: {
     product: {

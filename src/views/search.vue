@@ -15,6 +15,7 @@ export default {
     const searchQuery = ref(route.params.searchquery);
     const products = ref(store.productsCatalogue);
     const productsArray = ref([]);
+    const searchByCategory = computed(() => category.value !== "all");
 
     /* new product array with only products that match searchquery*/
     const filteredArray = computed(() =>
@@ -50,14 +51,23 @@ export default {
     return {
                 products: store.productsCatalogue,
                 filteredArray,
-                category
+                category,
+                searchQuery,
+                searchByCategory
             }
 
-}}
+}
+}
 
 </script>
 
 <template>
+  <div v-if="searchByCategory">
+      <p class="text-2xl font-antonio pt-4 pl-4">{{ category}}</p>
+    </div>
+    <div v-else class="text-2xl font-antonio pt-4 pl-4">
+      <p> Search results for "{{ searchQuery }}"</p>
+    </div>
   <div
       class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4">
     <Card

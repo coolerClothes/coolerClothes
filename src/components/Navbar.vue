@@ -20,6 +20,12 @@
         router.push({ path: '/search/all/' + searchInput.value })
         console.log(searchInput.value)
     }
+
+    const goToFavorites = () => {
+        router.push({ path: '/favorites/favorites'})
+        console.log("gotofavorites")
+    }
+
 </script>
 
 <template>
@@ -93,7 +99,7 @@
                     />
                     <h2 class="pl-1 pt-0.5 max-md:hidden">Login</h2>
                 </div>
-                <div class="flex pr-1">
+                <div class="flex pr-1" @click="goToFavorites">
                     <img
                         src="/src/assets/icons/favorite-icon.svg"
                         alt="heart icon"
