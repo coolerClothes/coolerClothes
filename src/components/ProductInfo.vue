@@ -32,7 +32,7 @@
 
     <div
       id="item-info-card"
-      class="h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
+      class="flex flex-col h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
     >
       <div id="titles-and-stock" class="relative">
         <h3 class="text-xl font-bold">{{ item.title }}</h3>
@@ -94,7 +94,7 @@
       </div>
       <!-- counter container -->
 
-      <div id="add-to-cart" class="space-y-2">
+      <div id="form" class="space-y-2">
         <div
           id="size-and-amount-container"
           class="flex flex-row justify-around items-center"
@@ -114,11 +114,12 @@
         <button
           @click="console.log(cartItem)"
           label="Add to cart"
-          class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
+          class="h-10 w-full hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
         >
           Add to cart
         </button>
       </div>
+      <!-- form -->
     </div>
     <!-- item info card -->
   </div>
