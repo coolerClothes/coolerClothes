@@ -24,6 +24,11 @@ const handleSearch = () => {
   console.log(searchInput.value);
 };
 
+const goToFavorites = () => {
+  router.push({ path: "/favorites/favorites" });
+  console.log("gotofavorites");
+};
+
 // Handle scroll event
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 0;
@@ -135,7 +140,7 @@ const bottomContainerClass = computed(() => {
           />
           <h2 class="pl-1 pt-0.5 max-md:hidden">Login</h2>
         </div>
-        <div class="flex pr-1 hover:text-[#ff007a]">
+        <div class="flex pr-1 hover:text-[#ff007a]" @click="goToFavorites">
           <img
             src="/src/assets/icons/favorite-icon.svg"
             alt="heart icon"

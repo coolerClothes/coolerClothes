@@ -31,11 +31,11 @@
     <!-- gallery container -->
 
     <div
-      id="product-info-card"
-      class="h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
+      id="item-info-card"
+      class="flex flex-col h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
     >
       <div id="titles-and-stock" class="relative">
-        <h3 class="text-xl font-bold">{{ product.title }}</h3>
+        <h3 class="text-xl font-bold">{{ item.title }}</h3>
         <div class="absolute bottom-1/4 right-0 flex flex-row">
           <span class="flex items-center p-1 text-white"
             ><svg
@@ -52,20 +52,20 @@
             in stock</span
           >
         </div>
-        <h4 class="text-[#a3a3a3]">{{ product.brand }}</h4>
+        <h4 class="text-[#a3a3a3]">{{ item.brand }}</h4>
       </div>
       <!-- titles and stock -->
 
       <div id="price-and-disclamer">
-        <h2 class="text-2xl">{{ product.price }}kr</h2>
+        <h2 class="text-2xl">{{ item.price }}kr</h2>
         <span id="small-print" class="text-sm italic text-[#a3a3a3]"
           >Priser ink. moms. Frakt tillkommer.</span
         >
       </div>
       <!-- price and disclamer -->
       <div id="description-container">
-        <span id="product-description" class="text-sm">
-          {{ product.description }}
+        <span id="item-description" class="text-sm">
+          {{ item.description }}
         </span>
       </div>
       <!-- desrciption container -->
@@ -94,7 +94,7 @@
       </div>
       <!-- counter container -->
 
-      <form id="add-to-cart" class="space-y-2">
+      <div id="form" class="space-y-2">
         <div
           id="size-and-amount-container"
           class="flex flex-row justify-around items-center"
@@ -107,45 +107,56 @@
             class="h-8 rounded-lg my-1.5 text-center bg-[#a3a3a3] text-black"
           />
           <datalist id="sizeList">
-            <option v-for="size in product.sizes" :value="size"></option>
+            <option v-for="size in item.sizes" :value="size"></option>
           </datalist>
         </div>
         <!-- size and amount container -->
         <button
-          type="submit"
+          @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
+          class="h-10 w-full hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
         >
           Add to cart
         </button>
-      </form>
+      </div>
+      <!-- form -->
     </div>
-    <!-- product info card -->
+    <!-- item info card -->
   </div>
   <!-- component container -->
 </template>
 <script setup>
 import { ref } from "vue";
+import { useCartStore } from "../store";
+
+const props = defineProps({
+  item: { type: Object, required: true },
+  galleryImgSrc: { type: String },
+});
 
 const count = ref(1);
+const selectedSize = ref("");
+
+const cart = useCartStore();
+
+function addClicked(item, selectedSize, amount) {
+  while (amount > 0) {
+    cart.addToCart({
+      title: item.title,
+      brand: item.brand,
+      category: item.category,
+      price: item.price,
+      chosenSize: selectedSize,
+      imgSrc: item.imgSrc,
+    });
+    amount--;
+  }
+}
+
 const increase = () => {
   count.value++;
 };
 const decrease = () => {
   count.value--;
-};
-</script>
-
-<script>
-export default {
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
-    galleryImgSrc: {
-      type: String,
-    },
-  },
 };
 </script>
