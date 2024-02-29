@@ -94,7 +94,7 @@
       </div>
       <!-- counter container -->
 
-      <form id="add-to-cart" class="space-y-2">
+      <div id="add-to-cart" class="space-y-2">
         <div
           id="size-and-amount-container"
           class="flex flex-row justify-around items-center"
@@ -112,13 +112,13 @@
         </div>
         <!-- size and amount container -->
         <button
-          type="submit"
+          @click="console.log(cartItem)"
           label="Add to cart"
           class="h-8 w-full duration-300 ease-in-out bg-black hover:bg-[#FF007A] text-white hover:text-black font-bold rounded-full p-0.5"
         >
           Add to cart
         </button>
-      </form>
+      </div>
     </div>
     <!-- product info card -->
   </div>
@@ -126,26 +126,25 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import { useCartStore } from "../store";
+
+const props = defineProps({
+  product: { type: Object, required: true },
+  galleryImgSrc: { type: String },
+});
+/* Can't access the damned object that was passed as a prop */
+/* console.log(this.product); */
+
+const cart = useCartStore();
+cart.addToCart();
 
 const count = ref(1);
+const selectedSize = ref("");
+
 const increase = () => {
   count.value++;
 };
 const decrease = () => {
   count.value--;
-};
-</script>
-
-<script>
-export default {
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
-    galleryImgSrc: {
-      type: String,
-    },
-  },
 };
 </script>
