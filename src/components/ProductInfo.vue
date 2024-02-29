@@ -78,7 +78,7 @@
           name="decrease"
           @click="decrease()"
           label="-"
-          class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+          class="px-2 rounded-lg font-extrabold bg-[#00E0FF] text-black"
         >
           -
         </button>
@@ -87,7 +87,7 @@
           name="increase"
           @click="increase()"
           label="+"
-          class="px-2 rounded-lg font-semibold bg-[#a3a3a3] text-black"
+          class="px-2 rounded-lg font-extrabold bg-[#00E0FF] text-black"
         >
           +
         </button>
