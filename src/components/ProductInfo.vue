@@ -112,7 +112,7 @@
         </div>
         <!-- size and amount container -->
         <button
-          @click="console.log(cartItem)"
+          @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
           class="h-10 w-full hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
         >
@@ -134,15 +134,24 @@ const props = defineProps({
   galleryImgSrc: { type: String },
 });
 
-const cart = useCartStore();
-cart.addToCart();
-
-const productTest = props.item;
-/* IT WAS THIS ^^^^^^ THE WHOLE DAMN TIME */
-console.log(productTest);
-
 const count = ref(1);
 const selectedSize = ref("");
+
+const cart = useCartStore();
+
+function addClicked(item, selectedSize, amount) {
+  while (amount > 0) {
+    cart.addToCart({
+      title: item.title,
+      brand: item.brand,
+      category: item.category,
+      price: item.price,
+      chosenSize: selectedSize,
+      imgSrc: item.imgSrc,
+    });
+    amount--;
+  }
+}
 
 const increase = () => {
   count.value++;
