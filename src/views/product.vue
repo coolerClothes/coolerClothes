@@ -13,7 +13,7 @@ const currentProduct = ref(null);
 
 if (products.value !== null || undefined) {
   currentProduct.value = Object.values(products.value).find(
-    (product) => product.id == route.params.productID
+    (product) => product.id == route.params.productID,
   );
 }
 
@@ -22,23 +22,23 @@ watch(
   (newProductsCatalogue) => {
     products.value = newProductsCatalogue;
     currentProduct.value = Object.values(newProductsCatalogue).find(
-      (product) => product.id == route.params.productID
+      (product) => product.id == route.params.productID,
     );
-  }
+  },
 );
 watch(
   () => route.params.productID,
   (newValue) => {
     currentID.value = route.params.productID;
     currentProduct.value = Object.values(products.value).find(
-      (product) => product.id == newValue
+      (product) => product.id == newValue,
     );
-  }
+  },
 );
 </script>
 
 <template>
-  <div class="xl:px-24 px-4 my-4 overflow-x-hidden">
+  <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo
