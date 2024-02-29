@@ -42,7 +42,7 @@ watch(
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo
-        :product="currentProduct"
+        :item="currentProduct"
         :galleryImgSrc="currentProduct.imgSrc"
       />
     </div>

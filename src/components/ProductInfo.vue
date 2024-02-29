@@ -31,11 +31,11 @@
     <!-- gallery container -->
 
     <div
-      id="product-info-card"
+      id="item-info-card"
       class="h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
     >
       <div id="titles-and-stock" class="relative">
-        <h3 class="text-xl font-bold">{{ product.title }}</h3>
+        <h3 class="text-xl font-bold">{{ item.title }}</h3>
         <div class="absolute bottom-1/4 right-0 flex flex-row">
           <span class="flex items-center p-1 text-white"
             ><svg
@@ -52,20 +52,20 @@
             in stock</span
           >
         </div>
-        <h4 class="text-[#a3a3a3]">{{ product.brand }}</h4>
+        <h4 class="text-[#a3a3a3]">{{ item.brand }}</h4>
       </div>
       <!-- titles and stock -->
 
       <div id="price-and-disclamer">
-        <h2 class="text-2xl">{{ product.price }}kr</h2>
+        <h2 class="text-2xl">{{ item.price }}kr</h2>
         <span id="small-print" class="text-sm italic text-[#a3a3a3]"
           >Priser ink. moms. Frakt tillkommer.</span
         >
       </div>
       <!-- price and disclamer -->
       <div id="description-container">
-        <span id="product-description" class="text-sm">
-          {{ product.description }}
+        <span id="item-description" class="text-sm">
+          {{ item.description }}
         </span>
       </div>
       <!-- desrciption container -->
@@ -107,7 +107,7 @@
             class="h-8 rounded-lg my-1.5 text-center bg-[#a3a3a3] text-black"
           />
           <datalist id="sizeList">
-            <option v-for="size in product.sizes" :value="size"></option>
+            <option v-for="size in item.sizes" :value="size"></option>
           </datalist>
         </div>
         <!-- size and amount container -->
@@ -120,7 +120,7 @@
         </button>
       </div>
     </div>
-    <!-- product info card -->
+    <!-- item info card -->
   </div>
   <!-- component container -->
 </template>
@@ -129,14 +129,16 @@ import { ref } from "vue";
 import { useCartStore } from "../store";
 
 const props = defineProps({
-  product: { type: Object, required: true },
+  item: { type: Object, required: true },
   galleryImgSrc: { type: String },
 });
-/* Can't access the damned object that was passed as a prop */
-/* console.log(this.product); */
 
 const cart = useCartStore();
 cart.addToCart();
+
+const productTest = props.item;
+/* IT WAS THIS ^^^^^^ THE WHOLE DAMN TIME */
+console.log(productTest);
 
 const count = ref(1);
 const selectedSize = ref("");
