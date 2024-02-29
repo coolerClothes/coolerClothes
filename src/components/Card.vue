@@ -14,7 +14,7 @@
 <template>
   <div
     id="card-background"
-    class="flex flex-col rounded shadow overflow-hidden bg-[#1c1c1c]"
+    class="flex flex-col rounded shadow overflow-hidden bg-[#1c1c1c] font-inter"
     v-if="show"
   >
     <div>
@@ -39,12 +39,12 @@
     >
       <div id="title-brand" class="flex flex-col stretch flex-wrap space-y-1">
         <h3 class="text-sm font-medium">{{ product.title }}</h3>
-        <h4 class="text-xs font-light">
+        <h4 class="text-xs font-light text-[#c1c1c1]">
           {{ product.brand }}
         </h4>
       </div>
       <!-- end title-brand -->
-      <h2 class="flex-none text-md">{{ product.price }}kr</h2>
+      <h2 class="flex-none text-lg">{{ product.price }}kr</h2>
     </div>
     <!-- product-info -->
   </div>
