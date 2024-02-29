@@ -49,7 +49,7 @@ watch(
 
     <!-- grid for the cards -->
     <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4"
     >
       <Card
         class="col-span-1"
