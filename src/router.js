@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "./views/home.vue";
 import Search from "./views/search.vue";
 import Product from "./views/product.vue";
+import Favorites from "./views/favorites.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/products/:productID",
     name: "Product",
     component: Product,
+  },
+  {
+    path: "/favorites/favorites",
+    name: "Favorites",
+    component: Favorites,
   },
 ];
 

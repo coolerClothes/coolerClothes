@@ -29,7 +29,7 @@
 <template>
     <div
         id="bg-hero"
-        class="hero bg-cover bg-[center_top_30%] text-white justify-center items-center h-[56vh]"
+        class="hero bg-cover bg-[center_top_30%] text-white justify-center items-center h-[50vh]"
     >
         <div
             id="hero-text-background"
@@ -37,7 +37,7 @@
         >
             <div
                 id="huge-neons"
-                class="flex flex-col uppercase text-7xl font-extrabold drop-shadow-[0_1.4px_1.4px_rgba(0,0,0,0.9)] tracking-[-.25rem]"
+                class="flex flex-col uppercase text-8xl font-extrabold drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.9)] tracking-[-.25rem] font-inter"
             >
                 <!-- don't know why the drop shadow isn't working -->
                 <span class="text-[#FF007A]">sale</span>
@@ -45,7 +45,8 @@
                 <span class="text-[#FF007A]">sale</span>
             </div>
             <!-- huge neons -->
-            <span class="text-xl font-semibold uppercase"
+            <span
+                class="text-3xl font-semibold uppercase font-antonio drop-shadow-[0_3.4px_1.4px_rgba(0,0,0,0.9)]"
                 >Discount up to 66%</span
             >
         </div>
