@@ -1,8 +1,14 @@
 <script setup>
-import { useProductsStore } from "./store";
+import { useCartStore, useProductsStore } from "./store";
 import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 const store = useProductsStore();
+const cartStore = useCartStore()
+
+const fetchCart =()=>{
+  cartStore.getCart()
+}
+
 
 const fetchProducts = async () => {
   try {
@@ -16,6 +22,7 @@ const fetchProducts = async () => {
   }
 };
 
+fetchCart()
 fetchProducts();
 </script>
 
