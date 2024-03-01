@@ -41,13 +41,13 @@ onBeforeUnmount(() => {
 
 const logoSrc = computed(() => {
   return isScrolled.value
-    ? "/src/assets/small-logo.png" // Use this logo when scrolled
-    : "/src/assets/logo.png"; // Use the default logo when not scrolled
+    ? "/src/assets/small-logo.png" // Slim logo when scrolled
+    : "/src/assets/logo.png"; // Default logo when not scrolled
 });
 const logoAltSrc = computed(() => {
   return isScrolled.value
-    ? "/src/assets/small-alt-logo.png" // Use this logo when scrolled
-    : "/src/assets/alt-logo.png"; // Use the default logo when not scrolled
+    ? "/src/assets/small-alt-logo.png" // Slim logo hover when scrolled
+    : "/src/assets/alt-logo.png"; // Default logo hover when not scrolled
 });
 
 const bottomContainerClass = computed(() => {
@@ -127,7 +127,7 @@ const bottomContainerClass = computed(() => {
         id="navbar-right"
         class="flex flex-1 justify-center gap-4 max-sm:gap-5 max-md:gap-9 max-md:justify-end max-md:mr-5 text-sm"
       >
-        <div class="flex pr-1 hover:text-[#ff007a]">
+        <div class="flex cursor-pointer pr-1 hover:text-[#ff007a]">
           <img
             src="/src/assets/icons/login-icon.svg"
             alt="mask icon"
@@ -136,8 +136,25 @@ const bottomContainerClass = computed(() => {
           <h2 class="pl-1 pt-0.5 max-md:hidden">Login</h2>
         </div>
         <router-link to="/favorites/favorites">
-                        <div class="flex pr-1">
-                    <svg class="min-w-6 text-[#F5F5F5] hover:fill-[#FF007A] hover:scale-90 transition-transform duration-300 transform ease-in-out" viewBox="0 0 24 24"  fill="none"  stroke="currentColor">  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg><h2 class="pl-1 pt-0.5 max-md:hidden hover:text-[#ff007a]">Favorites</h2></div></router-link>
+          <div class="flex pr-1">
+            <svg
+              class="min-w-6 text-[#F5F5F5] hover:fill-[#FF007A] hover:scale-90 transition-transform duration-300 transform ease-in-out"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+            <h2 class="pl-1 pt-0.5 max-md:hidden hover:text-[#ff007a]">
+              Favorites
+            </h2>
+          </div></router-link
+        >
         <div
           class="flex cursor-pointer pr-1 hover:text-[#ff007a]"
           @click="handleCartMenuActivation"
@@ -203,23 +220,16 @@ const bottomContainerClass = computed(() => {
 }
 
 #navbar-top-container {
-  transition:
-    height 0.3s ease-in-out,
-    background-color 0.3s ease-in-out;
+  transition: height 0.45s ease-in-out;
 }
 
 .slim-navbar {
   height: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #1c1c1c; /* Adjust the color as needed */
+  background-color: #1c1c1c;
   border-bottom: 5px solid #0c0c0c;
 }
-
-/* #navbar-bottom-container {
-  transition: height 0.3s ease-in-out;
-} */
-
 .slim-navbar #navbar-bottom-container {
   height: 0;
 }
