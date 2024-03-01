@@ -66,7 +66,8 @@ export default {
       <p class="text-2xl font-antonio pt-4 pl-4">{{ category}}</p>
     </div>
     <div v-else class="text-2xl font-antonio pt-4 pl-4">
-      <p> Search results for "{{ searchQuery }}"</p>
+      <p v-if="filteredArray.length > 0" class="text-2xl font-antonio pt-4 pl-4">Results for: {{ searchQuery.join(' ')}}</p>
+      <p v-else class="text-2xl font-antonio pt-4 pl-4">No search results found for: {{ searchQuery.join(' ') }}</p>
     </div>
   <div
       class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4">

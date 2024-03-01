@@ -66,7 +66,7 @@ export default {
 </div>
   <div v-else>
   <p class="text-2xl font-antonio pt-4 pl-4">Favorites</p>
-  <p class="text-center" >no favorite products</p>
+  <p class="font-antonio pt-4 pl-4" >no favorite products</p>
 </div>
 
 </template>
