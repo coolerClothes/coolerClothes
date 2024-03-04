@@ -38,7 +38,7 @@ watch(
 </script>
 
 <template>
-  <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
+  <div class="xl:px-[9%] px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo

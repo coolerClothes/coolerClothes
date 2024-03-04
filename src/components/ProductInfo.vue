@@ -1,7 +1,7 @@
 <template>
   <div
     id="component-container"
-    class="sm:flex sm:flex-col md:grid grid-cols-10 md:space-x-4 space-y-4 md:space-y-0"
+    class="sm:flex sm:flex-col md:grid grid-cols-10 md:space-x-4 md:space-y-0"
   >
     <div
       id="gallery-container"
@@ -91,35 +91,32 @@
       </div>
       <!-- desrciption container -->
 
-      <div
-        id="counter-container"
-        class="flex w-full items-center justify-around"
-      >
-        <button
-          name="decrease"
-          @click="decrease()"
-          label="-"
-          class="px-2 rounded-lg font-extrabold bg-[#00E0FF] text-black"
-        >
-          -
-        </button>
-        <span class="">{{ count }}</span>
-        <button
-          name="increase"
-          @click="increase()"
-          label="+"
-          class="px-2 rounded-lg font-extrabold bg-[#00E0FF] text-black"
-        >
-          +
-        </button>
-      </div>
-      <!-- counter container -->
-
-      <div id="form" class="space-y-2">
+      <div id="form" class="flex flex-col space-y-2 space-x-2 md:space-x-0">
         <div
           id="size-and-amount-container"
-          class="flex flex-row justify-around items-center"
+          class="flex flex-row justify-center items-center space-x-4"
         >
+          <div id="counter-container" class="flex justify-center space-x-2">
+            <button
+              name="decrease"
+              @click="decrease()"
+              label="-"
+              class="px-2 rounded-lg font-extrabold bg-[#FF007A] text-black"
+            >
+              -
+            </button>
+            <span class="">{{ count }}</span>
+            <button
+              name="increase"
+              @click="increase()"
+              label="+"
+              class="px-2 rounded-lg font-extrabold bg-[#FF007A] text-black"
+            >
+              +
+            </button>
+          </div>
+          <!-- counter container -->
+
           <input
             type="text"
             v-model="selectedSize"
@@ -135,7 +132,7 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="h-10 w-full hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
+          class="h-10 w-[80%] hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
         >
           Add to cart
         </button>
