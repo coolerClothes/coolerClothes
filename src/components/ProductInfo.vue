@@ -201,6 +201,7 @@ function addClicked(item, selectedSize, amount) {
       imgSrc: item.imgSrc,
     });
     amount--;
+    console.log(selectedSize);
   }
 }
 

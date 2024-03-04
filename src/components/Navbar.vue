@@ -110,7 +110,7 @@ const bottomContainerClass = computed(() => {
           <img
             src="/src/assets/icons/search-icon.svg"
             alt=""
-            class="absolute transition-all z-10 duration-500 pl-2 top-2 h-6"
+            class="absolute transition-all z-10 duration-300 pl-2 top-2 h-6"
           />
         </div>
 
