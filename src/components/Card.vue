@@ -14,7 +14,7 @@
 <template>
   <div
     id="card-background"
-    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] font-inter"
+    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] font-inter transition-transform transform-gpu hover:scale-[1.02]"
     v-if="show"
   >
     <div class="flex relative">
