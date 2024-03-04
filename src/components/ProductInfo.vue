@@ -101,7 +101,8 @@
               name="decrease"
               @click="decrease()"
               label="-"
-              class="px-2 rounded-lg font-extrabold bg-[#FF007A] text-black"
+              class="px-2 rounded-lg font-extrabold bg-[#FF007A] disabled:bg-[#a3a3a3] text-black"
+              :disabled="decreaseButton(count)"
             >
               -
             </button>
@@ -153,6 +154,12 @@ const props = defineProps({
 });
 
 const count = ref(1);
+
+function decreaseButton(count) {
+  let isDisabled = count > 1 ? false : true;
+  return isDisabled;
+}
+
 const selectedSize = ref("");
 
 const cart = useCartStore();
