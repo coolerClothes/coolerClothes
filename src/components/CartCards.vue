@@ -48,8 +48,9 @@ watch(
       id="cartProducts"
       v-if="Object.keys(cart).length !== 0"
       v-for="productArray in cart"
+      class="bg-[#141414] mb-1 border-[#1c1c1c]"
     >
-      <div class="p-2">
+      <div class="p-2 font-inter">
         <div class="flex">
           <router-link
             :to="'/products/' + productArray[0].id"
@@ -69,14 +70,14 @@ watch(
                 {{ productArray[0].title }}
               </h2>
             </router-link>
-            <h3 class="text-xs font-thin pt-1">
+            <h3 class="text-xs text-[#858585] font-light pt-1">
               {{ productArray[0].brand }}
             </h3>
-            <h3 class="text-sm font-light pt-2">
+            <h3 class="text-sm font-light pt-2 mt-2">
               {{ productArray[0].category }}
             </h3>
             <div class="flex justify-between items-center">
-              <h3 class="text-xs">
+              <h3 class="text-s text-[#ff007a]">
                 {{ productArray[0].chosenSize.toUpperCase() }}
               </h3>
               <div class="flex items-center">
@@ -103,7 +104,7 @@ watch(
             <img
               src="/src/assets/icons/trash-icon.svg"
               alt="trashcan icon"
-              class="h-7 cursor-pointer"
+              class="h-7 cursor-pointer m-1"
               @click="store.removeAllDuplicates(productArray[0])"
             />
           </div>

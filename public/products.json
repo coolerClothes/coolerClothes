@@ -32,7 +32,7 @@
   },
   "jacket2": {
     "id": "03a22602-98b0-4210-8ab4-484cca0bcb28",
-    "title": "Lights Show Jacket",
+    "title": "Lights Show",
     "brand": "COOLERclothes",
     "category": "jackets",
     "price": 500,
@@ -63,7 +63,7 @@
   },
   "jacket3": {
     "id": "92151565-6cec-4518-a294-9b7d494572cb",
-    "title": "DJ Deluxe Jacket",
+    "title": "DJ Deluxe",
     "brand": "COOLERclothes",
     "category": "jackets",
     "price": 500,
@@ -94,7 +94,7 @@
   },
   "jacket4": {
     "id": "36b0b7ac-c085-4b86-9473-7084a8605ad6",
-    "title": "Rainbow Bomber Jacket",
+    "title": "Rainbow Bomber",
     "brand": "COOLERclothes",
     "category": "jackets",
     "price": 500,
@@ -125,7 +125,7 @@
   },
   "jacket5": {
     "id": "a4ea76d9-02b4-4055-89d6-4fd8737b0701",
-    "title": "Retro Hooded Jacket",
+    "title": "Retro Hooded",
     "brand": "COOLERclothes",
     "category": "jackets",
     "price": 500,
@@ -528,7 +528,7 @@
   },
   "pants4": {
     "id": "f723eddf-bbb5-4a20-90ba-db3f6a6482bb",
-    "title": "Classy Formal Chinos",
+    "title": "Classy Formal",
     "brand": "COOLERclothes",
     "category": "pants",
     "price": 500,
@@ -652,13 +652,13 @@
   },
   "shirt3": {
     "id": "eb338b33-a03b-4958-8a25-e31190d68e77",
-    "title": "Goddess of the Sun",
+    "title": "Always Sunny",
     "brand": "COOLERclothes",
     "category": "shirts",
     "price": 500,
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/3.jpg",
-    "alt": "Goddess of the Sun",
+    "alt": "Always Sunny",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "bestSeller": false,
     "inStock": true,
@@ -1086,7 +1086,7 @@
   },
   "acc10": {
     "id": "17aca893-d162-43be-8967-d4b2ccadf916",
-    "title": "Explorer's Adventure Hat",
+    "title": "Adventure Hat",
     "brand": "COOLERclothes",
     "category": "accessories",
     "price": 500,
