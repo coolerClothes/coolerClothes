@@ -133,7 +133,7 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="h-10 w-[80%] hover:w-11/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
+          class="h-10 w-[90%] hover:w-10/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
         >
           Add to cart
         </button>

@@ -1,15 +1,29 @@
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
 import SideMenu from "./SideMenu.vue";
 import CartMenu from "./CartMenu.vue";
 import { useRouter } from "vue-router";
+import SearchMenu from "./SearchMenu.vue";
+import { useCartStore } from "../store";
 
 const sideMenuActive = ref(false);
 const cartMenuActive = ref(false);
+const searchMenuActive = ref(false);
 const searchInput = ref("");
 const isScrolled = ref(false);
+const cartProductsAmount = ref(0);
 
 const router = useRouter();
+
+const store = useCartStore();
+
+if (store.cart) {
+  cartProductsAmount.value = store.cart.length;
+}
+
+const handleSearchMenuActivation = () => {
+  searchMenuActive.value = !searchMenuActive.value;
+};
 
 const handleSideMenuActivation = () => {
   sideMenuActive.value = !sideMenuActive.value;
@@ -28,6 +42,13 @@ const handleSearch = () => {
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 0;
 };
+
+watch(
+  () => store.cart,
+  (newCart) => {
+    cartProductsAmount.value = newCart.length;
+  },
+);
 
 // Add event listeners on component mount
 onMounted(() => {
@@ -67,6 +88,11 @@ const bottomContainerClass = computed(() => {
       @handle-cart-menu-activation="handleCartMenuActivation"
     />
 
+    <SearchMenu
+      :search-menu-active="searchMenuActive"
+      @handle-search-menu-activation="handleSearchMenuActivation"
+    />
+
     <div
       id="navbar-top-container"
       class="flex items-center bg-[#1c1c1c] p-3 transition-all h-32 w-full"
@@ -101,7 +127,8 @@ const bottomContainerClass = computed(() => {
           <img
             src="/src/assets/icons/search-icon-black.svg"
             alt=""
-            class="h-6"
+            class="h-6 cursor-pointer"
+            @click="handleSearchMenuActivation"
           />
         </div>
       </div>
@@ -159,12 +186,22 @@ const bottomContainerClass = computed(() => {
           class="flex cursor-pointer pr-1 hover:text-[#ff007a]"
           @click="handleCartMenuActivation"
         >
-          <img
-            src="/src/assets/icons/cart-icon.svg"
-            alt="Shopping bag icon"
-            class="min-w-6"
-          />
-          <h2 class="pl-1 pt-0.5 max-md:hidden">Cart</h2>
+          <div class="relative">
+            <img
+              src="/src/assets/icons/cart-icon.svg"
+              alt="Shopping bag icon"
+              class="min-w-6"
+            />
+            <span
+              :class="
+                ' absolute -top-2 -right-[0.55rem] size-5 rounded-full bg-[#0c0c0c] flex justify-center items-center text-xs font-medium ' +
+                (cartProductsAmount > 0 ? '' : 'hidden')
+              "
+              >{{ cartProductsAmount }}</span
+            >
+          </div>
+
+          <h2 class="pl-2 pt-0.5 max-md:hidden">Cart</h2>
         </div>
       </div>
     </div>
