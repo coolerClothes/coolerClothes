@@ -5,11 +5,16 @@
   >
     <div
       id="gallery-container"
-      class="p-4 space-y-2 col-span-5 lg:col-span-7 bg-[#1c1c1c] flex flex-col lg:h-auto lg:max-h-screen justify-around items-center"
+      class="col-span-5 lg:col-span-7 flex justify-center items-start"
     >
-      <img :src="galleryImgSrc" class="max-h-80 overflow-hidden object-cover" />
+      <div id="imgBg" class="flex flex-col bg-[#1c1c1c] w-full p-4">
+        <img
+          :src="galleryImgSrc"
+          class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[60vh] w-full object-contain"
+        />
+      </div>
 
-      <div
+      <!-- <div
         id="gallery-row"
         class="flex justify-around h-fit max-h-1/3 space-x-2"
       >
@@ -25,7 +30,7 @@
         <div class="imgContainer overflow-hidden">
           <img :src="galleryImgSrc" class="object-contain rounded" />
         </div>
-      </div>
+      </div> -->
       <!-- gallery row -->
     </div>
     <!-- gallery container -->
@@ -56,11 +61,27 @@
       </div>
       <!-- titles and stock -->
 
-      <div id="price-and-disclamer">
+      <div id="price-and-disclamer" class="relative">
         <h2 class="text-2xl">{{ item.price }}kr</h2>
         <span id="small-print" class="text-sm italic text-[#a3a3a3]"
           >Priser ink. moms. Frakt tillkommer.</span
         >
+        <div @click="toggleFavorite(item)" class="absolute right-0 top-0">
+          <svg
+            class="h-10 w-10 text-[#FF007A] rounded-bl-lg hover:text-[#ff59a9]"
+            :class="{ 'fill-[#FF007A] text-[#1c1c1c]': isFavorite }"
+            viewBox="-3 -1 29 26"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            />
+          </svg>
+        </div>
       </div>
       <!-- price and disclamer -->
       <div id="description-container">
@@ -126,7 +147,7 @@
   <!-- component container -->
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useCartStore } from "../store";
 
 const props = defineProps({
@@ -158,5 +179,36 @@ const increase = () => {
 };
 const decrease = () => {
   count.value--;
+};
+
+/* favorite functionality by Lucia but with ITEM instead of PRODUCT, since this component needs to take in a different prop */
+const isFavorite = ref();
+
+const checkFavorite = (item) => {
+  let favoritesArray = JSON.parse(localStorage.getItem("favoritesArray")) || [];
+  if (favoritesArray.includes(item.title)) {
+    return (isFavorite.value = true);
+  } else {
+    return (isFavorite.value = false);
+  }
+};
+
+onMounted(() => {
+  checkFavorite(props.item);
+});
+
+const toggleFavorite = (item) => {
+  let favoritesArray = JSON.parse(localStorage.getItem("favoritesArray")) || [];
+  const index = favoritesArray.lastIndexOf(item.title);
+  if (index !== -1) {
+    favoritesArray.splice(index, 1);
+    isFavorite.value = false;
+  } else {
+    favoritesArray.push(item.title);
+    isFavorite.value = true;
+  }
+  localStorage.setItem("favoritesArray", JSON.stringify(favoritesArray));
+  emit("toggle-favorite");
+  return { toggleFavorite, isFavorite, checkFavorite };
 };
 </script>
