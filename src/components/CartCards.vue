@@ -104,7 +104,7 @@ watch(
             <img
               src="/src/assets/icons/trash-icon.svg"
               alt="trashcan icon"
-              class="h-7 cursor-pointer m-1"
+              class="h-7 cursor-pointer m-1 transition-transform transform-gpu hover:scale-[1.1]"
               @click="store.removeAllDuplicates(productArray[0])"
             />
           </div>
@@ -112,7 +112,11 @@ watch(
       </div>
     </div>
     <div v-else>
-      <h1 class="text-center p-20 text-lg font-medium">Cart is empty</h1>
+      <h1
+        class="text-center p-20 text-lg font-medium font-inter text-[#505050]"
+      >
+        Nothing to see here :(
+      </h1>
     </div>
   </div>
 </template>

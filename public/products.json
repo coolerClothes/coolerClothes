@@ -8,7 +8,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/1.jpg",
     "alt": "Tech Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -39,7 +39,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/2.jpg",
     "alt": "Lights Show Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -70,7 +70,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/3.jpg",
     "alt": "DJ Deluxe Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -101,7 +101,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/4.jpg",
     "alt": "Rainbow Bomber Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": true,
     "inStock": true,
     "moreImgs": [
@@ -132,7 +132,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/5.jpg",
     "alt": "Retro Hooded Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -163,7 +163,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/jackets/6.jpg",
     "alt": "Cyberpunk Jacket",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -194,7 +194,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/1.jpg",
     "alt": "Super Cool",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -225,7 +225,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/2.jpg",
     "alt": "Skull & Glasses",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -256,7 +256,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/3.jpg",
     "alt": "Dual Colored Plain",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -287,7 +287,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/4.jpg",
     "alt": "Hoodie of Liberty",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -318,7 +318,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/5.jpg",
     "alt": "Stark Iron Cool",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -349,7 +349,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/6.jpg",
     "alt": "Vibrant Lone Wolf",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -380,7 +380,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/7.jpg",
     "alt": "Plumeria",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": true,
     "inStock": true,
     "moreImgs": [
@@ -411,7 +411,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/hoodies/8.jpg",
     "alt": "Big City",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
     "bestSeller": true,
     "inStock": true,
     "moreImgs": [
@@ -442,7 +442,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/pants/1.jpg",
     "alt": "Super Cool Dark",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -473,7 +473,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/pants/2.jpg",
     "alt": "Super Cool Light",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -504,7 +504,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/pants/3.jpg",
     "alt": "Super Cool Shorts",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -535,7 +535,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/pants/4.jpg",
     "alt": "Classy Formal Chinos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -566,7 +566,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/pants/5.jpg",
     "alt": "Super Cool Chinos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -597,7 +597,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/1.jpg",
     "alt": "Super Cool Blue",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": true,
     "inStock": true,
     "moreImgs": [
@@ -628,7 +628,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/2.jpg",
     "alt": "Super Cool Orange",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": true,
     "inStock": true,
     "moreImgs": [
@@ -659,7 +659,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/3.jpg",
     "alt": "Always Sunny",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -690,7 +690,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/4.jpg",
     "alt": "Viewtify",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -721,7 +721,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/5.jpg",
     "alt": "Chilling Vibes",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -752,7 +752,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/6.jpg",
     "alt": "Too Cool",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -783,7 +783,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/shirts/7.jpg",
     "alt": "SUPER Cool Shirt",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -814,7 +814,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/1.jpg",
     "alt": "Patches Cap",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -845,7 +845,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/2.jpg",
     "alt": "Dark Cool Cap",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -876,7 +876,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/3.jpg",
     "alt": "Cool B&R Cap",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -907,7 +907,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/4.jpg",
     "alt": "Deluxe Sun Glasses",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -938,7 +938,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/5.jpg",
     "alt": "Vacay Shades",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -969,7 +969,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/6.jpg",
     "alt": "Casual Cool Glasses",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -1000,7 +1000,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/7.jpg",
     "alt": "Sharp Hat",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -1031,7 +1031,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/8.jpg",
     "alt": "Agent Hat",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -1062,7 +1062,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/9.jpg",
     "alt": "Vacay Vibes Hat",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [
@@ -1093,7 +1093,7 @@
     "sizes": ["xs", "s", "m", "l", "xl"],
     "imgSrc": "src/assets/products/accessories/10.jpg",
     "alt": "Explorer's Adventure Hat",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *Beard not included.",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit. *Beard not included.",
     "bestSeller": false,
     "inStock": true,
     "moreImgs": [

@@ -37,9 +37,9 @@
 
     <div
       id="item-info-card"
-      class="flex flex-col h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white"
+      class="flex flex-col h-fit col-span-5 lg:col-span-3 p-4 bg-[#1c1c1c] space-y-4 text-white font-inter"
     >
-      <div id="titles-and-stock" class="relative">
+      <div id="titles-and-stock" class="relative mb-4">
         <h3 class="text-xl font-bold">{{ item.title }}</h3>
         <div class="absolute bottom-1/4 right-0 flex flex-row">
           <span class="flex items-center p-1 text-white"
@@ -68,7 +68,7 @@
         >
         <div @click="toggleFavorite(item)" class="absolute right-0 top-0">
           <svg
-            class="h-10 w-10 text-[#FF007A] rounded-bl-lg hover:text-[#ff59a9]"
+            class="h-10 w-10 text-[#c1c1c1] rounded-bl-lg hover:text-[#ff59a9]"
             :class="{ 'fill-[#FF007A] text-[#1c1c1c]': isFavorite }"
             viewBox="-3 -1 29 26"
             fill="none"
@@ -94,19 +94,22 @@
       <div id="form" class="flex flex-col space-y-2 space-x-2 md:space-x-0">
         <div
           id="size-and-amount-container"
-          class="flex flex-row justify-center items-center space-x-4"
+          class="flex flex-row justify-center items-center space-x-4 m-4"
         >
           <div id="counter-container" class="flex justify-center space-x-2">
-            <button
+            <!-- OLD BUTTONS -->
+            <!-- <button
               name="decrease"
               @click="decrease()"
               label="-"
               class="px-2 rounded-lg font-extrabold bg-[#FF007A] disabled:bg-[#a3a3a3] text-black"
               :disabled="decreaseButton(count)"
             >
-              -
+
             </button>
-            <span class="">{{ count }}</span>
+            <h3 class="text-base border border-gray-800 px-2">
+              {{ count }}
+            </h3>
             <button
               name="increase"
               @click="increase()"
@@ -114,7 +117,26 @@
               class="px-2 rounded-lg font-extrabold bg-[#FF007A] text-black"
             >
               +
-            </button>
+            </button> -->
+
+            <!-- NEW BUTTONS -->
+            <div class="flex items-center">
+              <img
+                src="/src/assets/icons/arrow-icon.svg"
+                alt="arrow right icon"
+                @click="decrease()"
+                class="flex rotate-180 w-4 py-2 mr-1 cursor-pointer"
+              />
+              <h3 class="text-base border border-gray-800 px-2">
+                {{ count }}
+              </h3>
+              <img
+                src="/src/assets/icons/arrow-icon.svg"
+                alt="arrow right icon"
+                @click="increase()"
+                class="w-4 py-2 ml-1 cursor-pointer"
+              />
+            </div>
           </div>
           <!-- counter container -->
 
@@ -123,7 +145,7 @@
             v-model="selectedSize"
             name="Size"
             list="sizeList"
-            class="h-8 rounded-lg my-1.5 text-center bg-[#a3a3a3] text-black"
+            class="h-8 my-1.5 text-center bg-[#f5f5f5] text-black w-20"
           />
           <datalist id="sizeList">
             <option v-for="size in item.sizes" :value="size"></option>
@@ -133,7 +155,7 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="h-10 w-[90%] hover:w-10/12 duration-300 ease-in-out bg-black hover:ring hover:ring-[#FF007a] ring-offset-2 text-white font-bold rounded-full p-2 place-self-center"
+          class="p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a]"
         >
           Add to cart
         </button>
@@ -144,6 +166,7 @@
   </div>
   <!-- component container -->
 </template>
+
 <script setup>
 import { ref, onMounted } from "vue";
 import { useCartStore } from "../store";

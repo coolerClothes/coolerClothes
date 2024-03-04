@@ -100,7 +100,7 @@
         ><img
           src="/src/assets/logo.png"
           alt="Cooler Clothes logo"
-          class="max-h-32"
+          class="max-h-[15vh]"
       /></router-link>
     </div>
   </div>

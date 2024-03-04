@@ -73,24 +73,24 @@ export default {
 
 <template>
   <div class="xl:px-[10%] px-4 mt-4 overflow-x-hidden text-2xl font-antonio">
-    <div v-if="searchByCategory" class="pl-4">
+    <div v-if="searchByCategory" class="pt-4 pl-4">
       <p>
         {{ category.charAt(0).toUpperCase() + category.substring(1) }}
       </p>
     </div>
     <div v-else>
-      <p v-if="filteredArray.length > 0" class="pl-4">
+      <p v-if="filteredArray.length > 0" class="pt-4 pl-4">
         Results for:
         <span class="text-[#ff007a]">{{ searchQuery.join(" ") }}</span>
       </p>
-      <p v-else class="pl-4">
+      <p v-else class="pt-4 pl-4">
         No results found for:
         <span class="text-[#ff007a]">{{ searchQuery.join(" ") }}</span>
       </p>
       <p></p>
     </div>
     <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4 mb-14"
     >
       <Card
         v-for="product in filteredArray"
