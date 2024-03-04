@@ -56,7 +56,7 @@ filterForBestSellers(store.productsCatalogue);
 
   <div class="xl:px-24 px-8 my-2 lg:my-4 overflow-x-hidden">
     <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 py-2 md:py-4 lg:py-12"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4"
     >
       <h2 class="text-4xl col-span-full font-antonio pb-5">Best sellers</h2>
       <Card
