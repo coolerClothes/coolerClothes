@@ -27,8 +27,8 @@
       </RouterLink>
       <div @click="toggleFavorite(product)" class="absolute right-0">
         <svg
-          class="h-10 w-10 text-[#FF007A] rounded-bl-lg bg-black bg-opacity-50 hover:text-[#ff59a9]"
-          :class="{ 'fill-[#FF007A] text-[#1c1c1c]': isFavorite }"
+          class="h-10 w-10 text-[#c1c1c1] rounded-bl-lg bg-black bg-opacity-50 hover:text-[#ff59a9]"
+          :class="{ 'fill-[#FF007A]': isFavorite }"
           viewBox="-3 -1 29 26"
           fill="none"
           stroke="currentColor"
