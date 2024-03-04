@@ -48,7 +48,7 @@ watch(
       id="cartProducts"
       v-if="Object.keys(cart).length !== 0"
       v-for="productArray in cart"
-      class="bg-[#141414] mb-1 border-[#1c1c1c]"
+      class="bg-[#141414] mb-1 border-[#1c1c1c] overflow-hidden"
     >
       <div class="p-2 font-inter">
         <div class="flex">

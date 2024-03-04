@@ -190,6 +190,7 @@ const cart = useCartStore();
 function addClicked(item, selectedSize, amount) {
   while (amount > 0) {
     cart.addToCart({
+      id: item.id,
       title: item.title,
       brand: item.brand,
       category: item.category,
