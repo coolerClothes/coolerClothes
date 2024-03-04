@@ -16,7 +16,7 @@ const handleCategoriesClick = () => {
   <div
     id="side-menu-container"
     :class="
-      ' fixed flex h-full top-0 w-full z-50 bg-[rgba(0,0,0,.3)] text-[#f5f5f5] transition-all duration-300' +
+      'font-inter fixed flex h-full top-0 w-full z-50 bg-[rgba(0,0,0,.3)] text-[#f5f5f5] transition-all duration-300' +
       (sideMenuActive ? 'opacity-100' : ' opacity-0 pointer-events-none')
     "
   >

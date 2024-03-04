@@ -8,10 +8,12 @@
       class="col-span-5 lg:col-span-7 flex justify-center items-start"
     >
       <div id="imgBg" class="flex flex-col bg-[#1c1c1c] w-full p-4">
-        <img
-          :src="galleryImgSrc"
-          class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[60vh] w-full object-contain"
-        />
+        <div class="bg-[#0c0c0c]">
+          <img
+            :src="galleryImgSrc"
+            class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[60vh] w-full object-contain"
+          />
+        </div>
       </div>
 
       <!-- <div

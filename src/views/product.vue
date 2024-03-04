@@ -38,7 +38,7 @@ watch(
 </script>
 
 <template>
-  <div class="xl:px-[9%] px-4 my-4 overflow-x-hidden">
+  <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
       <ProductInfo
@@ -46,18 +46,18 @@ watch(
         :galleryImgSrc="currentProduct.imgSrc"
       />
     </div>
-
-    <!-- grid for the cards -->
-    <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4"
-    >
-      <Card
-        class="col-span-1"
-        v-for="product in products"
-        :key="product.id"
-        :product="product"
-        :cardImgSrc="product.imgSrc"
-      />
-    </div>
+  </div>
+  <!-- grid for the cards -->
+  <div
+    class="xl:px-[10%] grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4"
+  >
+    <h2 class="text-2xl col-span-full font-antonio pt-4">Similar products</h2>
+    <Card
+      class="col-span-1"
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+      :cardImgSrc="product.imgSrc"
+    />
   </div>
 </template>

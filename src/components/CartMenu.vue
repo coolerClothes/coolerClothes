@@ -69,7 +69,7 @@ getTotalAmount();
           <CartCards @handle-cart-menu-activation="handleCartMenuActivation" />
         </div>
         <div
-          class="h-72 bg-[#0c0c0c] flex flex-col px-4 border-t-2 border-[#00e0ff]"
+          class="h-72 bg-[#0c0c0c] flex flex-col px-4 border-t-2 border-gray-800"
         >
           <div class="flex justify-between mt-6 font-inter">
             <h3>Delivery Cost</h3>
