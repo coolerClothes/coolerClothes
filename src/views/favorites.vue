@@ -11,24 +11,20 @@ export default {
     const store = useProductsStore();
     const products = ref(store.productsCatalogue);
     const productsArray = ref([]);
-    const favoritesArray = JSON.parse(localStorage.getItem("favoritesArray"));
-    console.log(favoritesArray)
+    let favoritesArray = ref(JSON.parse(localStorage.getItem("favoritesArray")));
+    console.log(favoritesArray.value)
 
     const filteredArray = computed(() =>
       productsArray.value.filter(isInLocalStorage)
     );
 
     function isInLocalStorage(product) {
-        if(favoritesArray !== null){
-    return favoritesArray.includes(product.title);}
+        if(favoritesArray.value !== null){
+    return favoritesArray.value.includes(product.title);}
     };
 
-    let hasFavorites = "";
-    if(favoritesArray !== null){
-        hasFavorites = true
-    }
-    else{
-        hasFavorites = false
+    const updateLikedProducts = () => {
+      favoritesArray.value = JSON.parse(localStorage.getItem("favoritesArray"))
     }
 
     watch(
@@ -42,7 +38,8 @@ export default {
 
     return {
             filteredArray,
-            hasFavorites
+            favoritesArray,
+            updateLikedProducts
             }
 
 }
@@ -51,11 +48,12 @@ export default {
 </script>
 
 <template>
-<div v-if="hasFavorites">
-    <p class="text-2xl font-antonio pt-4 pl-4">Favorites</p>
+    <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
+      <p class="text-2xl font-antonio pt-4 pl-4">Favorites</p>
+<div v-if="favoritesArray.length > 0 ">
             <div
-        class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 p-4" >
-        <Card
+        class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4">
+        <Card @toggle-favorite="updateLikedProducts"
         v-for="product in filteredArray"
         class="col-span-1"
         :key="product.id"
@@ -65,8 +63,7 @@ export default {
     </div>
 </div>
   <div v-else>
-  <p class="text-2xl font-antonio pt-4 pl-4">Favorites</p>
-  <p class="text-center" >no favorite products</p>
+  <p class="font-antonio pt-4 pl-4" >No favorite products</p>
 </div>
-
+</div>
 </template>

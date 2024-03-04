@@ -14,6 +14,9 @@ const totalAmount = ref(0);
 
 const getTotalAmount = () => {
   let newTotalAmount = 0;
+  if (!store.cart){
+    return
+  }
   for (const product of store.cart) {
     newTotalAmount += product.price;
   }
