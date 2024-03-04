@@ -22,7 +22,7 @@
         <!-- The card links to the product page, that in turn pass these props to the productInfo component on call -->
         <img
           :src="cardImgSrc"
-          class="w-full h-32 sm:h-48 lg:h-56 xl:h-[25vh]object-cover"
+          class="w-full h-32 sm:h-48 lg:h-56 xl:h-[25vh] object-cover"
         />
       </RouterLink>
       <div @click="toggleFavorite(product)" class="absolute right-0">
@@ -78,7 +78,7 @@ export default {
       }
     },
   },
-  setup(props) {
+  setup(props, { emit }) {
     const isFavorite = ref();
 
     const checkFavorite = (product) => {
@@ -107,6 +107,7 @@ export default {
         isFavorite.value = true;
       }
       localStorage.setItem("favoritesArray", JSON.stringify(favoritesArray));
+      emit("toggle-favorite");
     };
 
     return { toggleFavorite, isFavorite, checkFavorite };
