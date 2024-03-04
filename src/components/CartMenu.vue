@@ -14,8 +14,8 @@ const totalAmount = ref(0);
 
 const getTotalAmount = () => {
   let newTotalAmount = 0;
-  if (!store.cart){
-    return
+  if (!store.cart) {
+    return;
   }
   for (const product of store.cart) {
     newTotalAmount += product.price;
@@ -31,7 +31,7 @@ watch(
   () => store.cart,
   () => {
     getTotalAmount();
-  }
+  },
 );
 
 getTotalAmount();
@@ -51,10 +51,7 @@ getTotalAmount();
       @click="emit('handle-cart-menu-activation')"
     ></div>
     <div id="cart-menu" class="h-full w-[70%] max-w-[400px] bg-[#1c1c1c]">
-      <div
-        id="top"
-        class="relative h-16 flex justify-start items-center border-b border-black"
-      >
+      <div id="top" class="relative h-16 flex justify-start items-center">
         <img
           src="/src/assets/icons/close-icon.svg"
           alt="X icon"
@@ -62,7 +59,7 @@ getTotalAmount();
           @click="emit('handle-cart-menu-activation')"
         />
         <div class="flex-1 flex justify-center">
-          <h1 class="text-2xl font-medium">Cart</h1>
+          <h1 class="text-2xl font-bold font-inter">Cart</h1>
         </div>
       </div>
       <div id="bottom" class="flex flex-col h-full">
@@ -70,15 +67,17 @@ getTotalAmount();
           <CartCards @handle-cart-menu-activation="handleCartMenuActivation" />
         </div>
         <div class="h-72 bg-[#0c0c0c] flex flex-col px-4">
-          <div class="flex justify-between mt-6">
+          <div class="flex justify-between mt-6 font-inter">
             <h3>Delivery Cost</h3>
             <h3>0:-</h3>
           </div>
-          <div class="flex justify-between mt-8">
+          <div class="flex justify-between mt-8 font-inter">
             <h3>Total Cost:</h3>
             <h3>{{ totalAmount }}:-</h3>
           </div>
-          <button class="p-5 bg-[#1c1c1c] rounded-lg hover:opacity-75 mt-8">
+          <button
+            class="p-4 bg-[#1c1c1c] rounded-full hover:bg-[#1f1f1f] mt-8 font-inter hover:border-b-2 hover:border-[#ff007a]"
+          >
             Checkout
           </button>
         </div>
