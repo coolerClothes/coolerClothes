@@ -21,7 +21,7 @@
             Instagram's gradient
             linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   -->
           <svg
-            class="h-8 w-8 hover:h-10 hover:w-10 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#ca0548]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#ca0548]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -37,7 +37,7 @@
         <!-- twitter icon because I couldn't find tiktok's  -->
         <a href="https://twitter.com/" target="_blank" class="p-1">
           <svg
-            class="h-8 w-8 hover:h-10 hover:w-10 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#02ffe3]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#02ffe3]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -58,7 +58,7 @@
           class="pl-1 pt-1 pb-1"
         >
           <svg
-            class="h-8 w-8 hover:h-10 hover:w-10 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#de0000]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#de0000]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -75,7 +75,7 @@
         <!-- facebook icon -->
         <a href="https://facebook.com/" target="_blank" class="pt-1 pb-1 pr-1">
           <svg
-            class="h-8 w-8 hover:h-10 hover:w-10 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-blue-600"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-blue-600"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
