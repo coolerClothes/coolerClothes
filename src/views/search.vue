@@ -129,7 +129,11 @@ export default {
       </div>
       <!-- possible headers end -->
 
-      <div id="sorting" class="text-sm font-inter space-x-4">
+      <div
+        id="sorting"
+        v-if="searchByCategory || filteredArray.length > 0"
+        class="text-sm font-inter space-x-4"
+      >
         <span>Sort results by:</span>
         <span class="rounded-full divide-[#a3a3a3] text-[#a3a3a3]">
           <button
