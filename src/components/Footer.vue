@@ -7,7 +7,7 @@
   >
     <div
       id="socials"
-      class="py-4 2xl:py-10 space-y-2 text-center text-sm 2xl:text-base font-extralight font-inter"
+      class="py-4 2xl:py-10 space-y-1 2xl:space-y-2 text-center text-sm 2xl:text-base font-extralight font-inter"
     >
       <p class="text-white">Follow our journey!</p>
 
