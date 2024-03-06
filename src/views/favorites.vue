@@ -68,7 +68,12 @@ export default {
       </div>
     </div>
     <div v-else>
-      <p class="pt-4 pl-4">No favorite products</p>
+      <p class="pt-6 pl-4 font-inter font-light text-[#ff007a]">
+        No love could be found :(
+      </p>
+      <p class="pt-2 pl-4 font-light font-inter text-[#505050] text-sm">
+        (Add favorites by clicking a products heart icon)
+      </p>
     </div>
   </div>
 </template>

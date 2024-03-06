@@ -11,7 +11,7 @@
         <div class="bg-[#0c0c0c]">
           <img
             :src="galleryImgSrc"
-            class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[60vh] w-full object-contain"
+            class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[70vh] w-full object-contain"
           />
         </div>
       </div>
@@ -59,13 +59,13 @@
             in stock</span
           >
         </div>
-        <h4 class="text-[#a3a3a3]">{{ item.brand }}</h4>
+        <h4 class="text-[#858585]">{{ item.brand }}</h4>
       </div>
       <!-- titles and stock -->
 
       <div id="price-and-disclamer" class="relative">
         <h2 class="text-2xl">{{ item.price }}kr</h2>
-        <span id="small-print" class="text-sm italic text-[#a3a3a3]"
+        <span id="small-print" class="text-sm italic text-[#858585]"
           >Priser ink. moms. Frakt tillkommer.</span
         >
         <div @click="toggleFavorite(item)" class="absolute right-0 top-0">
@@ -99,15 +99,18 @@
           class="flex flex-row justify-center items-center space-x-4 m-4"
         >
           <div id="counter-container" class="flex justify-center space-x-2">
+            <div class="flex items-center text-sm text-[#858585]">
+              <p>Antal:</p>
+            </div>
             <!-- OLD BUTTONS -->
-            <!-- <button
+            <button
               name="decrease"
               @click="decrease()"
               label="-"
-              class="px-2 rounded-lg font-extrabold bg-[#FF007A] disabled:bg-[#a3a3a3] text-black"
+              class="px-2 font-extrabold bg-[#FF007A] disabled:bg-[#858585] text-black"
               :disabled="decreaseButton(count)"
             >
-
+              -
             </button>
             <h3 class="text-base border border-gray-800 px-2">
               {{ count }}
@@ -116,38 +119,21 @@
               name="increase"
               @click="increase()"
               label="+"
-              class="px-2 rounded-lg font-extrabold bg-[#FF007A] text-black"
+              class="px-2 font-extrabold bg-[#FF007A] text-black"
             >
               +
-            </button> -->
-
-            <!-- NEW BUTTONS -->
-            <div class="flex items-center">
-              <img
-                src="/src/assets/icons/arrow-icon.svg"
-                alt="arrow right icon"
-                @click="decrease()"
-                class="flex rotate-180 w-4 py-2 mr-1 cursor-pointer"
-              />
-              <h3 class="text-base border border-gray-800 px-2">
-                {{ count }}
-              </h3>
-              <img
-                src="/src/assets/icons/arrow-icon.svg"
-                alt="arrow right icon"
-                @click="increase()"
-                class="w-4 py-2 ml-1 cursor-pointer"
-              />
-            </div>
+            </button>
           </div>
           <!-- counter container -->
-
+          <div class="flex items-center text-sm text-[#858585]">
+            <p>Storlek:</p>
+          </div>
           <input
             type="text"
             v-model="selectedSize"
             name="Size"
             list="sizeList"
-            class="h-8 my-1.5 text-center bg-[#f5f5f5] text-black w-20"
+            class="h-[26px] text-center bg-[#00000000] text-[#f5f5f5] w-14 text-base border border-gray-800"
           />
           <datalist id="sizeList">
             <option v-for="size in item.sizes" :value="size"></option>
@@ -157,9 +143,15 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a]"
+          class="p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20"
+          :disabled="selectedSize === ''"
         >
           Add to cart
+          <img
+            src="/src/assets/icons/cart-icon.svg"
+            alt="mask icon"
+            class="max-w-5 inline ml-1 mb-0.5"
+          />
         </button>
       </div>
       <!-- form -->
