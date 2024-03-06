@@ -143,7 +143,7 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20"
+          class="p-4 lg:p-3 2xl:p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20"
           :disabled="selectedSize === ''"
         >
           Add to cart
