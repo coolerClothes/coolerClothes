@@ -44,9 +44,9 @@
       <div id="titles-and-stock" class="relative mb-4">
         <h3 class="text-xl font-bold">{{ item.title }}</h3>
         <div class="absolute bottom-1/4 right-0 flex flex-row">
-          <span class="flex items-center p-1 text-white"
+          <span class="flex items-center text-sm 2xl:text-base p-1 text-white"
             ><svg
-              class="h-4 w-4 text-emerald-500 mr-1"
+              class="h-3 w-3 2xl:h-4 2xl:w-4 text-emerald-500 mr-1"
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
@@ -64,13 +64,13 @@
       <!-- titles and stock -->
 
       <div id="price-and-disclamer" class="relative">
-        <h2 class="text-2xl">{{ item.price }}kr</h2>
+        <h2 class="xl:text-xl 2xl:text-2xl">{{ item.price }}kr</h2>
         <span id="small-print" class="text-sm italic text-[#858585]"
           >Priser ink. moms. Frakt tillkommer.</span
         >
         <div @click="toggleFavorite(item)" class="absolute right-0 top-0">
           <svg
-            class="h-10 w-10 text-[#c1c1c1] rounded-bl-lg hover:text-[#ff59a9]"
+            class="h-8 w-8 2xl:h-10 2xl:w-10 text-[#c1c1c1] rounded-bl-lg hover:text-[#ff59a9]"
             :class="{ 'fill-[#FF007A] text-[#1c1c1c]': isFavorite }"
             viewBox="-3 -1 29 26"
             fill="none"
