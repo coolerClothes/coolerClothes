@@ -143,7 +143,7 @@
         <button
           @click="addClicked(props.item, selectedSize, count)"
           label="Add to cart"
-          class="p-4 lg:p-3 2xl:p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20"
+          class="p-4 lg:p-3 2xl:p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20 relative"
           :disabled="selectedSize === ''"
         >
           Add to cart
@@ -152,6 +152,23 @@
             alt="mask icon"
             class="max-w-5 inline ml-1 mb-0.5"
           />
+
+          <svg
+            id="added-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            hidden
+            class="w-8 h-8 absolute animate-bounce duration-1000 -top-3 -right-1 p-1 rounded-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
         </button>
       </div>
       <!-- form -->
