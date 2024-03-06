@@ -7,7 +7,7 @@
   >
     <div
       id="socials"
-      class="py-4 2xl:py-10 space-y-2 text-center text-sm font-extralight font-inter"
+      class="py-4 2xl:py-10 space-y-2 text-center text-sm 2xl:text-base font-extralight font-inter"
     >
       <p class="text-white">Follow our journey!</p>
 
@@ -96,7 +96,7 @@
       id="copyright"
       class="flex flex-col items-center w-full py-6 2xl:py-16 space-y-2 lg:space-y-4 bg-[#141414]"
     >
-      <p class="text-center px-12 text-xs italic font-inter">
+      <p class="text-center px-12 text-xs 2xl:text-sm italic font-inter">
         The content of this site is copyright protected and is the property of
         Team 6, ITHS.
       </p>
