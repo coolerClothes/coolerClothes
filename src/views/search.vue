@@ -150,6 +150,12 @@ export default {
           >
             Price
           </button>
+          <button
+            label="popularity"
+            class="px-2 rounded-full hover:text-black hover:bg-[#a3a3a3]"
+          >
+            Popularity
+          </button>
         </span>
       </div>
       <!-- sorting -->
