@@ -48,7 +48,7 @@ watch(
     </div>
   </div>
   <!-- grid for the cards -->
-  <h2 class="text-2xl col-span-full font-antonio px-4 pt-4">
+  <h2 class="text-2xl col-span-full font-antonio px-4 pt-4 xl:px-[10%]">
     Similar products
   </h2>
   <div
