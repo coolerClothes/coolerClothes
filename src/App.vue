@@ -30,7 +30,9 @@ fetchProducts();
   <div
     class="flex flex-col min-h-screen justify-around overflow-x-hidden bg-[#141414] text-white"
   >
-    <router-view></router-view>
+    <div class="mb-auto">
+      <router-view></router-view>
+    </div>
     <Footer></Footer>
   </div>
 </template>

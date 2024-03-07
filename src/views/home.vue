@@ -37,7 +37,7 @@ filterForBestSellers(store.productsCatalogue);
     >
       <div
         id="huge-neons"
-        class="flex flex-col uppercase md:text-7xl 2xl:text-[12vh] font-extrabold drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.9)] tracking-[-.3rem] font-inter"
+        class="flex flex-col uppercase text-7xl 2xl:text-[12vh] font-extrabold drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.9)] tracking-[-.3rem] font-inter"
       >
         <!-- don't know why the drop shadow isn't working |||| Works for me /emil -->
         <span class="text-[#FF007A]">sale</span>
@@ -46,7 +46,7 @@ filterForBestSellers(store.productsCatalogue);
       </div>
       <!-- huge neons -->
       <span
-        class="md:text-2xl 2xl:text-[3.8vh] font-semibold uppercase font-antonio drop-shadow-[0_3.4px_1.4px_rgba(0,0,0,0.9)]"
+        class="text-2xl 2xl:text-[3.8vh] font-semibold uppercase font-antonio drop-shadow-[0_3.4px_1.4px_rgba(0,0,0,0.9)]"
         >Discount up to 66%</span
       >
     </div>
