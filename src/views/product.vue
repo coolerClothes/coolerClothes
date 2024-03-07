@@ -38,6 +38,34 @@ watch(
 </script>
 
 <template>
+  <div
+    id="breacrumbs"
+    class="flex justify-center my-3 font-inter max-md:hidden"
+  >
+    <router-link to="/">
+      <h3 class="text-[#858585] hover:text-[#ec3f79]">Home</h3>
+    </router-link>
+
+    <h3 class="px-1 text-[#858585]">/</h3>
+
+    <router-link :to="'/search/' + currentProduct.category">
+      <h3 class="text-[#858585] hover:text-[#ec3f79]">
+        {{
+          currentProduct.category[0].toUpperCase() +
+          currentProduct.category.slice(1)
+        }}
+      </h3>
+    </router-link>
+
+    <h3 class="px-1 text-[#858585]">/</h3>
+
+    <router-link :to="'/products/' + currentProduct.id">
+      <h3 class="font-medium hover:text-[#ec3f79]">
+        {{ currentProduct.title }}
+      </h3>
+    </router-link>
+  </div>
+
   <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
     <!-- has to instanciate with only one object, which has to passed to the page -->
     <div v-if="currentProduct !== null">
