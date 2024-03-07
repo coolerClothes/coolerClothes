@@ -99,9 +99,6 @@
           class="flex flex-row justify-center items-center space-x-4 m-4"
         >
           <div id="counter-container" class="flex justify-center space-x-2">
-            <div class="flex items-center text-sm text-[#858585]">
-              <p>Antal:</p>
-            </div>
             <!-- OLD BUTTONS -->
             <button
               name="decrease"
@@ -126,7 +123,7 @@
           </div>
           <!-- counter container -->
           <div class="flex items-center text-sm text-[#858585]">
-            <p>Storlek:</p>
+            <p>Size:</p>
           </div>
           <input
             type="text"
