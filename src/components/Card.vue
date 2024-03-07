@@ -14,7 +14,7 @@
 <template>
   <div
     id="card-background"
-    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] hover:bg-[#272727] max-w-[16.5rem font-inter transition-transform transform-gpu hover:scale-[1.02] 2xl:max-w-[14vw]"
+    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] hover:bg-[#272727] max-w-[16.5rem] font-inter transition-transform transform-gpu hover:scale-[1.02] max-md:min-w-48 max-sm:min-w-32 max-md:scroll-ml-2 2xl:max-w-[14vw]"
     v-if="show"
   >
     <div class="flex relative">
@@ -44,7 +44,7 @@
     </div>
     <div
       id="product-info"
-      class="flex flex-row self-stretch items-center px-2 py-3 md:py-4 space-x-2 justify-around h-full"
+      class="flex flex-row self-stretch items-center px-2 py-3 md:py-4 space-x-2 justify-around h-full max-sm:flex-col max-sm:items-start max-sm:space-x-0"
     >
       <div id="title-brand" class="flex flex-col stretch flex-wrap space-y-1">
         <h3 class="text-sm xl:text-m font-medium">{{ product.title }}</h3>
@@ -53,7 +53,9 @@
         </h4>
       </div>
       <!-- end title-brand -->
-      <h2 class="text-sm lg:text-md flex-none">{{ product.price }}kr</h2>
+      <h2 class="text-sm lg:text-md flex-none max-sm:mt-2">
+        {{ product.price }}kr
+      </h2>
     </div>
     <!-- product-info -->
   </div>
