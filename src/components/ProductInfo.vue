@@ -234,6 +234,8 @@ onMounted(() => {
   checkFavorite(props.item);
 });
 
+const emit = defineEmits(['toggle-favorite'])
+
 const toggleFavorite = (item) => {
   let favoritesArray = JSON.parse(localStorage.getItem("favoritesArray")) || [];
   const index = favoritesArray.lastIndexOf(item.title);
