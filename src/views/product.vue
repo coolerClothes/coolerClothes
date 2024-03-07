@@ -40,16 +40,16 @@ watch(
 <template>
   <div
     id="breacrumbs"
-    class="flex justify-center my-3 font-inter max-md:hidden"
+    class="flex justify-center my-3 font-inter max-md:hidden text-sm"
   >
     <router-link to="/">
-      <h3 class="text-[#858585] hover:text-[#ec3f79]">Home</h3>
+      <h3 class="text-[#858585] hover:text-[#f5f5f5]">Home</h3>
     </router-link>
 
     <h3 class="px-1 text-[#858585]">/</h3>
 
     <router-link :to="'/search/' + currentProduct.category">
-      <h3 class="text-[#858585] hover:text-[#ec3f79]">
+      <h3 class="text-[#858585] hover:text-[#f5f5f5]">
         {{
           currentProduct.category[0].toUpperCase() +
           currentProduct.category.slice(1)
@@ -60,7 +60,7 @@ watch(
     <h3 class="px-1 text-[#858585]">/</h3>
 
     <router-link :to="'/products/' + currentProduct.id">
-      <h3 class="font-medium hover:text-[#ec3f79]">
+      <h3 class="font-medium cursor-default">
         {{ currentProduct.title }}
       </h3>
     </router-link>

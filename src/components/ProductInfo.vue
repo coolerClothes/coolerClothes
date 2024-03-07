@@ -46,7 +46,7 @@
         <div class="absolute bottom-1/4 right-0 flex flex-row">
           <span class="flex items-center text-sm 2xl:text-base p-1 text-white"
             ><svg
-              class="h-3 w-3 2xl:h-4 2xl:w-4 text-emerald-500 mr-1"
+              class="h-3 w-3 2xl:h-4 2xl:w-4 text-[#00FF66] mr-1"
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
@@ -104,19 +104,21 @@
               name="decrease"
               @click="decrease()"
               label="-"
-              class="px-2 font-extrabold bg-[#FF007A] disabled:bg-[#858585] text-black"
+              class="px-2 w-7 font-extrabold rounded-l-md bg-[#FF007A] disabled:bg-[#858585] text-black relative"
               :disabled="decreaseButton(count)"
             >
               -
             </button>
+
             <h3 class="text-base border border-gray-800 px-2">
               {{ count }}
             </h3>
+
             <button
               name="increase"
               @click="increase()"
               label="+"
-              class="px-2 font-extrabold bg-[#FF007A] text-black"
+              class="px-2 w-7 rounded-r-md font-extrabold bg-[#FF007A] text-black relative"
             >
               +
             </button>
@@ -139,33 +141,53 @@
         <!-- size and amount container -->
         <button
           @click="addClicked(props.item, selectedSize, count)"
+          id="addButton"
           label="Add to cart"
-          class="p-4 lg:p-3 2xl:p-4 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter hover:border-b-2 hover:border-[#ff007a] disabled:opacity-20 relative"
+          class="p-4 lg:p-3 2xl:p-2 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)]"
           :disabled="selectedSize === ''"
         >
-          Add to cart
-          <img
-            src="/src/assets/icons/cart-icon.svg"
-            alt="mask icon"
-            class="max-w-5 inline ml-1 mb-0.5"
-          />
-
-          <svg
-            id="added-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            hidden
-            class="w-8 h-8 absolute animate-bounce duration-1000 -top-3 -right-1 p-1 rounded-full"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
+          <div id="button-contents" class="relative mt-1">
+            <p class="inline">Add to cart</p>
+            <!-- cart svg -->
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="max-w-5 ml-2 mb-[3px] inline transition duration-300 ease-in-out transform"
+              id="add-icon"
+            >
+              <g clip-path="url(#clip0_119_81)">
+                <path
+                  d="M18 6H16C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6H6C4.9 6 4 6.9 4 8V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6ZM10 10C10 10.55 9.55 11 9 11C8.45 11 8 10.55 8 10V8H10V10ZM12 4C13.1 4 14 4.9 14 6H10C10 4.9 10.9 4 12 4ZM16 10C16 10.55 15.55 11 15 11C14.45 11 14 10.55 14 10V8H16V10Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_119_81">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <!-- added svg -->
+            <svg
+              id="added-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 p-1 mb-[2px] rounded-full ml-[-26px] inline transition duration-300 ease-in-out opacity-0 top-0 left-0 transform text-[#00FF66]"
+            >
+              <!-- animate-bounce duration-1000 -->
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </div>
         </button>
       </div>
       <!-- form -->
@@ -174,6 +196,16 @@
   </div>
   <!-- component container -->
 </template>
+
+<style scoped>
+#addButton:focus #add-icon {
+  opacity: 0;
+}
+
+#addButton:focus #added-icon {
+  opacity: 1;
+}
+</style>
 
 <script setup>
 import { ref, onMounted } from "vue";
@@ -234,7 +266,7 @@ onMounted(() => {
   checkFavorite(props.item);
 });
 
-const emit = defineEmits(['toggle-favorite'])
+const emit = defineEmits(["toggle-favorite"]);
 
 const toggleFavorite = (item) => {
   let favoritesArray = JSON.parse(localStorage.getItem("favoritesArray")) || [];
