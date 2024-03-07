@@ -5,19 +5,23 @@
     id="footer-background"
     class="flex flex-col items-center justify-center w-screen bg-[#0c0c0c] text-[#a3a3a3]"
   >
-    <div id="socials" class="py-10 space-y-2">
-      <p class="text-center text-white text-sm font-extralight font-inter">
-        Follow our journey!
-      </p>
+    <div
+      id="socials"
+      class="py-4 2xl:py-10 space-y-1 2xl:space-y-2 text-center text-sm 2xl:text-base font-extralight font-inter"
+    >
+      <p class="text-white">Follow our journey!</p>
 
-      <div id="icons-container" class="flex flex-row items-center space-x-3">
+      <div
+        id="icons-container"
+        class="flex flex-row items-center space-x-2 2xl:space-x-3"
+      >
         <!-- instagram Icon -->
         <a href="https://www.instagram.com/" target="_blank" class="p-1">
           <!--
             Instagram's gradient
             linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   -->
           <svg
-            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#ca0548]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#ca0548]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -33,7 +37,7 @@
         <!-- twitter icon because I couldn't find tiktok's  -->
         <a href="https://twitter.com/" target="_blank" class="p-1">
           <svg
-            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#02ffe3]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#02ffe3]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -54,7 +58,7 @@
           class="pl-1 pt-1 pb-1"
         >
           <svg
-            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#de0000]"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-[#de0000]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -71,7 +75,7 @@
         <!-- facebook icon -->
         <a href="https://facebook.com/" target="_blank" class="pt-1 pb-1 pr-1">
           <svg
-            class="h-10 w-10 hover:h-8 hover:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-blue-600"
+            class="h-8 w-8 hover:h-6 hover:w-6 2xl:h-10 2xl:w-10 hover:2xl:h-8 hover:2xl:w-8 duration-300 ease-in-out hover:stroke-white hover:fill-blue-600"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -90,9 +94,9 @@
     <!-- socials -->
     <div
       id="copyright"
-      class="flex flex-col items-center w-full py-4 lg:py-16 space-y-2 lg:space-y-4 bg-[#141414]"
+      class="flex flex-col items-center w-full py-6 2xl:py-16 space-y-2 lg:space-y-4 bg-[#141414]"
     >
-      <p class="text-center px-12 text-xs italic font-inter">
+      <p class="text-center px-12 text-xs 2xl:text-sm italic font-inter">
         The content of this site is copyright protected and is the property of
         Team 6, ITHS.
       </p>
@@ -100,7 +104,7 @@
         ><img
           src="/src/assets/logo.png"
           alt="Cooler Clothes logo"
-          class="max-h-[15vh]"
+          class="h-[13vh] 2xl:h-[15vh]"
       /></router-link>
     </div>
   </div>
