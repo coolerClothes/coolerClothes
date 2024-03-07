@@ -49,13 +49,6 @@ const handleCategoriesClick = () => {
         >
           <li class="mt-2">
             <router-link
-              to="/search/capes"
-              @click="emit('handle-side-menu-activation')"
-              >Capes</router-link
-            >
-          </li>
-          <li class="mt-2">
-            <router-link
               to="/search/jackets"
               @click="emit('handle-side-menu-activation')"
               >Jackets</router-link
