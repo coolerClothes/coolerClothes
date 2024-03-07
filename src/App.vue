@@ -28,7 +28,7 @@ fetchProducts();
 <template>
   <Navbar />
   <div
-    class="flex flex-col min-h-screen justify-around overflow-x-hidden bg-[#141414] text-white"
+    class="flex flex-col min-h-screen overflow-x-hidden bg-[#141414] text-white"
   >
     <div class="mb-auto">
       <router-view></router-view>
