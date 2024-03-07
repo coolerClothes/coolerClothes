@@ -152,12 +152,12 @@
 
           <svg
             id="added-icon"
+            :hidden="addedIconHidden"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            hidden
             class="w-8 h-8 absolute animate-bounce duration-1000 -top-3 -right-1 p-1 rounded-full"
           >
             <path
@@ -184,6 +184,8 @@ const props = defineProps({
   galleryImgSrc: { type: String },
 });
 
+let addedIconHidden = ref(true);
+
 const count = ref(1);
 
 function decreaseButton(count) {
@@ -207,7 +209,8 @@ function addClicked(item, selectedSize, amount) {
       imgSrc: item.imgSrc,
     });
     amount--;
-    console.log(selectedSize);
+    addedIconHidden = !addedIconHidden;
+    console.log(addedIconHidden);
   }
 }
 
@@ -234,7 +237,7 @@ onMounted(() => {
   checkFavorite(props.item);
 });
 
-const emit = defineEmits(['toggle-favorite'])
+const emit = defineEmits(["toggle-favorite"]);
 
 const toggleFavorite = (item) => {
   let favoritesArray = JSON.parse(localStorage.getItem("favoritesArray")) || [];
