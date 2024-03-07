@@ -149,23 +149,6 @@
             alt="mask icon"
             class="max-w-5 inline ml-1 mb-0.5"
           />
-
-          <svg
-            id="added-icon"
-            :hidden="addedIconHidden"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-8 h-8 absolute animate-bounce duration-1000 -top-3 -right-1 p-1 rounded-full"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
         </button>
       </div>
       <!-- form -->
@@ -183,8 +166,6 @@ const props = defineProps({
   item: { type: Object, required: true },
   galleryImgSrc: { type: String },
 });
-
-let addedIconHidden = ref(true);
 
 const count = ref(1);
 
@@ -209,8 +190,6 @@ function addClicked(item, selectedSize, amount) {
       imgSrc: item.imgSrc,
     });
     amount--;
-    addedIconHidden = !addedIconHidden;
-    console.log(addedIconHidden);
   }
 }
 
