@@ -99,8 +99,41 @@ export default {
 
 <template>
   <div
+    id="breacrumbs"
+    class="flex justify-center my-3 col-span-full font-inter max-md:hidden text-sm"
+  >
+    <router-link to="/">
+      <h3 class="text-[#858585] hover:text-[#f5f5f5]">Home</h3>
+    </router-link>
+
+    <h3 class="px-1 text-[#858585]">/</h3>
+
+    <div v-if="searchByCategory">
+      <router-link :to="'/search/' + category">
+        <h3 class="font-medium hover:text-[#f5f5f5]">
+          {{ category[0].toUpperCase() + category.slice(1) }}
+        </h3>
+      </router-link>
+    </div>
+
+    <div v-else class="flex">
+      <router-link :to="'/search/' + category">
+        <h3 class="text-[#858585] hover:text-[#f5f5f5]">
+          {{ category[0].toUpperCase() + category.slice(1) }}
+        </h3>
+      </router-link>
+
+      <h3 class="px-1 text-[#858585]">/</h3>
+
+      <router-link :to="'/search/all/' + searchQuery[0]">
+        <h3 class="font-medium cursor-default">{{ searchQuery[0] }}</h3>
+      </router-link>
+    </div>
+  </div>
+
+  <div
     id="template-grid"
-    class="grid xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] px-4 py-16"
+    class="grid xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] px-4 pt-4 pb-16"
   >
     <div
       id="headers"
