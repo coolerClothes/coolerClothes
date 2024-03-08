@@ -3,6 +3,7 @@ import Home from "./views/home.vue";
 import Search from "./views/search.vue";
 import Product from "./views/product.vue";
 import Favorites from "./views/favorites.vue";
+import Error from "./views/error.vue";
 
 const routes = [
   {
@@ -25,6 +26,7 @@ const routes = [
     name: "Favorites",
     component: Favorites,
   },
+  { path: "/:catchAll(.*)", name: "Error", component: Error },
 ];
 
 const router = createRouter({
