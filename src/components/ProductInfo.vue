@@ -15,25 +15,6 @@
           />
         </div>
       </div>
-
-      <!-- <div
-        id="gallery-row"
-        class="flex justify-around h-fit max-h-1/3 space-x-2"
-      >
-        <div class="imgContainer overflow-hidden">
-          <img :src="galleryImgSrc" class="object-contain rounded" />
-        </div>
-        <div class="imgContainer overflow-hidden">
-          <img :src="galleryImgSrc" class="object-contain rounded" />
-        </div>
-        <div class="imgContainer overflow-hidden">
-          <img :src="galleryImgSrc" class="object-contain rounded" />
-        </div>
-        <div class="imgContainer overflow-hidden">
-          <img :src="galleryImgSrc" class="object-contain rounded" />
-        </div>
-      </div> -->
-      <!-- gallery row -->
     </div>
     <!-- gallery container -->
 
@@ -143,9 +124,7 @@
           @click="addClicked(props.item, selectedSize, count)"
           id="addButton"
           label="Add to cart"
-          
           class="p-4 lg:p-0 2xl:p-0 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)]"
-
           :disabled="selectedSize === ''"
         >
           <div id="button-contents" class="relative mt-1">
