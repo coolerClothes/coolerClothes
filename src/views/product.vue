@@ -39,6 +39,7 @@ watch(
 
 <template>
   <div
+    v-if="currentProduct"
     id="breacrumbs"
     class="flex justify-center my-3 font-inter max-md:hidden text-sm"
   >
@@ -84,7 +85,9 @@ watch(
   >
     <Card
       class="col-span-1"
-      v-for="product in products"
+      v-for="product in Object.values(products).filter(
+        (item) => item.category == currentProduct.category,
+      )"
       :key="product.id"
       :product="product"
       :cardImgSrc="product.imgSrc"
