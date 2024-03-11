@@ -29,7 +29,7 @@ filterForBestSellers(store.productsCatalogue);
 <template>
   <div
     id="bg-hero"
-    class="hero bg-fixed bg-cover bg-[center_top_30%] text-white justify-center items-center h-[50vh]"
+    class="hero bg-fixed bg-cover bg-[center_top_30%] text-white justify-center items-center h-[55vh] overflow-hidden"
   >
     <div
       id="hero-text-background"
@@ -37,16 +37,16 @@ filterForBestSellers(store.productsCatalogue);
     >
       <div
         id="huge-neons"
-        class="flex flex-col uppercase text-8xl font-extrabold drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.9)] tracking-[-.25rem] font-inter"
+        class="flex flex-col uppercase text-7xl 2xl:text-[12vh] font-extrabold drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.9)] tracking-[-.3rem] font-inter"
       >
-        <!-- don't know why the drop shadow isn't working -->
+        <!-- don't know why the drop shadow isn't working |||| Works for me /emil -->
         <span class="text-[#FF007A]">sale</span>
         <span class="text-[#00E0FF]">sale</span>
         <span class="text-[#FF007A]">sale</span>
       </div>
       <!-- huge neons -->
       <span
-        class="text-3xl font-semibold uppercase font-antonio drop-shadow-[0_3.4px_1.4px_rgba(0,0,0,0.9)]"
+        class="text-2xl 2xl:text-[3.8vh] font-semibold uppercase font-antonio drop-shadow-[0_3.4px_1.4px_rgba(0,0,0,0.9)]"
         >Discount up to 66%</span
       >
     </div>
@@ -54,11 +54,11 @@ filterForBestSellers(store.productsCatalogue);
   </div>
   <!-- bg-hero -->
 
-  <div class="xl:px-24 px-8 my-2 lg:my-4 overflow-x-hidden">
+  <div class="xl:px-[10%] my-2 lg:my-4 overflow-x-hidden text-2xl font-antonio">
     <div
-      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4 py-2 md:py-4 lg:py-12"
+      class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4 mb-14"
     >
-      <h2 class="text-4xl col-span-full font-antonio pb-5">Best sellers</h2>
+      <h2 class="text-2xl col-span-full font-antonio pt-4">Most popular</h2>
       <Card
         class="col-span-1"
         v-for="product in products"

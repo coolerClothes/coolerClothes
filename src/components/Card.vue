@@ -14,7 +14,9 @@
 <template>
   <div
     id="card-background"
-    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] font-inter"
+
+    class="flex flex-col rounded-lg shadow overflow-hidden bg-[#1c1c1c] hover:bg-[#272727] max-w-[16.5rem] font-inter transition-transform transform-gpu hover:scale-[1.02] max-md:min-w-48 max-sm:min-w-32 max-md:scroll-ml-2 2xl:max-w-[14vw]"
+
     v-if="show"
   >
     <div class="flex relative">
@@ -22,12 +24,13 @@
         <!-- The card links to the product page, that in turn pass these props to the productInfo component on call -->
         <img
           :src="cardImgSrc"
-          class="w-full h-32 sm:h-48 lg:h-56 xl:h-[25vh] object-cover"
+          class="w-full h-32 sm:h-48 lg:h-56 xl:h-[27vh] object-cover"
         />
       </RouterLink>
       <div @click="toggleFavorite(product)" class="absolute right-0">
         <svg
-          class="h-10 w-10 text-[#FF007A] rounded-bl-lg bg-black bg-opacity-50 hover:text-[#ff59a9]"
+          class="h-10 w-10 text-[#c1c1c1] rounded-bl-lg bg-black bg-opacity-50 hover:text-[#ff59a9]"
+
           :class="{ 'fill-[#FF007A] text-[#1c1c1c]': isFavorite }"
           viewBox="-3 -1 29 26"
           fill="none"
@@ -44,16 +47,18 @@
     </div>
     <div
       id="product-info"
-      class="flex flex-row self-stretch items-center px-2 py-3 md:py-6 space-x-2 justify-around h-full"
+      class="flex flex-row self-stretch items-center px-2 py-3 md:py-4 space-x-2 justify-around h-full max-sm:flex-col max-sm:items-start max-sm:space-x-0"
     >
       <div id="title-brand" class="flex flex-col stretch flex-wrap space-y-1">
-        <h3 class="text-sm font-medium">{{ product.title }}</h3>
-        <h4 class="text-xs font-light text-[#c1c1c1]">
+        <h3 class="text-sm xl:text-m font-medium">{{ product.title }}</h3>
+        <h4 class="text-xs xl:text-sm font-light text-[#c1c1c1]">
           {{ product.brand }}
         </h4>
       </div>
       <!-- end title-brand -->
-      <h2 class="flex-none text-lg">{{ product.price }}kr</h2>
+      <h2 class="text-sm lg:text-md flex-none max-sm:mt-2">
+        {{ product.price }}kr
+      </h2>
     </div>
     <!-- product-info -->
   </div>

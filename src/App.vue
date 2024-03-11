@@ -3,11 +3,12 @@ import { useCartStore, useProductsStore } from "./store";
 import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 const store = useProductsStore();
-const cartStore = useCartStore()
 
-const fetchCart =()=>{
-  cartStore.getCart()
-}
+const cartStore = useCartStore();
+
+const fetchCart = () => {
+  cartStore.getCart();
+};
 
 
 const fetchProducts = async () => {
@@ -22,16 +23,20 @@ const fetchProducts = async () => {
   }
 };
 
-fetchCart()
+
+fetchCart();
+
 fetchProducts();
 </script>
 
 <template>
   <Navbar />
   <div
-    class="flex flex-col min-h-screen justify-around overflow-x-hidden bg-[#141414] text-white"
+    class="flex flex-col min-h-screen overflow-x-hidden bg-[#141414] text-white"
   >
-    <router-view></router-view>
+    <div class="mb-auto">
+      <router-view></router-view>
+    </div>
     <Footer></Footer>
   </div>
 </template>
