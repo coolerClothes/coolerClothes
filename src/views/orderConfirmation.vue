@@ -51,7 +51,7 @@
       <!-- order detalis -->
       <section
         id="order-details"
-        class="flex flex-col h-auto w-full md:w-2/3 xl:w-1/3 justify-center p-4 xl:py-6 space-y-4 bg-[#1c1c1c]"
+        class="flex flex-col h-auto w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
       >
         <h1
           class="font-antonio font-bold uppercase text-3xl 2xl:text-4xl text-center tracking-wide"
@@ -60,13 +60,13 @@
         </h1>
         <section
           id="cards-container"
-          class="flex flex-col w-full overflow-y-auto px-2 space-y-2 xl:space-y-3.5 2xl:space-y-4 my-3 2xl:text-xl"
+          class="flex flex-col w-full overflow-y-auto px-2 space-y-1 xl:space-y-2 2xl:space-y-3 my-3 2xl:text-xl"
         >
           <div
             id="cards"
             v-if="Object.keys(cart).length !== 0"
             v-for="productArray in cart"
-            class="flex flex-shrink-0 items-center justify-between space-x-2 w-full my-1"
+            class="flex flex-shrink-0 items-center justify-between w-full p-1 bg-[#0f0f0f]"
           >
             <router-link :to="'/products/' + productArray[0].id"
               ><img
@@ -172,5 +172,18 @@ watch(
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+}
+*::-webkit-scrollbar {
+  width: 20px;
+  height: 25px;
+}
+*::-webkit-scrollbar-track {
+  background: #0c0c0c;
+
+  margin: 0 30px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ec3f79;
+  padding: 20px;
 }
 </style>
