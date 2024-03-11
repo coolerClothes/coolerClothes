@@ -58,19 +58,19 @@ getTotalAmount();
 <template>
     <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
         <p class="text-2xl font-antonio pt-4 pl-4">Checkout</p>
-        <form class="font-inter font-light text-[#F5F5F5] ">
+        <form class="font-inter font-light text-[#F5F5F5]">
             <!-- checkout page grid -->
             <div class="grid p-4 grid-cols-2 grid-rows-3 gap-4 2xl:gap-[1.7vw] font-inter ">
                 <!-- delivery information div -->
                 <div class="bg-[#1c1c1c]">
-                    <fieldset id="deliveryInfo" ref="deliveryInfo">
+                    <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
                             "\s?-?" = optional whitespace or hyphen
                          -->
                         <legend>Delivery Information</legend>
                         <input id="email" aria-label="Email" type="email" placeholder="Email" class="w-full" required
-                            maxlength="320">
+                            maxlength="40">
                         <input id="phoneNumber" aria-label="Phone number" type="text" placeholder="Phone number"
                             pattern="(\+?(\d\s?-?){11}|(\d\s?-?){10})" required>
                         <input id="firstName" aria-label="First name" type="text" placeholder="First name"
@@ -90,7 +90,7 @@ getTotalAmount();
                     <h2 class="text-[#F5F5F5]">Cart</h2>
                     <div class="mt-[2cqh]">
                         <CartCards :editAllowed="false" />
-                        <div class="h-72 flex flex-col">
+                        <div class="flex flex-col">
                             <div class="flex justify-between mt-6 font-inter">
                                 <h3>Delivery Cost</h3>
                                 <h3>0:-</h3>
@@ -173,13 +173,13 @@ getTotalAmount();
 /* General styling */
 fieldset,
 #cart {
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 legend,
 h2 {
     color: #F5F5F5;
-    padding-top: 3rem;
+    padding-top: 2rem;
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -191,11 +191,13 @@ h2 {
 }
 
 #deliveryInfo>input {
-    background: #1C1C1C;
+    background: #f5f5f5;
     outline: 1px solid #858585;
     padding-left: 1cqw;
+    padding: 0.5rem;
     margin-top: 2cqh;
     margin-bottom: 1cqh;
+    margin-right: 1cqh;
 }
 
 #deliveryInfo>input:focus:placeholder-shown {
@@ -203,10 +205,10 @@ h2 {
 }
 
 #deliveryInfo>input:focus:valid {
-    outline: 1px solid #00FF66;
+    outline: 3px solid #35ad6d;
 }
 
 #deliveryInfo>input:focus:invalid {
-    outline: 1px solid #FF3666;
+    outline: 3px solid #c92f53;
 }
 </style>
