@@ -188,10 +188,9 @@ fieldset,
 
 legend,
 h2 {
-    color: #F5F5F5;
+    color: #868686;
     padding-top: 2rem;
-    font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.75rem;
 }
 
