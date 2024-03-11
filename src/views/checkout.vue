@@ -60,15 +60,15 @@ getTotalAmount();
         <p class="text-2xl font-antonio pt-4 pl-4">Checkout</p>
         <form class="font-inter font-light text-[#F5F5F5]">
             <!-- checkout page grid -->
-            <div class="grid p-4 grid-cols-5 grid-rows-3 gap-4 2xl:gap-[1vw] font-inter ">
+            <div class="grid p-4 grid-cols-5 grid-rows-12 gap-4 2xl:gap-[1vw] font-inter ">
                 <!-- delivery information div -->
-                <div class="bg-[#1c1c1c] col-span-3">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10">
                     <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
                             "\s?-?" = optional whitespace or hyphen
                          -->
-                        <legend>Delivery Information</legend>
+                        <legend class="text-[#868686]">Delivery Information</legend>
                         <input id="email" aria-label="Email" type="email" placeholder="Email" class="w-[48.5%]" required
                             maxlength="40">
                         <input id="phoneNumber" aria-label="Phone number" type="text" placeholder="Phone number" class="w-[48.5%]"
@@ -96,16 +96,16 @@ getTotalAmount();
 
                 </div>
                 <!-- checkout cart div -->
-                <div id="cart" class="bg-[#1c1c1c] row-span-2 col-span-2">
-                    <h2 class="text-[#F5F5F5]">Cart</h2>
-                    <div class="mt-[2cqh]">
-                        <CartCards :editAllowed="false" />
-                        <div class="flex flex-col">
-                            <div class="flex justify-between mt-6 font-inter">
+                <div id="cart" class="col-span-2 row-span-12 relative top-0 right-0 h-auto">
+                    <div class="bg-[#1c1c1c] p-1">
+                        <h2 class="text-[#F5F5F5] font-semibold px-6 pt-6 pb-10">Cart</h2>
+                        <CartCards :editAllowed="true" />
+                        <div class="flex flex-col p-6">
+                            <div class="flex justify-between mt-8 font-inter">
                                 <h3>Delivery Cost</h3>
                                 <h3>0:-</h3>
                             </div>
-                            <div class="flex justify-between mt-8 font-inter">
+                            <div class="flex justify-between mt-4 font-inter font-bold">
                                 <h3>Total Cost:</h3>
                                 <h3>{{ totalAmount }}:-</h3>
                             </div>
@@ -113,11 +113,11 @@ getTotalAmount();
                     </div>
                 </div>
 
-                <!-- Shipment method div -->
-                <div class="bg-[#1c1c1c] col-span-3">
+                <!-- shipment method div -->
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
                     <fieldset id="shippingMethod">
-                        <legend>Shipping method</legend>
-                        <div class= "mt-[2.5cqh] ">
+                        <legend class="text-[#868686]">Shipping method</legend>
+                        <div>
                             <div class="flex flex-row items-center border-solid border-[#2a2a2a] border-2">
                                 <input id="postnord" type="radio" value="postnord" name="shippingMethod" class="border-none size-5 ml-5 mr-3" >
                                 <label for="postnord">Postnord</label>
@@ -140,10 +140,10 @@ getTotalAmount();
                     </fieldset>
                 </div>
                 <!-- payment method div -->
-                <div class="bg-[#1c1c1c] col-span-3">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10">
                     <fieldset id="paymentMethod">
-                        <legend>Payment method</legend>
-                        <div class="mt-[2cqh]">
+                        <legend class="text-[#868686]">Payment method</legend>
+                        <div>
                             <div class="flex flex-row items-center border-solid border-[#2a2a2a] border-2">
                                 <input id="swish" type="radio" value="swish" name="paymentMethod" class="border-none size-5 ml-5 mr-3">
                                 <label for="swish">Swish</label>
@@ -181,15 +181,10 @@ getTotalAmount();
 /* Custom css made to avoid repeat tailwind class declarations on elements */
 
 /* General styling */
-fieldset,
-#cart {
-    padding: 0 2rem 2rem 2rem;
-}
 
 legend,
 h2 {
-    color: #868686;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.75rem;
 }
@@ -204,8 +199,7 @@ h2 {
     outline: 1px solid #858585;
     padding-left: 1cqw;
     padding: 0.5rem;
-    margin-top: 2cqh;
-    margin-bottom: 1cqh;
+    margin-bottom: 2.5%;
     margin-right: 1.5%;
 }
 
