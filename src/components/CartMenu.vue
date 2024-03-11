@@ -86,6 +86,7 @@ getTotalAmount();
             <button
               class="p-2 lg:p-2 2xl:p-2 mt-9 w-[100%] bg-[#0C0C0C] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)] text-[#f5f5f5]"
               @click="handleCartMenuActivation"
+
             >
               <div id="button-contents" class="relative mt-1">
                 <p class="inline">Checkout</p>
