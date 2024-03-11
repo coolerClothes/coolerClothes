@@ -12,6 +12,7 @@ const searchMenuActive = ref(false);
 const searchInput = ref("");
 const isScrolled = ref(false);
 const cartProductsAmount = ref(0);
+const cartUpdated = ref(false);
 
 const router = useRouter();
 
@@ -47,6 +48,11 @@ watch(
   () => store.cart,
   (newCart) => {
     cartProductsAmount.value = newCart.length;
+    cartUpdated.value = true;
+
+    setTimeout(() => {
+      cartUpdated.value = false;
+    }, 400);
   },
 );
 
@@ -190,7 +196,6 @@ const bottomContainerClass = computed(() => {
               class="min-w-6 mr-1"
               viewBox="0 0 24 24"
               fill="currentColor"
-
               stroke="currentColor"
             >
               <path
@@ -234,8 +239,11 @@ const bottomContainerClass = computed(() => {
             </svg>
             <span
               :class="
-                ' absolute -top-2 -right-[0.55rem] size-5 rounded-full bg-[#0c0c0c] text-[#ff007a] flex justify-center items-center text-xs font-medium ' +
-                (cartProductsAmount > 0 ? '' : 'hidden')
+                ' absolute -top-2 -right-[0.55rem] size-5 rounded-full bg-[#0c0c0c] text-[#ff007a] flex justify-center items-center text-xs font-medium transition-all duration-300 ' +
+                (cartProductsAmount > 0 ? '' : 'hidden') +
+                (cartUpdated
+                  ? ' -translate-y-3 scale-150 '
+                  : ' translate-y-0 scale-100 ')
               "
               >{{ cartProductsAmount }}</span
             >
