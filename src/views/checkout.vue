@@ -56,13 +56,13 @@ getTotalAmount();
 
 
 <template>
-    <div class="xl:px-[10%] px-4 my-4 overflow-x-hidden">
+    <div class="xl:px-[20%] px-4 my-4 overflow-x-hidden">
         <p class="text-2xl font-antonio pt-4 pl-4">Checkout</p>
         <form class="font-inter font-light text-[#F5F5F5]">
             <!-- checkout page grid -->
-            <div class="grid p-4 grid-cols-5 grid-rows-12 gap-4 2xl:gap-[1vw] font-inter ">
+            <div class="grid p-4 grid-cols-5 grid-rows-20 gap-4 2xl:gap-[1vw] font-inter ">
                 <!-- delivery information div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
                     <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
@@ -88,7 +88,7 @@ getTotalAmount();
                             label="Add c/o adress"
                             class="px-5  mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)]"
                         >
-                        <div id="button-contents" class="relative p-1.5">
+                        <div id="button-contents" class="relative p-1">
                             <p class="inline">Add c/o-adress <span class="text-xl font-bold">+</span></p>
                         </div>
                         </button>
@@ -140,7 +140,7 @@ getTotalAmount();
                     </fieldset>
                 </div>
                 <!-- payment method div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
                     <fieldset id="paymentMethod">
                         <legend class="text-[#868686]">Payment method</legend>
                         <div>
@@ -198,7 +198,7 @@ h2 {
     background: #f5f5f5;
     outline: 1px solid #858585;
     padding-left: 1cqw;
-    padding: 0.5rem;
+    padding: 0.4rem;
     margin-bottom: 2.5%;
     margin-right: 1.5%;
 }
