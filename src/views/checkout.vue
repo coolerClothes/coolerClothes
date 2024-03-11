@@ -112,7 +112,6 @@ getTotalAmount();
                         </div>
                     </div>
                 </div>
-
                 <!-- shipment method div -->
                 <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
                     <fieldset id="shippingMethod">
