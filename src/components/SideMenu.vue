@@ -37,7 +37,7 @@ const handleCategoriesClick = () => {
       </div>
       <div id="menu" class="ml-3">
         <h2 @click="handleCategoriesClick" class="text-xl mt-5 cursor-pointer">
-          Categories
+          Browse
         </h2>
         <ul
           :class="
