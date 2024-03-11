@@ -67,7 +67,7 @@ getTotalAmount();
       </div>
       <div id="bottom" class="flex flex-col h-full">
         <div class="flex-1 bg-[#1c1c1c] overflow-auto">
-          <CartCards @handle-cart-menu-activation="handleCartMenuActivation" />
+          <CartCards @handle-cart-menu-activation="handleCartMenuActivation" :editAllowed="true" />
         </div>
         <div
           class="h-72 bg-[#141414] flex flex-col px-4 border-t-2 border-gray-800"
@@ -80,6 +80,7 @@ getTotalAmount();
             <h3>Total Cost:</h3>
             <h3>{{ totalAmount }}:-</h3>
           </div>
+          <router-link to="/checkout/checkout">
           <button
             class="p-4 lg:p-2 2xl:p-2 mt-9 bg-[#0C0C0C] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)] text-[#f5f5f5]"
           >
@@ -100,6 +101,7 @@ getTotalAmount();
               </svg>
             </div>
           </button>
+        </router-link>
         </div>
       </div>
     </div>
