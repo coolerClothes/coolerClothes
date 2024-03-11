@@ -124,9 +124,7 @@
           @click="addClicked(props.item, selectedSize, count)"
           id="addButton"
           label="Add to cart"
-
-          class="p-4 lg:p-0 2xl:p-1 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)]"
-
+          class="p-2 lg:p-0 2xl:p-1 bg-[#0d0d0d] rounded-full hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.6)]"
           :disabled="selectedSize === ''"
         >
           <div id="button-contents" class="relative mt-1">
