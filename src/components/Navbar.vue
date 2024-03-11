@@ -190,6 +190,7 @@ const bottomContainerClass = computed(() => {
               class="min-w-6 mr-1"
               viewBox="0 0 24 24"
               fill="currentColor"
+
               stroke="currentColor"
             >
               <path
@@ -204,8 +205,8 @@ const bottomContainerClass = computed(() => {
           </div></router-link
         >
         <!-- FAV END -->
-
         <!-- CART START -->
+
         <div
           class="flex cursor-pointer pr-1 hover:text-[#ff007a]"
           @click="handleCartMenuActivation"

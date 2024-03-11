@@ -11,10 +11,12 @@ export default {
     const store = useProductsStore();
     const products = ref(store.productsCatalogue);
     const productsArray = ref([]);
+
     let favoritesArray = ref(
       JSON.parse(localStorage.getItem("favoritesArray")),
     );
     console.log(favoritesArray.value);
+
 
     const filteredArray = computed(() =>
       productsArray.value.filter(isInLocalStorage),
@@ -64,6 +66,7 @@ export default {
           :key="product.id"
           :product="product"
           :cardImgSrc="product.imgSrc"
+
         />
       </div>
     </div>
@@ -76,4 +79,5 @@ export default {
       </p>
     </div>
   </div>
+
 </template>

@@ -98,6 +98,7 @@ export default {
 </script>
 
 <template>
+
   <div
     id="breacrumbs"
     class="flex justify-center my-3 col-span-full font-inter max-md:hidden text-sm"
@@ -203,6 +204,7 @@ export default {
       <!-- sorting -->
     </div>
     <!-- headers -->
+
     <Card
       v-for="product in filteredArray"
       class="col-span-1"
@@ -213,4 +215,5 @@ export default {
       :categorySearch="true"
     />
   </div>
+
 </template>
