@@ -12,6 +12,7 @@
           <img
             :src="galleryImgSrc"
             class="overflow-hidden h-[50vh] md:h-[80vh] lg:h-[70vh] w-full object-contain"
+            :alt="item.alt"
           />
         </div>
       </div>

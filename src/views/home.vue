@@ -30,6 +30,7 @@ filterForBestSellers(store.productsCatalogue);
   <div
     id="bg-hero"
     class="hero bg-fixed bg-cover bg-[center_top_30%] text-white justify-center items-center h-[55vh] overflow-hidden"
+    title="Crowd of manequins wearing COOLer Clothes apparel in a seemingly endless room"
   >
     <div
       id="hero-text-background"
