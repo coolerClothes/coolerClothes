@@ -66,16 +66,16 @@
             id="cards"
             v-if="Object.keys(cart).length !== 0"
             v-for="productArray in cart"
-            class="flex flex-shrink-0 items-center justify-around space-x-2 w-full my-1"
+            class="flex flex-shrink-0 items-center justify-between space-x-2 w-full my-1"
           >
             <router-link :to="'/products/' + productArray[0].id"
               ><img
                 :src="productArray[0].imgSrc"
                 :alt="productArray[0].alt"
-                class="max-w-14"
+                class="max-w-14 mr-4"
             /></router-link>
             <!-- image end -->
-            <p class="text-base 2xl:text-base flex flex-col">
+            <p class="text-base 2xl:text-base grow flex flex-col">
               <router-link :to="'/products/' + productArray[0].id"
                 ><span
                   class="text-base 2xl:text-lg font-semibold xl:leading-[14px]"
@@ -86,11 +86,14 @@
               <span class="text-[#aaaaaa]">{{ productArray[0].brand }}</span>
               <span>{{ productArray[0].category }}</span>
             </p>
-            <span class="font-bold text-[#ff007a]">
-              {{ productArray[0].chosenSize.toUpperCase() }}
-            </span>
-            <span>x{{ productArray.length }}</span>
-            <span> {{ productArray[0].price }}:- </span>
+
+            <div class="flex space-x-3 justify-self-end">
+              <span class="font-bold text-[#ff007a]">
+                {{ productArray[0].chosenSize.toUpperCase() }}
+              </span>
+              <span>x{{ productArray.length }}</span>
+              <span> {{ productArray[0].price }}:- </span>
+            </div>
           </div>
           <!-- individual card -->
         </section>
