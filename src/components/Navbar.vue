@@ -267,6 +267,11 @@ const bottomContainerClass = computed(() => {
         class="flex gap-5 h-full justify-center items-center font-inter font-semibold text-xs"
       >
         <li>
+          <router-link to="/search/all" class="p-4 hover:text-[#ff007a]"
+            >ALL</router-link
+          >
+        </li>
+        <li>
           <router-link to="/search/jackets" class="p-4 hover:text-[#ff007a]"
             >JACKETS</router-link
           >
