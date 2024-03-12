@@ -34,14 +34,12 @@ const sortCart = () => {
 
 if (store.cart !== null) {
   sortCart();
-  console.log(cart.value);
 }
 
 watch(
   () => store.cart,
   () => {
     sortCart();
-    console.log(cart.value);
   },
 );
 </script>
