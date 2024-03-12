@@ -5,8 +5,8 @@ import { useCartStore } from "../store";
 const emit = defineEmits(["handle-cart-menu-activation"]);
 
 const props = defineProps({
-  editAllowed: Boolean,
-});
+  editAllowed: Boolean
+})
 
 const store = useCartStore();
 const cart = ref({});
@@ -95,7 +95,7 @@ watch(
 
               <section
                 id="counter"
-                v-if="editAllowed"
+
                 class="flex items-center"
               >
                 <img
@@ -122,14 +122,9 @@ watch(
             class="flex flex-col justify-between mx-3"
           >
             <h2>{{ productArray[0].price }}:-</h2>
-
-            <h2 v-if="!editAllowed" class="self-center">
-              {{ productArray.length }}
-            </h2>
             <!-- what is intended to display in this H2? Can it be removed? (from Amanda)-->
 
             <img
-              v-if="editAllowed"
               src="/src/assets/icons/trash-icon.svg"
               alt="trashcan icon"
               class="h-7 cursor-pointer m-1 transition-transform transform-gpu hover:scale-[1.1]"
