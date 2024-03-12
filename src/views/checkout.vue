@@ -125,89 +125,144 @@ getTotalAmount();
         >
           <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
             <legend class="text-[#868686]">Delivery Information</legend>
+            <div class="relative inline-flex w-[48.5%]">
             <input
               id="email"
               aria-label="Email"
               type="email"
               placeholder="Email"
-              class="w-[48.5%]"
+              class="w-full"
               required
               maxlength="40"
             />
+            <p
+                                class="tooltip absolute bottom-[100%] px-1 bg-[#00E0FF] rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50 flex">
+                                Email:
+                                example@mail.example <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-1">✗</span>
+                            </p>
+              </div>
+              <div class="relative inline-flex w-[48.5%]">
             <input
               id="phoneNumber"
               aria-label="Phone number"
               type="text"
               placeholder="Phone number"
-              class="w-[48.5%]"
-              pattern="(\+?(\d\s?-?){11}|(\d\s?-?){10})"
+              class="w-full"
+              pattern="(\+(\d\s?-?){11}|(\d\s?-?){10})"
               required
             />
+            <p
+                                class="tooltip absolute bottom-[100%] bg-[#00E0FF] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                Tel: 10 numbers or dialing code followed 11 numbers <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-1">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[48.5%]">
             <input
               id="firstName"
               aria-label="First name"
               type="text"
               placeholder="First name"
-              class="w-[48.5%]"
+              class="w-full"
               pattern="[\p{L}a-z]{1,30}"
               required
             />
+            <p
+                                class="tooltip absolute bottom-[100%] bg-[#00E0FF] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                First name <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[48.5%]">
             <input
               id="lastName"
               aria-label="Last name"
               type="text"
               placeholder="Last name"
-              class="w-[48.5%]"
+              class="w-full"
               pattern="[\p{L}a-z]{1,30}"
               required
             />
+            <p
+                                class="tooltip absolute bottom-[100%] bg-[#00E0FF] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                Last name <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+              <div class="relative inline-flex w-[35.5%]">
             <input
               id="adress"
               aria-label="Delivery adress"
               type="text"
               placeholder="Delivery adress"
-              class="w-[35.5%]"
-              pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
+              class="w-full"
+              pattern="[\p{L}a-z]{1,30}\s?\d{1,3}"
               required
             />
+            <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                Adress: Street name + number <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[30%]">
             <input
               id="postCode"
               aria-label="Post code"
               type="text"
               placeholder="ZIP code"
               required
-              class="w-[30%]"
+              class="w-full"
               pattern="\d{3}\s?\d{2}"
             />
+            <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                Zip code: 5 numbers <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[30%]">
             <input
               id="postTown"
               aria-label="Post town"
               type="text"
               placeholder="City"
               required
-              class="w-[30%]"
+              class="w-full"
               pattern="[\p{L}a-z]{1,15}"
             />
+            <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                Post town <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[35.5%]" v-if="addCoFields === true">
             <input
-              v-if="addCoFields === true"
               id="coAdress"
               aria-label="c/o adress"
               type="text"
               placeholder="c/o adress"
-              class="w-[35.5%]"
+              class="w-full"
               pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
               required
             />
+            <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                C/o Adress: Street name + number <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[30%]"  v-if="addCoFields === true">
             <input
-              v-if="addCoFields === true"
               id="coPostCode"
               aria-label="c/o post code"
               type="text"
               placeholder="c/o ZIP code"
               required
-              class="w-[30%]"
+              class="w-full"
               pattern="\d{3}\s?\d{2}"
             />
+             <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                C/o Zip code: 5 numbers <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
+            <div class="relative inline-flex w-[30%]"  v-if="addCoFields === true">
             <input
               v-if="addCoFields === true"
               id="coPostTown"
@@ -215,16 +270,21 @@ getTotalAmount();
               type="text"
               placeholder="c/o City"
               required
-              class="w-[30%]"
+              class="w-full"
               pattern="[\p{L}a-z]{1,15}"
             />
+            <p
+                                class="tooltip bg-[#00E0FF] absolute bottom-[100%] px-1 rounded-t-sm self-center text-[#003238] invisible text-sm font-medium z-50">
+                                C/o Post town <span class="check invisible font-bold absolute right-1">✓</span>
+                                <span class="cross invisible font-bold ml-auto">✗</span></p>
+                        </div>
 
             <!-- Check if c/o adress fields are present -->
             <button
               v-if="!addCoFields"
               id="adressButton"
               label="Add c/o adress"
-              @click="addCoFields = !addCoFields"
+              @click="addCoFields=!addCoFields"
               class="px-5 mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)] block"
             >
               <div id="button-contents" class="relative p-1.5">
@@ -237,7 +297,7 @@ getTotalAmount();
               v-else
               id="adressButton"
               label="Remove c/o adress"
-              @click="addCoFields = !addCoFields"
+              @click="addCoFields=!addCoFields"
               class="px-5 mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)] block"
             >
               <div id="button-contents" class="relative p-1.5">
@@ -503,26 +563,42 @@ h2 {
   color: #858585;
 }
 
-#deliveryInfo > input {
-  background: #f5f5f5;
-  outline: 1px solid #858585;
-  padding-left: 1cqw;
-  padding: 0.4rem;
-  margin-bottom: 2.5%;
-  margin-right: 1.5%;
+
+
+#deliveryInfo>div {
+    margin-bottom: 2.5%;
+    margin-right: 1.5%;
 }
 
-#deliveryInfo > input:focus:placeholder-shown {
-  outline: 3px solid #00e0ff !important;
+#deliveryInfo>div>input {
+    background: #f5f5f5;
+    outline: 1px solid #858585;
+    padding-left: 1cqw;
+    padding: 0.4rem;
 }
 
-#deliveryInfo > input:focus:valid {
-  outline: 3px solid #35ad6d;
+#deliveryInfo>div>input:focus {
+    outline: 3px solid #00E0FF;
 }
 
-#deliveryInfo > input:focus:invalid {
-  outline: 3px solid #c92f53;
+
+/* Tooltip styling */
+#deliveryInfo>div>input:focus+.tooltip {
+    visibility: visible;
+    color: #003238;
+    background-color: #00E0FF;
 }
+
+/* Tooltip checkmarks and crossmarks styling */
+#deliveryInfo>div>input:focus:invalid+.tooltip>.cross {
+    visibility: visible;
+}
+
+#deliveryInfo>div>input:focus:valid+.tooltip>.check {
+    visibility: visible;
+}
+
+/*Scrollbar styling */
 ::-webkit-scrollbar {
   width: 5px;
   height: 25px;
