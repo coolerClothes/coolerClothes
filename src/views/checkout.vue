@@ -95,13 +95,13 @@ getTotalAmount();
 
 
 <template>
-    <div class="xl:px-[20%] px-4 my-4 overflow-x-hidden">
+    <div class="2xl:px-[20%] px-4 my-4 overflow-x-hidden">
         <p class="text-2xl font-antonio pt-4 pl-4">Checkout</p>
         <form class="font-inter font-light text-[#F5F5F5]">
             <!-- checkout page grid -->
             <div class="grid p-4 grid-cols-5 grid-rows-20 gap-4 2xl:gap-[1vw] font-inter ">
                 <!-- delivery information div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]" :class="{ 'border-solid border-l-4 border-[#4dc94f]': !shipFieldsetDisabled }">
                     <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
@@ -164,7 +164,7 @@ getTotalAmount();
                     </div>
                 </div>
                 <!-- shipment method div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10" :class="{ 'opacity-40': shipFieldsetDisabled }">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]" :class="{ 'opacity-40 filter grayscale': shipFieldsetDisabled }, { 'border-solid border-l-4 border-[#4dc94f]': !payFieldsetDisabled }">
                     <fieldset id="shippingMethod" :disabled=shipFieldsetDisabled>
                         <legend class="text-[#868686]">Shipping method</legend>
                         <div>
@@ -196,7 +196,7 @@ getTotalAmount();
                     </fieldset>
                 </div>
                 <!-- payment method div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10" :class="{ 'opacity-40': payFieldsetDisabled }">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]" :class="{ 'opacity-40 filter grayscale': payFieldsetDisabled }, { 'border-solid border-l-4 border-[#4dc94f]': !confirmFieldsetDisabled }">
                     <fieldset id="paymentMethod" :disabled=payFieldsetDisabled>
                         <legend class="text-[#868686]">Payment method</legend>
                         <div>
