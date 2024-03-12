@@ -92,6 +92,7 @@ getTotalAmount();
             <div class="grid p-4 grid-cols-5 grid-rows-20 gap-4 2xl:gap-[1vw] font-inter ">
                 <!-- delivery information div -->
                 <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
+>>>>>>>>> Temporary merge branch 2
                     <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
