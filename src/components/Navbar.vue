@@ -36,7 +36,6 @@ const handleCartMenuActivation = () => {
 
 const handleSearch = () => {
   router.push({ path: "/search/all/" + searchInput.value });
-  console.log(searchInput.value);
 };
 
 // Handle scroll event
