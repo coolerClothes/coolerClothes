@@ -108,6 +108,7 @@ export default {
 
     <h3 class="px-1 text-[#858585]">/</h3>
 
+    <!-- if category is chosen -->
     <div v-if="searchByCategory">
       <router-link :to="'/search/' + category">
         <h3 class="font-medium hover:text-[#f5f5f5]">
@@ -116,13 +117,19 @@ export default {
       </router-link>
     </div>
 
+
+    <!-- if category is all -->
+
     <div v-if="!searchByCategory && searchQuery == ''">
       <router-link to="/search/All">
         <h3 class="font-medium hover:text-[#f5f5f5]">All</h3>
       </router-link>
     </div>
 
-    <div v-if="searchCategory && searchQuery !== ''" class="flex">
+
+    <!-- if it is a search -->
+    <div v-if="!searchByCategory && searchQuery[0] !== ''" class="flex">
+
       <router-link :to="'/search/' + category">
         <h3 class="text-[#858585] hover:text-[#f5f5f5]">
           {{ category[0].toUpperCase() + category.slice(1) }}
@@ -150,6 +157,7 @@ export default {
           {{ category.charAt(0).toUpperCase() + category.substring(1) }}
         </p>
       </div>
+      <div v-else-if="searchQuery[0] === ''"> <p> All products</p> </div>
       <div v-else>
         <div
           id="query-result-text"

@@ -71,7 +71,7 @@ export default {
     <div
       class="grid xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] px-4 pt-4 pb-16"
     >
-      <p class="text-2xl font-antonio col-span-full space-y-2 mt-[42px] mb-2">
+      <p class="text-2xl font-antonio col-span-full space-y-2 mb-2">
         Favorites
       </p>
       <Card
