@@ -1,7 +1,7 @@
 <template>
   <div
     id="bg-img"
-    class="flex w-full min-h-fit xl:h-[95vh] pt-5 md:p-10 bg-cover"
+    class="flex w-full min-h-fit xl:h-[95vh] 2xl:h-[82vh] pt-5 md:p-10 bg-cover"
     title="Abstract vaporwave background"
   >
     <div
@@ -10,11 +10,11 @@
     >
       <section
         id="message"
-        class="flex flex-col self-center place-items-center place-content-center h-fit xl:w-[50%] 2xl:w-[44%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 mt-8 2xl:mt-0 text-white text-center 2xl:text-xl"
+        class="flex flex-col self-center place-items-center place-content-center h-fit 2xl:h-[60vh] xl:w-[50%] 2xl:w-[40%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 mt-8 2xl:mt-0 text-white text-center 2xl:text-xl"
       >
         <h1
           id="thank-you"
-          class="text-3xl 2xl:text-4xl font-inter font-extrabold tracking-tight"
+          class="text-3xl 2xl:text-4xl font-inter font-extrabold tracking-tight mb-2"
         >
           <span class="glowing border-[3.5px] display-block rounded-full px-3"
             >Thank you</span
@@ -28,21 +28,18 @@
         <p class="sm:w-2/3">
           Should you have any
           <span class="font-bold text-[#ff007a]"> questions</span>, please don't
-          hesitate to contact us through any of the following means:
+          hesitate to contact us:
         </p>
 
         <section
           id="contact"
           class="flex flex-wrap w-full justify-center font-extrabold"
         >
-          <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
-            <span> (+46) 70 123 4567 </span>
+          <div class="flex flex-nowrap m-1 p-1 justify-center text-center w-[100%]">
+            <p > support@coolerclothes.com </p>
           </div>
-          <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
-            <span> (+46) 70 123 4567 </span>
-          </div>
-          <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
-            <span> (+46) 70 123 4567 </span>
+          <div class="flex flex-nowrap m-1 p-1 justify-center text-center w-[100%]">
+            <p> (+46) 70 123 4567 </p>
           </div>
         </section>
         <!-- contact -->
@@ -51,10 +48,10 @@
       <!-- order detalis -->
       <section
         id="order-details"
-        class="flex flex-col h-auto w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
+        class="flex flex-col h-[60vh] w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
       >
         <h1
-          class="font-antonio font-bold uppercase text-3xl 2xl:text-4xl text-center tracking-wide"
+          class="font-antonio font-bold uppercase text-3xl 2xl:text-3xl text-center tracking-wide mb-2"
         >
           Order summary:
         </h1>
@@ -72,7 +69,7 @@
               ><img
                 :src="productArray[0].imgSrc"
                 :alt="productArray[0].alt"
-                class="max-w-14 mr-4"
+                class="max-w-14 mr-4 ml-2"
             /></router-link>
             <!-- image end -->
             <p class="text-base 2xl:text-base grow flex flex-col">
@@ -87,8 +84,8 @@
               <span>{{ productArray[0].category }}</span>
             </p>
 
-            <div class="flex space-x-3 justify-self-end">
-              <span class="font-bold text-[#ff007a]">
+            <div class="flex space-x-3 justify-self-end mr-3">
+              <span class="font-bold text-[#ff007a] mr-2">
                 {{ productArray[0].chosenSize.toUpperCase() }}
               </span>
               <span>x{{ productArray.length }}</span>
