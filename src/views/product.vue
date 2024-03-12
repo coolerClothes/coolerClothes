@@ -85,6 +85,7 @@ watch(
   >
     <Card
       class="col-span-1"
+      v-if="products"
       v-for="product in Object.values(products).filter(
         (item) => item.category == currentProduct.category,
       )"

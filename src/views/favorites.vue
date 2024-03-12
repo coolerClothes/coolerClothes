@@ -52,6 +52,21 @@ export default {
 </script>
 
 <template>
+  <div
+    id="breacrumbs"
+    class="flex justify-center my-3 font-inter max-md:hidden text-sm"
+  >
+    <router-link to="/">
+      <h3 class="text-[#858585] hover:text-[#f5f5f5]">Home</h3>
+    </router-link>
+
+    <h3 class="px-1 text-[#858585]">/</h3>
+
+    <router-link to="/favorites/favorites">
+      <h3 class="font-medium hover:text-[#f5f5f5]">Favorites</h3>
+    </router-link>
+  </div>
+
   <div v-if="favoritesArray.length > 0">
     <div
       class="grid xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] px-4 pt-4 pb-16"
