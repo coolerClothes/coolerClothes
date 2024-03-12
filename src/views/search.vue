@@ -98,7 +98,6 @@ export default {
 </script>
 
 <template>
-
   <div
     id="breacrumbs"
     class="flex justify-center my-3 col-span-full font-inter max-md:hidden text-sm"
@@ -109,6 +108,7 @@ export default {
 
     <h3 class="px-1 text-[#858585]">/</h3>
 
+    <!-- if category is chosen -->
     <div v-if="searchByCategory">
       <router-link :to="'/search/' + category">
         <h3 class="font-medium hover:text-[#f5f5f5]">
@@ -117,7 +117,19 @@ export default {
       </router-link>
     </div>
 
-    <div v-else class="flex">
+
+    <!-- if category is all -->
+
+    <div v-if="!searchByCategory && searchQuery == ''">
+      <router-link to="/search/All">
+        <h3 class="font-medium hover:text-[#f5f5f5]">All</h3>
+      </router-link>
+    </div>
+
+
+    <!-- if it is a search -->
+    <div v-if="!searchByCategory && searchQuery[0] !== ''" class="flex">
+
       <router-link :to="'/search/' + category">
         <h3 class="text-[#858585] hover:text-[#f5f5f5]">
           {{ category[0].toUpperCase() + category.slice(1) }}
@@ -215,5 +227,4 @@ export default {
       :categorySearch="true"
     />
   </div>
-
 </template>

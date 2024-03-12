@@ -36,7 +36,6 @@ const handleCartMenuActivation = () => {
 
 const handleSearch = () => {
   router.push({ path: "/search/all/" + searchInput.value });
-  console.log(searchInput.value);
 };
 
 // Handle scroll event
@@ -266,6 +265,11 @@ const bottomContainerClass = computed(() => {
       <ul
         class="flex gap-5 h-full justify-center items-center font-inter font-semibold text-xs"
       >
+        <li>
+          <router-link to="/search/all" class="p-4 hover:text-[#ff007a]"
+            >ALL</router-link
+          >
+        </li>
         <li>
           <router-link to="/search/jackets" class="p-4 hover:text-[#ff007a]"
             >JACKETS</router-link
