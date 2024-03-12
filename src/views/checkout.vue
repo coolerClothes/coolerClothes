@@ -236,16 +236,32 @@ getTotalAmount();
                     </fieldset>
                 </div>
             </div>
-            <div class="text-center pb-12" :class="{ 'opacity-40': confirmFieldsetDisabled }">
+            <div class="text-center pb-12" :class="{ 'opacity-40 filter grayscale': confirmFieldsetDisabled }">
                 <fieldset id="confirmPayment" :disabled=confirmFieldsetDisabled>
                     <input type="checkbox" id="newsLetter" name="News Letter" class="mr-3 size-5 align-middle"/>
-                    <label for="newsLetter" class="align-middle">Sign up to our news letter!</label>
-                    <p class="pt-6">Att betala: {{ totalAmount }}:-</p>
+                    <label for="newsLetter" class="align-middle text-sm">Sign up to our news letter!</label>
+                    <p class="pt-6 font-semibold text-lg">Att betala: {{ totalAmount }}:-</p>
                     <router-link to="/orderConfirmation">
                         <button id="confirmButton" label="Confirm payment"
-                            class="px-5  mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)]">
+                            class="px-5  mt-4 text-[#000000] bg-[#4dc94f] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)]">
                             <div id="button-contents" class="relative p-1.5">
-                                <p class="inline">Confirm payment</p>
+                                <p class="inline align-middle">Confirm payment</p>
+                                <svg
+                                    id="added-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-8 h-8 p-1 rounded-full inline transform text-[#000000]"
+                                    >
+                                <!-- animate-bounce duration-1000 -->
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                                />
+                                </svg>
                             </div>
                         </button>
                     </router-link>
