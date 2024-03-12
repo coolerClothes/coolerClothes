@@ -107,7 +107,9 @@ getTotalAmount();
 
 <template>
   <div class="2xl:px-[20%] sm:px-4 my-4 overflow-x-hidden">
-    <p class="text-2xl font-antonio pt-4 pl-4 md:pl-10 lg:pl-16 2xl:pl-none"">Checkout</p>
+    <p class="text-2xl font-antonio pt-4 pl-4 md:pl-10 lg:pl-16 2xl:pl-none">
+      Checkout
+    </p>
     <form class="font-inter font-light text-[#F5F5F5]">
       <!-- checkout page grid -->
       <div
@@ -122,10 +124,6 @@ getTotalAmount();
           }"
         >
           <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
-            <!-- regex:
-                            "[\p{L}a-z]" = letters including swedish/international letters
-                            "\s?-?" = optional whitespace or hyphen
-                         -->
             <legend class="text-[#868686]">Delivery Information</legend>
             <input
               id="email"
