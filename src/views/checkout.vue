@@ -10,6 +10,7 @@ import CartCards from "../components/CartCards.vue";
 const deliveryInfo = ref();
 let shipFieldsetDisabled = ref(true);
 let payFieldsetDisabled = ref(true);
+let confirmFieldsetDisabled = ref(true);
 let addCoFields = ref(false);
 
 onMounted(() => {
@@ -53,6 +54,15 @@ onMounted(() => {
         });
     });
 
+    paymentMethodFieldset.querySelectorAll('input[name="paymentMethod"]').forEach(radioButton => {
+        radioButton.addEventListener('click', () => {
+            if (paymentMethodFieldset.querySelector('input[name="paymentMethod"]:checked') !== null) {
+                confirmFieldsetDisabled.value = false
+                console.log(confirmFieldsetDisabled.value);
+            }
+        });
+    });
+
 })
 
 
@@ -92,7 +102,6 @@ getTotalAmount();
             <div class="grid p-4 grid-cols-5 grid-rows-20 gap-4 2xl:gap-[1vw] font-inter ">
                 <!-- delivery information div -->
                 <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
->>>>>>>>> Temporary merge branch 2
                     <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
                         <!-- regex:
                             "[\p{L}a-z]" = letters including swedish/international letters
@@ -155,7 +164,7 @@ getTotalAmount();
                     </div>
                 </div>
                 <!-- shipment method div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-3 px-6 pt-8 pb-10" :class="{ 'opacity-40': shipFieldsetDisabled }">
                     <fieldset id="shippingMethod" :disabled=shipFieldsetDisabled>
                         <legend class="text-[#868686]">Shipping method</legend>
                         <div>
@@ -187,7 +196,7 @@ getTotalAmount();
                     </fieldset>
                 </div>
                 <!-- payment method div -->
-                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10">
+                <div class="bg-[#1c1c1c] col-span-3 row-span-4 px-6 pt-8 pb-10" :class="{ 'opacity-40': payFieldsetDisabled }">
                     <fieldset id="paymentMethod" :disabled=payFieldsetDisabled>
                         <legend class="text-[#868686]">Payment method</legend>
                         <div>
@@ -197,7 +206,7 @@ getTotalAmount();
                                 <label for="swish">Swish</label>
                                 <img src="/src/assets/payment/swish-logo.jpg" alt=""
                                     class="h-16 w-28 object-cover inline ml-auto"
-                                    :class="{ 'filter grayscale': payFieldsetDisabled }">
+                                    :class="{ 'filter grayscale': payFieldsetDisabled}" >
                             </div>
                             <div class="flex flex-row items-center border-solid border-[#2a2a2a] border-x-2">
                                 <input id="klarna" type="radio" value="klarna" name="paymentMethod"
@@ -205,7 +214,7 @@ getTotalAmount();
                                 <label for="klarna">Klarna</label>
                                 <img src="/src/assets/payment/klarna-logo.jpg" alt=""
                                     class="h-16 w-28 object-cover inline ml-auto"
-                                    :class="{ 'filter grayscale': payFieldsetDisabled }">
+                                    :class="{ 'filter grayscale': payFieldsetDisabled}" >
                             </div>
                             <div class="flex flex-row items-center border-solid border-[#2a2a2a] border-x-2 border-t-2">
                                 <input id="masterCard" type="radio" value="masterCard" name="paymentMethod"
@@ -213,7 +222,7 @@ getTotalAmount();
                                 <label for="masterCard">Mastercard </label>
                                 <img src="/src/assets/payment/mastercard-logo.svg" alt=""
                                     class="h-16 w-28 inline ml-auto bg-[#16366F]"
-                                    :class="{ 'filter grayscale': payFieldsetDisabled }">
+                                    :class="{ 'filter grayscale': payFieldsetDisabled}" >
                             </div>
                             <div class=" flex flex-row items-center border-solid border-[#2a2a2a] border-2">
                                 <input id="visa" type="radio" value="visa" name="paymentMethod"
@@ -221,22 +230,26 @@ getTotalAmount();
                                 <label for="visa">VISA</label>
                                 <img src="/src/assets/payment/visa-logo.jpg" alt=""
                                     class="h-16 w-28 object-cover inline ml-auto"
-                                    :class="{ 'filter grayscale': payFieldsetDisabled }">
+                                    :class="{ 'filter grayscale': payFieldsetDisabled}" >
                             </div>
                         </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-span-3 row-span-1">
-                <p>Att betala {{ totalAmount }}</p>
-                <router-link to="/orderConfirmation">
-                    <button id="adressButton" label="Add c/o adress"
-                        class="px-5  mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)]">
-                        <div id="button-contents" class="relative p-1.5">
-                            <p class="inline">Confirm payment</p>
-                        </div>
-                    </button>
-                </router-link>
+            <div class="text-center pb-12" :class="{ 'opacity-40': confirmFieldsetDisabled }">
+                <fieldset id="confirmPayment" :disabled=confirmFieldsetDisabled>
+                    <input type="checkbox" id="newsLetter" name="News Letter" class="mr-3 size-5 align-middle"/>
+                    <label for="newsLetter" class="align-middle">Sign up to our news letter!</label>
+                    <p class="pt-6">Att betala: {{ totalAmount }}:-</p>
+                    <router-link to="/orderConfirmation">
+                        <button id="confirmButton" label="Confirm payment"
+                            class="px-5  mt-3 text-[#003238] bg-[#00e0ff] font-semibold rounded-md hover:opacity-90 font-inter border-y-4 border-[#00000000] disabled:opacity-20 disabled:hover:border-[#ff007a00] relative drop-shadow-[0_4.3px_1.4px_rgba(0,0,0,0.2)]">
+                            <div id="button-contents" class="relative p-1.5">
+                                <p class="inline">Confirm payment</p>
+                            </div>
+                        </button>
+                    </router-link>
+                </fieldset>
             </div>
         </form>
     </div>
