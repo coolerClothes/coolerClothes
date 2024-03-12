@@ -157,6 +157,7 @@ export default {
           {{ category.charAt(0).toUpperCase() + category.substring(1) }}
         </p>
       </div>
+      <div v-else-if="searchQuery[0] === ''"> <p> All products</p> </div>
       <div v-else>
         <div
           id="query-result-text"
