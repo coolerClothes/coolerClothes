@@ -4,10 +4,6 @@ import { useCartStore } from "../store";
 
 const emit = defineEmits(["handle-cart-menu-activation"]);
 
-const props = defineProps({
-  editAllowed: Boolean
-})
-
 const store = useCartStore();
 const cart = ref({});
 
@@ -75,7 +71,7 @@ watch(
 
                 {{ productArray[0].chosenSize.toUpperCase() }}
               </h3>
-              <div v-if="editAllowed" class="flex items-center">
+              <div class="flex items-center">
                 <img src="/src/assets/icons/arrow-icon.svg" alt="arrow right icon"
                   @click="decreaseQuantity(productArray[0])" class="flex rotate-180 w-4 py-2 mr-1 cursor-pointer" />
                 <h3 class="text-base border border-gray-800 px-2">
@@ -88,9 +84,7 @@ watch(
           </div>
           <div class="flex flex-col justify-between mx-3">
             <h2>{{ productArray[0].price }}:-</h2>
-
-            <h2 v-if="!editAllowed" class="self-center">{{ productArray.length }}</h2>
-            <img v-if="editAllowed" src="/src/assets/icons/trash-icon.svg" alt="trashcan icon"
+            <img src="/src/assets/icons/trash-icon.svg" alt="trashcan icon"
               class="h-7 cursor-pointer m-1 transition-transform transform-gpu hover:scale-[1.1]"
               @click="store.removeAllDuplicates(productArray[0])" />
 
