@@ -58,7 +58,6 @@ onMounted(() => {
           ) !== null
         ) {
           payFieldsetDisabled.value = false;
-          console.log(payFieldsetDisabled.value);
         }
       });
     });
@@ -129,110 +128,99 @@ getTotalAmount();
             class="text-[#0c0c0c] space-y-2"
           >
             <legend class="text-[#868686]">Delivery Information</legend>
-            <div id="delivery-row-1" class="flex space-x-2 flex-wrap">
-              <input
-                id="email"
-                aria-label="Email"
-                type="email"
-                placeholder="Email"
-                class="w-[48.5%]"
-                required
-                maxlength="40"
-              />
-              <input
-                id="phoneNumber"
-                aria-label="Phone number"
-                type="text"
-                placeholder="Phone number"
-                class="w-[48.5%]"
-                pattern="(\+?(\d\s?-?){11}|(\d\s?-?){10})"
-                required
-              />
-            </div>
-
-            <div id="delivery-row-2" class="flex space-x-2 flex-wrap">
-              <input
-                id="firstName"
-                aria-label="First name"
-                type="text"
-                placeholder="First name"
-                class="w-[48.5%]"
-                pattern="[\p{L}a-z]{1,30}"
-                required
-              />
-              <input
-                id="lastName"
-                aria-label="Last name"
-                type="text"
-                placeholder="Last name"
-                class="w-[48.5%]"
-                pattern="[\p{L}a-z]{1,30}"
-                required
-              />
-            </div>
-
-            <div id="delivery-row-3" class="flex space-x-2 flex-wrap">
-              <input
-                id="adress"
-                aria-label="Delivery adress"
-                type="text"
-                placeholder="Delivery adress"
-                class="w-[35.5%]"
-                pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
-                required
-              />
-              <input
-                id="postCode"
-                aria-label="Post code"
-                type="text"
-                placeholder="ZIP code"
-                required
-                class="w-[30%]"
-                pattern="\d{3}\s?\d{2}"
-              />
-              <input
-                id="postTown"
-                aria-label="Post town"
-                type="text"
-                placeholder="City"
-                required
-                class="w-[30%]"
-                pattern="[\p{L}a-z]{1,15}"
-              />
-            </div>
-
-            <div id="delivery-row-4" class="flex space-x-2 flex-wrap">
-              <input
-                v-if="addCoFields === true"
-                id="coAdress"
-                aria-label="c/o adress"
-                type="text"
-                placeholder="c/o adress"
-                pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
-                class="w-[35.5%]"
-                required
-              />
-              <input
-                v-if="addCoFields === true"
-                id="coPostCode"
-                aria-label="c/o post code"
-                type="text"
-                placeholder="c/o ZIP code"
-                required
-                class="w-[30%]"
-                pattern="\d{3}\s?\d{2}"
-              />
-              <input
-                v-if="addCoFields === true"
-                id="coPostTown"
-                aria-label="c/o ost town"
-                type="text"
-                placeholder="c/o City"
-                required
-                class="w-[30%]"
-                pattern="[\p{L}a-z]{1,15}"
-              />
-            </div>
+            <input
+              id="email"
+              aria-label="Email"
+              type="email"
+              placeholder="Email"
+              class="md:w-[48.5%] w-[100%]"
+              required
+              maxlength="40"
+            />
+            <input
+              id="phoneNumber"
+              aria-label="Phone number"
+              type="text"
+              placeholder="Phone number"
+              class="md:w-[48.5%] w-[100%]"
+              pattern="(\+?(\d\s?-?){11}|(\d\s?-?){10})"
+              required
+            />
+            <input
+              id="firstName"
+              aria-label="First name"
+              type="text"
+              placeholder="First name"
+              class="md:w-[48.5%] w-[100%]"
+              pattern="[\p{L}a-z]{1,30}"
+              required
+            />
+            <input
+              id="lastName"
+              aria-label="Last name"
+              type="text"
+              placeholder="Last name"
+              class="md:w-[48.5%] w-[100%]"
+              pattern="[\p{L}a-z]{1,30}"
+              required
+            />
+            <input
+              id="adress"
+              aria-label="Delivery adress"
+              type="text"
+              placeholder="Delivery adress"
+              class="md:w-[35.5%] w-[100%]"
+              pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
+              required
+            />
+            <input
+              id="postCode"
+              aria-label="Post code"
+              type="text"
+              placeholder="ZIP code"
+              required
+              class="md:w-[30%] w-[100%]"
+              pattern="\d{3}\s?\d{2}"
+            />
+            <input
+              id="postTown"
+              aria-label="Post town"
+              type="text"
+              placeholder="City"
+              required
+              class="md:w-[30%] w-[100%]"
+              pattern="[\p{L}a-z]{1,15}"
+            />
+            <input
+              v-if="addCoFields === true"
+              id="coAdress"
+              aria-label="c/o adress"
+              type="text"
+              placeholder="c/o adress"
+              class="md:w-[35.5%] w-[100%]"
+              pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
+              required
+            />
+            <input
+              v-if="addCoFields === true"
+              id="coPostCode"
+              aria-label="c/o post code"
+              type="text"
+              placeholder="c/o ZIP code"
+              required
+              class="md:w-[30%] w-[100%]"
+              pattern="\d{3}\s?\d{2}"
+            />
+            <input
+              v-if="addCoFields === true"
+              id="coPostTown"
+              aria-label="c/o ost town"
+              type="text"
+              placeholder="c/o City"
+              required
+              class="md:w-[30%] w-[100%]"
+              pattern="[\p{L}a-z]{1,15}"
+            />
 
             <!-- Check if c/o adress fields are present -->
             <button
