@@ -115,14 +115,18 @@ getTotalAmount();
         id="grid-container"
         class="flex flex-col lg:grid grid-cols-5 grid-rows-4 gap-4 2xl:gap-[1vw] font-inter px-2 py-4 md:px-10 lg:px-16 2xl:px-none"
       >
-        <!-- delivery information div -->
-        <div
+        <section
+          id="delivery-information"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
           :class="{
             'border-solid border-l-4 border-[#4dc94f]': !shipFieldsetDisabled,
           }"
         >
-          <fieldset id="deliveryInfo" ref="deliveryInfo" class="text-[#0c0c0c]">
+          <fieldset
+            id="deliveryInfo"
+            ref="deliveryInfo"
+            class="text-[#0c0c0c] space-y-2"
+          >
             <legend class="text-[#868686]">Delivery Information</legend>
             <input
               id="email"
@@ -246,9 +250,8 @@ getTotalAmount();
               </div>
             </button>
           </fieldset>
-        </div>
-        <!-- checkout cart div -->
-        <div
+        </section>
+        <section
           id="cart"
           class="order-first lg:order-none col-span-2 row-span-4 relative top-0 right-0 h-auto lg:max-h-[1060px]"
         >
@@ -271,9 +274,10 @@ getTotalAmount();
               </div>
             </div>
           </div>
-        </div>
-        <!-- shipment method div -->
-        <div
+        </section>
+        <!-- end of checkout -->
+        <section
+          id="shipment-method"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
           :class="
             ({ 'opacity-40 filter grayscale': shipFieldsetDisabled },
@@ -341,9 +345,11 @@ getTotalAmount();
               </div>
             </div>
           </fieldset>
-        </div>
-        <!-- payment method div -->
-        <div
+        </section>
+        <!-- end of shipment method -->
+
+        <section
+          id="payment-method"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
           :class="
             ({ 'opacity-40 filter grayscale': payFieldsetDisabled },
@@ -355,7 +361,7 @@ getTotalAmount();
         >
           <fieldset id="paymentMethod" :disabled="payFieldsetDisabled">
             <legend class="text-[#868686]">Payment method</legend>
-            <div>
+            <section id="payment-method-container">
               <div
                 class="flex flex-row items-center border-solid border-[#2a2a2a] border-2"
               >
@@ -428,11 +434,14 @@ getTotalAmount();
                   :class="{ 'filter grayscale': payFieldsetDisabled }"
                 />
               </div>
-            </div>
+            </section>
           </fieldset>
-        </div>
+        </section>
       </div>
-      <div
+      <!-- end of grid -->
+
+      <section
+        id="news-total-and-confirm-button"
         class="text-center pb-12"
         :class="{ 'opacity-40 filter grayscale': confirmFieldsetDisabled }"
       >
@@ -474,12 +483,15 @@ getTotalAmount();
                   />
                 </svg>
               </div>
+              <!-- end of button-contents -->
             </button>
           </router-link>
         </fieldset>
-      </div>
+      </section>
+      <!-- end of news, total, and confirm-button -->
     </form>
   </div>
+  <!-- component container -->
 </template>
 
 <style scoped>
