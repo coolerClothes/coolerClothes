@@ -81,10 +81,11 @@ watch(
     Similar products
   </h2>
   <div
-    class="p-4 grid gap-4 2xl:gap-[1.7vw] xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 max-md:flex max-md:w-full max-md:overflow-x-auto max-md:gap-2 max-md:mb-8 max-md:pb-8 max-md:snap-x"
+    class="p-4 mb-14 grid gap-4 2xl:gap-[1.7vw] xl:px-[10%] xl:grid-cols-5 md:grid-cols-4 max-md:flex max-md:w-full max-md:overflow-x-auto max-md:gap-2 max-md:mb-8 max-md:pb-8 max-md:snap-x"
   >
     <Card
       class="col-span-1"
+      v-if="products"
       v-for="product in Object.values(products).filter(
         (item) => item.category == currentProduct.category,
       )"

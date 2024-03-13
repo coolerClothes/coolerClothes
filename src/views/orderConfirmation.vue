@@ -1,15 +1,16 @@
 <template>
   <div
     id="bg-img"
-    class="flex w-full min-h-fit xl:h-[95vh] p-2 md:p-8 bg-cover"
+    class="flex w-full min-h-fit xl:h-[95vh] pt-5 md:p-10 bg-cover"
+    title="Abstract vaporwave background"
   >
     <div
       id="component-container"
-      class="flex flex-col-reverse xl:flex-row self-center w-full h-fit xl:max-h-[85vh] items-center xl:items-stretch justify-center xl:space-x-3 space-y-3 xl:space-y-0"
+      class="flex flex-col-reverse xl:flex-row self-center w-full h-fit py-6 xl:max-h-[85vh] items-center xl:items-stretch justify-center xl:space-x-6 2xl:space-x-12 space-y-3 xl:space-y-0"
     >
       <section
         id="message"
-        class="flex flex-col self-center place-items-center place-content-center h-fit xl:w-[50%] 2xl:w-[44%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 text-white text-center 2xl:text-xl"
+        class="flex flex-col self-center place-items-center place-content-center h-fit xl:w-[50%] 2xl:w-[44%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 mt-8 xl:mt-0 text-white text-center 2xl:text-xl"
       >
         <h1
           id="thank-you"
@@ -38,10 +39,7 @@
             <span> (+46) 70 123 4567 </span>
           </div>
           <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
-            <span> (+46) 70 123 4567 </span>
-          </div>
-          <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
-            <span> (+46) 70 123 4567 </span>
+            <span> example@coolerclothes.se </span>
           </div>
         </section>
         <!-- contact -->
@@ -50,31 +48,31 @@
       <!-- order detalis -->
       <section
         id="order-details"
-        class="flex flex-col h-auto w-full md:w-2/3 xl:w-1/3 justify-center p-4 xl:py-6 space-y-4 bg-[#1c1c1c]"
+        class="flex flex-col h-fit self-center w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
       >
         <h1
-          class="font-antonio font-extrabold uppercase text-3xl 2xl:text-4xl text-center tracking-wider"
+          class="font-antonio font-bold uppercase text-3xl 2xl:text-4xl text-center tracking-wide"
         >
           Order summary:
         </h1>
         <section
           id="cards-container"
-          class="flex flex-col w-full overflow-y-auto px-2 space-y-2 xl:space-y-3.5 2xl:space-y-4 my-3 2xl:text-xl"
+          class="flex flex-col w-full md:max-h-[400px] 2xl:max-h-[600px] overflow-y-auto px-2 space-y-1 xl:space-y-2 2xl:space-y-3 my-3 2xl:text-xl"
         >
           <div
             id="cards"
             v-if="Object.keys(cart).length !== 0"
             v-for="productArray in cart"
-            class="flex flex-shrink-0 items-center justify-around space-x-2 w-full my-1"
+            class="flex flex-shrink-0 items-center justify-between w-full py-1 px-2 bg-[#0f0f0f]"
           >
             <router-link :to="'/products/' + productArray[0].id"
               ><img
                 :src="productArray[0].imgSrc"
                 :alt="productArray[0].alt"
-                class="max-w-14"
+                class="max-w-14 mr-4"
             /></router-link>
             <!-- image end -->
-            <p class="text-base 2xl:text-base flex flex-col">
+            <p class="text-base 2xl:text-base grow flex flex-col">
               <router-link :to="'/products/' + productArray[0].id"
                 ><span
                   class="text-base 2xl:text-lg font-semibold xl:leading-[14px]"
@@ -85,11 +83,14 @@
               <span class="text-[#aaaaaa]">{{ productArray[0].brand }}</span>
               <span>{{ productArray[0].category }}</span>
             </p>
-            <span class="font-bold text-[#ff007a]">
-              {{ productArray[0].chosenSize.toUpperCase() }}
-            </span>
-            <span>x{{ productArray.length }}</span>
-            <span> {{ productArray[0].price }}:- </span>
+
+            <div class="flex space-x-3 justify-self-end">
+              <span class="font-bold text-[#ff007a]">
+                {{ productArray[0].chosenSize.toUpperCase() }}
+              </span>
+              <span>x{{ productArray.length }}</span>
+              <span> {{ productArray[0].price }}:- </span>
+            </div>
           </div>
           <!-- individual card -->
         </section>
@@ -140,11 +141,10 @@ watch(
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #bg-img {
-  background-image: url("src/assets/joshua-harris-ObIkGbVQY9M-unsplash.jpg");
+  background-image: url("src/assets/hero-slides/wp3115813.jpg");
 }
 @keyframes glow {
   from {
@@ -168,5 +168,17 @@ watch(
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 25px;
+}
+*::-webkit-scrollbar-track {
+  background: #0c0c0c;
+  margin: 0 30px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ec3f79;
+  padding: 20px;
 }
 </style>

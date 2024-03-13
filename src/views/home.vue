@@ -30,6 +30,7 @@ filterForBestSellers(store.productsCatalogue);
   <div
     id="bg-hero"
     class="hero bg-fixed bg-cover bg-[center_top_30%] text-white justify-center items-center h-[55vh] overflow-hidden"
+    title="Crowd of manequins wearing COOLer Clothes apparel in a seemingly endless room"
   >
     <div
       id="hero-text-background"
@@ -54,7 +55,29 @@ filterForBestSellers(store.productsCatalogue);
   </div>
   <!-- bg-hero -->
 
-  <div class="xl:px-[10%] my-2 lg:my-4 overflow-x-hidden text-2xl font-antonio">
+  <div
+    class="flex flex-col items-center xl:px-[10%] my-2 lg:my-4 overflow-x-hidden"
+  >
+    <!--   <section
+      id="more-content"
+      class="grid grid-cols-4 gap-4 grid-rows-5 w-[60vw] h-[60vw] font-inter"
+    >
+      <div id="content1" class="bg-cover bg-center col-span-3 row-span-2"></div>
+      <div id="content2" class="col-span-1 row-span-2">
+        <h2 class="font-extrabold uppercase text-6xl">
+          bye<br />
+          bye<br />
+          <span class="text-5xl font-antonio">winter</span>
+        </h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div id="content3" class="col-span-2 row-span-1">
+        <h2 class="font-antonio text-4xl">hello spring</h2>
+      </div>
+      <div id="content4" class="bg-cover bg-center col-span-2 row-span-3"></div>
+      <div id="content5" class="col-span-2 row-span-2">5</div>
+    </section> -->
+    <!-- more content -->
     <div
       class="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 2xl:gap-[1.7vw] p-4 mb-14"
     >
@@ -73,6 +96,26 @@ filterForBestSellers(store.productsCatalogue);
 <style scoped>
 #bg-hero {
   background-image: url("src/assets/hero-slides/_bb005c35-e495-4702-ac13-34e16eff49e9.jpeg");
+  background-repeat: no-repeat;
+}
+#content1 {
+  background-image: url(src/assets/joshua-harris-ObIkGbVQY9M-unsplash.jpg);
+  background-repeat: no-repeat;
+} /*
+#content2 {
+  background-image: url(src/assets/hero-slides/wp3115813.jpg);
+  background-repeat: no-repeat;
+}
+#content3 {
+  background-image: url(src/assets/hero-slides/wp8279929.webp);
+  background-repeat: no-repeat;
+}
+#content5 {
+  background-image: url(src/assets/hero-slides/wp1895656.jpg);
+  background-repeat: no-repeat;
+}*/
+#content4 {
+  background-image: url(src/assets/hero-slides/wp1895665.jpg);
   background-repeat: no-repeat;
 }
 </style>

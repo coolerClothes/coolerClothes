@@ -12,6 +12,7 @@ const searchMenuActive = ref(false);
 const searchInput = ref("");
 const isScrolled = ref(false);
 const cartProductsAmount = ref(0);
+const cartUpdated = ref(false);
 
 const router = useRouter();
 
@@ -35,7 +36,6 @@ const handleCartMenuActivation = () => {
 
 const handleSearch = () => {
   router.push({ path: "/search/all/" + searchInput.value });
-  console.log(searchInput.value);
 };
 
 // Handle scroll event
@@ -47,6 +47,10 @@ watch(
   () => store.cart,
   (newCart) => {
     cartProductsAmount.value = newCart.length;
+    cartUpdated.value = true;
+    setTimeout(() => {
+      cartUpdated.value = false;
+    }, 400);
   },
 );
 
@@ -134,7 +138,7 @@ const bottomContainerClass = computed(() => {
       </div>
       <!-- LOGO START -->
       <div id="navbar-center" class="flex flex-1 justify-center">
-        <div id="logo-container" class="mx-5 relative">
+        <div id="logo-container" class="relative mr-7">
           <router-link to="/">
             <img
               :src="logoSrc"
@@ -154,7 +158,7 @@ const bottomContainerClass = computed(() => {
       <!-- LOGO END -->
       <div
         id="navbar-right"
-        class="flex flex-1 justify-center gap-4 max-sm:gap-5 max-md:gap-9 max-md:justify-end max-md:mr-5 text-sm"
+        class="flex flex-1 justify-center gap-4 max-sm:gap-3 max-md:gap-9 max-md:justify-end max-md:mr-5 text-sm"
       >
         <!-- LOGIN START -->
         <div class="flex cursor-default pr-1 text-[#616161]">
@@ -165,7 +169,7 @@ const bottomContainerClass = computed(() => {
             width="24px"
             height="24px"
             viewBox="0 0 386.77 283.29"
-            class="min-w-6 mr-1"
+            class="min-w-6 xl:mr-1"
           >
             <path
               d="M392.7,93a77,77,0,0,0-126-22.56,78.46,78.46,0,0,0-7.12,7.49c.32-.38-9.86-6.45-10.81-6.92a56,56,0,0,0-12.1-4.35c-8.24-1.92-18.52-2.76-26.38.89l-8.81,4.09A25.17,25.17,0,0,0,196,74.68a6.18,6.18,0,0,0-2.49,3.22,21.54,21.54,0,0,1-5.76-3A77,77,0,0,0,57.94,92.48c-5.27,6.71-12.14,10.89-26.08,8.14v35.31H47.77a125.91,125.91,0,0,1,5.6,12.43,77,77,0,0,0,151.54-10.45c.5-3.51.7-7.11.94-11.13.42-7,1.51-14.88,6.52-20.18,5.73-6,15.23-8.19,22.32-3.19,4.12,2.9,6.61,7.56,8,12.3,1.67,5.75.92,11.76,2.54,17.69a77,77,0,0,0,145.89,31.43,73.2,73.2,0,0,0,10.07-29.05h17.45V100.62C399.86,101.54,397.74,101.31,392.7,93ZM172.18,127.12h0a43.84,43.84,0,0,1-18.41,35.37c-2.7,1.51-5.55,2.81-8.47,4.36a39.22,39.22,0,0,1-4.09,1.87,44.17,44.17,0,0,1-12.93,1.93,43.73,43.73,0,0,1-20.35-5,50.28,50.28,0,0,1-17.21-16.16A43.89,43.89,0,0,1,99.3,93.77a47.15,47.15,0,0,1,41.56-9.1,44,44,0,0,1,28.65,27A54.87,54.87,0,0,1,172.18,127.12Zm169.15,39.12a57.87,57.87,0,0,1-11.11,3.66,43.91,43.91,0,0,1-49.71-29.18,46.79,46.79,0,0,1,8.58-42.88,43.9,43.9,0,0,1,45-13.35,50.38,50.38,0,0,1,5.81,2.12,42.19,42.19,0,0,1,17.78,14.77,47,47,0,0,1,6.67,37.51A44,44,0,0,1,341.33,166.24Z"
@@ -187,10 +191,9 @@ const bottomContainerClass = computed(() => {
         <router-link to="/favorites/favorites">
           <div class="flex pr-1 hover:text-[#ff007a]">
             <svg
-              class="min-w-6 mr-1"
+              class="min-w-6 xl:mr-1"
               viewBox="0 0 24 24"
               fill="currentColor"
-
               stroke="currentColor"
             >
               <path
@@ -234,8 +237,15 @@ const bottomContainerClass = computed(() => {
             </svg>
             <span
               :class="
-                ' absolute -top-2 -right-[0.55rem] size-5 rounded-full bg-[#0c0c0c] text-[#ff007a] flex justify-center items-center text-xs font-medium ' +
-                (cartProductsAmount > 0 ? '' : 'hidden')
+                ' absolute -top-2 -right-[0.55rem] size-5 rounded-full bg-[#0c0c0c] text-[#ff007a] flex justify-center items-center text-xs font-medium transition-all duration-300 ' +
+                (cartProductsAmount > 0 ? '' : 'hidden') +
+                (isScrolled
+                  ? cartUpdated
+                    ? ' -translate-y-1 scale-150'
+                    : ' translate-y-0 scale-100'
+                  : cartUpdated
+                    ? ' -translate-y-3 scale-150'
+                    : ' translate-y-0 scale-100')
               "
               >{{ cartProductsAmount }}</span
             >
@@ -254,6 +264,11 @@ const bottomContainerClass = computed(() => {
       <ul
         class="flex gap-5 h-full justify-center items-center font-inter font-semibold text-xs"
       >
+        <li>
+          <router-link to="/search/all" class="p-4 hover:text-[#ff007a]"
+            >ALL</router-link
+          >
+        </li>
         <li>
           <router-link to="/search/jackets" class="p-4 hover:text-[#ff007a]"
             >JACKETS</router-link

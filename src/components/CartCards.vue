@@ -4,6 +4,10 @@ import { useCartStore } from "../store";
 
 const emit = defineEmits(["handle-cart-menu-activation"]);
 
+const props = defineProps({
+  editAllowed: Boolean
+})
+
 const store = useCartStore();
 const cart = ref({});
 
@@ -30,30 +34,26 @@ const sortCart = () => {
 
 if (store.cart !== null) {
   sortCart();
-  console.log(cart.value);
 }
 
 watch(
   () => store.cart,
   () => {
     sortCart();
-    console.log(cart.value);
   },
 );
 </script>
 
 <template>
-  <div>
+  <section id="component-container">
     <div
       id="cartProducts"
       v-if="Object.keys(cart).length !== 0"
       v-for="productArray in cart"
-
       class="bg-[#141414] mb-1 border-[#1c1c1c] overflow-hidden"
     >
-      <div class="p-2 font-inter">
-
-        <div class="flex">
+      <section id="individual-card" class="p-2 font-inter">
+        <div id="inner-card-flex-container" class="flex">
           <router-link
             :to="'/products/' + productArray[0].id"
             @click="emit('handle-cart-menu-activation')"
@@ -63,7 +63,10 @@ watch(
               class="max-w-28"
           /></router-link>
 
-          <div class="flex flex-col flex-1 pl-5">
+          <section
+            id="product-info-size-and-counter"
+            class="flex flex-col flex-1 pl-5"
+          >
             <router-link
               :to="'/products/' + productArray[0].id"
               @click="emit('handle-cart-menu-activation')"
@@ -79,12 +82,20 @@ watch(
             <h3 class="text-sm font-light pt-2 mt-2">
               {{ productArray[0].category }}
             </h3>
-            <div class="flex justify-between items-center">
-              <h3 class="text-s text-[#ff007a]">
 
+            <div
+              id="size-and-counter"
+              class="flex justify-between items-center"
+            >
+              <h3 class="text-s text-[#ff007a]">
                 {{ productArray[0].chosenSize.toUpperCase() }}
               </h3>
-              <div class="flex items-center">
+
+              <section
+                id="counter"
+
+                class="flex items-center"
+              >
                 <img
                   src="/src/assets/icons/arrow-icon.svg"
                   alt="arrow right icon"
@@ -100,30 +111,36 @@ watch(
                   @click="increaseQuantity(productArray[0])"
                   class="w-4 py-2 ml-1 cursor-pointer"
                 />
-              </div>
+              </section>
             </div>
-          </div>
-          <div class="flex flex-col justify-between mx-3">
+            <!-- size and counter -->
+          </section>
+          <section
+            id="price-and-trashcan"
+            class="flex flex-col justify-between mx-3"
+          >
             <h2>{{ productArray[0].price }}:-</h2>
+            <!-- what is intended to display in this H2? Can it be removed? (from Amanda)-->
+
             <img
               src="/src/assets/icons/trash-icon.svg"
               alt="trashcan icon"
-
               class="h-7 cursor-pointer m-1 transition-transform transform-gpu hover:scale-[1.1]"
-
               @click="store.removeAllDuplicates(productArray[0])"
             />
-          </div>
+          </section>
         </div>
-      </div>
+        <!-- end of inner-card-flex-container -->
+      </section>
+      <!-- end of individual card -->
     </div>
+    <!-- end of conditional itteration -->
     <div v-else>
       <h1
         class="text-center p-20 text-lg font-medium font-inter text-[#505050]"
       >
         Nothing to see here :(
       </h1>
-
     </div>
-  </div>
+  </section>
 </template>

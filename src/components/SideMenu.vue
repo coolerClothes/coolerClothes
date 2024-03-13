@@ -37,7 +37,7 @@ const handleCategoriesClick = () => {
       </div>
       <div id="menu" class="ml-3">
         <h2 @click="handleCategoriesClick" class="text-xl mt-5 cursor-pointer">
-          Categories
+          Browse
         </h2>
         <ul
           :class="
@@ -49,8 +49,17 @@ const handleCategoriesClick = () => {
         >
           <li class="mt-2">
             <router-link
+              to="/search/all"
+              @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
+              >All</router-link
+            >
+          </li>
+          <li class="mt-2">
+            <router-link
               to="/search/jackets"
               @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
               >Jackets</router-link
             >
           </li>
@@ -58,6 +67,7 @@ const handleCategoriesClick = () => {
             <router-link
               to="/search/hoodies"
               @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
               >Hoodies</router-link
             >
           </li>
@@ -65,6 +75,7 @@ const handleCategoriesClick = () => {
             <router-link
               to="/search/shirts"
               @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
               >T-Shirts</router-link
             >
           </li>
@@ -72,6 +83,7 @@ const handleCategoriesClick = () => {
             <router-link
               to="/search/pants"
               @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
               >Pants</router-link
             >
           </li>
@@ -79,6 +91,7 @@ const handleCategoriesClick = () => {
             <router-link
               to="/search/accessories"
               @click="emit('handle-side-menu-activation')"
+              class="hover:text-[#ff007a]"
               >Accessories</router-link
             >
           </li>
