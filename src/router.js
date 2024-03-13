@@ -3,8 +3,8 @@ import Home from "./views/home.vue";
 import Error from "./views/error.vue";
 import Search from "./views/search.vue";
 import Product from "./views/product.vue";
-import Favorites from "./views/favorites.vue";
 import Checkout from "./views/checkout.vue";
+import Favorites from "./views/favorites.vue";
 import OrderConfirmation from "./views/orderConfirmation.vue";
 
 const routes = [

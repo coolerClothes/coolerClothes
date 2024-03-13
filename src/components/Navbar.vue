@@ -48,7 +48,6 @@ watch(
   (newCart) => {
     cartProductsAmount.value = newCart.length;
     cartUpdated.value = true;
-
     setTimeout(() => {
       cartUpdated.value = false;
     }, 400);

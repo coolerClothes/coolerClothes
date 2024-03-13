@@ -38,7 +38,6 @@
           <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
             <span> (+46) 70 123 4567 </span>
           </div>
-
           <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
             <span> example@coolerclothes.se </span>
           </div>
@@ -142,7 +141,6 @@ watch(
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(4px);
-
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #bg-img {
