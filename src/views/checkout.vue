@@ -58,7 +58,6 @@ onMounted(() => {
           ) !== null
         ) {
           payFieldsetDisabled.value = false;
-          console.log(payFieldsetDisabled.value);
         }
       });
     });
@@ -130,7 +129,7 @@ getTotalAmount();
               aria-label="Email"
               type="email"
               placeholder="Email"
-              class="w-[48.5%]"
+              class="md:w-[48.5%] w-[100%]"
               required
               maxlength="40"
             />
@@ -139,7 +138,7 @@ getTotalAmount();
               aria-label="Phone number"
               type="text"
               placeholder="Phone number"
-              class="w-[48.5%]"
+              class="md:w-[48.5%] w-[100%]"
               pattern="(\+?(\d\s?-?){11}|(\d\s?-?){10})"
               required
             />
@@ -148,7 +147,7 @@ getTotalAmount();
               aria-label="First name"
               type="text"
               placeholder="First name"
-              class="w-[48.5%]"
+              class="md:w-[48.5%] w-[100%]"
               pattern="[\p{L}a-z]{1,30}"
               required
             />
@@ -157,7 +156,7 @@ getTotalAmount();
               aria-label="Last name"
               type="text"
               placeholder="Last name"
-              class="w-[48.5%]"
+              class="md:w-[48.5%] w-[100%]"
               pattern="[\p{L}a-z]{1,30}"
               required
             />
@@ -166,7 +165,7 @@ getTotalAmount();
               aria-label="Delivery adress"
               type="text"
               placeholder="Delivery adress"
-              class="w-[35.5%]"
+              class="md:w-[35.5%] w-[100%]"
               pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
               required
             />
@@ -176,7 +175,7 @@ getTotalAmount();
               type="text"
               placeholder="ZIP code"
               required
-              class="w-[30%]"
+              class="md:w-[30%] w-[100%]"
               pattern="\d{3}\s?\d{2}"
             />
             <input
@@ -185,7 +184,7 @@ getTotalAmount();
               type="text"
               placeholder="City"
               required
-              class="w-[30%]"
+              class="md:w-[30%] w-[100%]"
               pattern="[\p{L}a-z]{1,15}"
             />
             <input
@@ -194,7 +193,7 @@ getTotalAmount();
               aria-label="c/o adress"
               type="text"
               placeholder="c/o adress"
-              class="w-[35.5%]"
+              class="md:w-[35.5%] w-[100%]"
               pattern="[\p{L}a-z]{0,30}\s?\d{1,3}"
               required
             />
@@ -205,7 +204,7 @@ getTotalAmount();
               type="text"
               placeholder="c/o ZIP code"
               required
-              class="w-[30%]"
+              class="md:w-[30%] w-[100%]"
               pattern="\d{3}\s?\d{2}"
             />
             <input
@@ -215,7 +214,7 @@ getTotalAmount();
               type="text"
               placeholder="c/o City"
               required
-              class="w-[30%]"
+              class="md:w-[30%] w-[100%]"
               pattern="[\p{L}a-z]{1,15}"
             />
 
