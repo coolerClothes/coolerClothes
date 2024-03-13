@@ -115,6 +115,7 @@ getTotalAmount();
         id="grid-container"
         class="flex flex-col lg:grid grid-cols-5 grid-rows-4 gap-4 2xl:gap-[1vw] font-inter px-2 py-4 md:px-10 lg:px-16 2xl:px-none"
       >
+      <!-- DELIVERY INFO -->
         <section
           id="delivery-information"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
@@ -251,6 +252,9 @@ getTotalAmount();
             </button>
           </fieldset>
         </section>
+        <!-- DELIVERY INFO END -->
+
+        <!-- CART START -->
         <section
           id="cart"
           class="order-first lg:order-none col-span-2 row-span-4 relative top-0 right-0 h-auto lg:max-h-[1060px]"
@@ -275,15 +279,17 @@ getTotalAmount();
             </div>
           </div>
         </section>
-        <!-- end of checkout -->
+        <!-- CART END -->
+
+        <!-- SHIPMENT START -->
         <section
           id="shipment-method"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
           :class="
-            ({ 'opacity-40 filter grayscale': shipFieldsetDisabled },
+            { 'opacity-40 filter grayscale': shipFieldsetDisabled },
             {
               'border-solid border-l-4 border-[#4dc94f]': !payFieldsetDisabled,
-            })
+            }
           "
         >
           <fieldset id="shippingMethod" :disabled="shipFieldsetDisabled">
@@ -346,17 +352,18 @@ getTotalAmount();
             </div>
           </fieldset>
         </section>
-        <!-- end of shipment method -->
+        <!-- SHIPMENT END -->
 
+        <!-- PAYMENT START -->
         <section
           id="payment-method"
           class="bg-[#1c1c1c] col-span-3 row-span-1 px-6 pt-8 pb-10 border-solid border-l-4 border-[#00e0ff]"
           :class="
-            ({ 'opacity-40 filter grayscale': payFieldsetDisabled },
+            { 'opacity-40 filter grayscale': payFieldsetDisabled },
             {
               'border-solid border-l-4 border-[#4dc94f]':
                 !confirmFieldsetDisabled,
-            })
+            }
           "
         >
           <fieldset id="paymentMethod" :disabled="payFieldsetDisabled">
@@ -437,6 +444,7 @@ getTotalAmount();
             </section>
           </fieldset>
         </section>
+        <!-- SHIPMENT END -->
       </div>
       <!-- end of grid -->
 
