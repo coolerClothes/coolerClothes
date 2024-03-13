@@ -10,7 +10,7 @@
     >
       <section
         id="message"
-        class="flex flex-col self-center place-items-center place-content-center h-fit 2xl:h-[60vh] xl:w-[50%] 2xl:w-[40%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 mt-8 2xl:mt-0 text-white text-center 2xl:text-xl"
+        class="flex flex-col self-center place-items-center place-content-center h-fit xl:w-[50%] 2xl:w-[44%] space-y-4 2xl:space-y-8 p-8 md:p-12 2xl:p-14 mt-8 xl:mt-0 text-white text-center 2xl:text-xl"
       >
         <h1
           id="thank-you"
@@ -38,8 +38,9 @@
           <div class="flex flex-nowrap m-1 p-1 justify-center text-center w-[100%]">
             <p > support@coolerclothes.com </p>
           </div>
-          <div class="flex flex-nowrap m-1 p-1 justify-center text-center w-[100%]">
-            <p> (+46) 70 123 4567 </p>
+
+          <div class="flex flex-nowrap m-1 p-1 justify-center text-center">
+            <span> example@coolerclothes.se </span>
           </div>
         </section>
         <!-- contact -->
@@ -48,7 +49,7 @@
       <!-- order detalis -->
       <section
         id="order-details"
-        class="flex flex-col h-[60vh] w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
+        class="flex flex-col h-fit self-center w-full md:w-2/3 xl:w-1/3 justify-center py-4 px-2 xl:py-6 space-y-4 bg-[#1c1c1c]"
       >
         <h1
           class="font-antonio font-bold uppercase text-3xl 2xl:text-3xl text-center tracking-wide mb-2"
@@ -57,13 +58,13 @@
         </h1>
         <section
           id="cards-container"
-          class="flex flex-col w-full overflow-y-auto px-2 space-y-1 xl:space-y-2 2xl:space-y-3 my-3 2xl:text-xl"
+          class="flex flex-col w-full md:max-h-[400px] 2xl:max-h-[600px] overflow-y-auto px-2 space-y-1 xl:space-y-2 2xl:space-y-3 my-3 2xl:text-xl"
         >
           <div
             id="cards"
             v-if="Object.keys(cart).length !== 0"
             v-for="productArray in cart"
-            class="flex flex-shrink-0 items-center justify-between w-full p-1 bg-[#0f0f0f]"
+            class="flex flex-shrink-0 items-center justify-between w-full py-1 px-2 bg-[#0f0f0f]"
           >
             <router-link :to="'/products/' + productArray[0].id"
               ><img
@@ -170,13 +171,12 @@ watch(
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-*::-webkit-scrollbar {
-  width: 20px;
+::-webkit-scrollbar {
+  width: 5px;
   height: 25px;
 }
 *::-webkit-scrollbar-track {
   background: #0c0c0c;
-
   margin: 0 30px;
 }
 *::-webkit-scrollbar-thumb {

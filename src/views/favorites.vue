@@ -84,11 +84,14 @@ export default {
       />
     </div>
   </div>
-  <div v-else>
-    <p class="pt-6 pl-4 font-inter font-light text-[#ff007a]">
+  <div v-else class="grid xl:px-[10%] pl-4 pt-4">
+    <p class="text-2xl font-antonio col-span-full space-y-2 mb-2">
+        Favorites
+      </p>
+    <p class="pt-6 font-inter font-light text-[#ff007a]">
       No love could be found :(
     </p>
-    <p class="pt-2 pl-4 font-light font-inter text-[#505050] text-sm">
+    <p class="pt-2 font-light font-inter text-[#505050] text-sm">
       (Add favorites by clicking a products heart icon)
     </p>
   </div>
