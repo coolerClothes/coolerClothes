@@ -1,0 +1,1118 @@
+{
+  "jacket1": {
+    "id": "a3e9c427-e068-42d8-b0d1-ba2f5c1ed81d",
+    "title": "Tech Jacket",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/1.jpg",
+    "alt": "Tech Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "jacket2": {
+    "id": "03a22602-98b0-4210-8ab4-484cca0bcb28",
+    "title": "Lights Show",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/2.jpg",
+    "alt": "Lights Show Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "jacket3": {
+    "id": "92151565-6cec-4518-a294-9b7d494572cb",
+    "title": "DJ Deluxe",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/3.jpg",
+    "alt": "DJ Deluxe Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "jacket4": {
+    "id": "36b0b7ac-c085-4b86-9473-7084a8605ad6",
+    "title": "Rainbow Bomber",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/4.jpg",
+    "alt": "Rainbow Bomber Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": true,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "jacket5": {
+    "id": "a4ea76d9-02b4-4055-89d6-4fd8737b0701",
+    "title": "Retro Hooded",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/5.jpg",
+    "alt": "Retro Hooded Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "jacket6": {
+    "id": "bfeb7776-ac0f-497b-a0aa-680d96944fa3",
+    "title": "Cyberpunk Jacket",
+    "brand": "COOLERclothes",
+    "category": "jackets",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/jackets/6.jpg",
+    "alt": "Cyberpunk Jacket",
+    "description": "Elevate your style with our sleek and versatile jacket - a perfect blend of comfort and fashion, designed to keep you warm in any season.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie1": {
+    "id": "ac9a1b29-daac-404e-8a05-924b1551f8fd",
+    "title": "Super Cool",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/1.jpg",
+    "alt": "Super Cool",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie2": {
+    "id": "40d66106-f77e-473b-bbf1-02f48b369478",
+    "title": "Skull & Glasses",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/2.jpg",
+    "alt": "Skull & Glasses",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie3": {
+    "id": "a8122926-4e12-4af9-b0b8-ed62d29b8ab5",
+    "title": "Dual Colored Plain",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/3.jpg",
+    "alt": "Dual Colored Plain",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie4": {
+    "id": "9c2d5789-e37f-4f6c-adb2-96a9bfc1d5ff",
+    "title": "Hoodie of Liberty",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/4.jpg",
+    "alt": "Hoodie of Liberty",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie5": {
+    "id": "c91d4466-8661-484b-b1df-f2070e3c850a",
+    "title": "Stark Iron Cool",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/5.jpg",
+    "alt": "Stark Iron Cool",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie6": {
+    "id": "67860ab3-b3c4-4d8c-8936-79c4536a7d55",
+    "title": "Vibrant Lone Wolf",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/6.jpg",
+    "alt": "Vibrant Lone Wolf",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie7": {
+    "id": "2dc825d0-a3c1-4979-ba73-6145f966eec4",
+    "title": "Plumeria",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/7.jpg",
+    "alt": "Plumeria",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": true,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "hoodie8": {
+    "id": "0e9f82fb-13a6-4d2c-8c4d-5d6011c987bd",
+    "title": "Big City",
+    "brand": "COOLERclothes",
+    "category": "hoodies",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/hoodies/8.jpg",
+    "alt": "Big City",
+    "description": "Stay effortlessly cool with our classic hoodie, featuring a modern design and comfortable fit, making it the ideal companion for laid-back days or active adventures.",
+    "bestSeller": true,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "pants1": {
+    "id": "bd92f524-6c79-4f67-80cb-ecb6e6558e37",
+    "title": "Super Cool Dark",
+    "brand": "COOLERclothes",
+    "category": "pants",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/pants/1.jpg",
+    "alt": "Super Cool Dark",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "pants2": {
+    "id": "79ff4219-e58f-48c9-ae5e-44d94929d233",
+    "title": "Super Cool Light",
+    "brand": "COOLERclothes",
+    "category": "pants",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/pants/2.jpg",
+    "alt": "Super Cool Light",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "pants3": {
+    "id": "6bffd945-208f-4653-a30f-552b41c44b32",
+    "title": "Super Cool Shorts",
+    "brand": "COOLERclothes",
+    "category": "pants",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/pants/3.jpg",
+    "alt": "Super Cool Shorts",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "pants4": {
+    "id": "f723eddf-bbb5-4a20-90ba-db3f6a6482bb",
+    "title": "Classy Formal",
+    "brand": "COOLERclothes",
+    "category": "pants",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/pants/4.jpg",
+    "alt": "Classy Formal Chinos",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "pants5": {
+    "id": "3996a3a5-a1c1-40f6-82ba-3d3e1c01bebc",
+    "title": "Super Cool Chinos",
+    "brand": "COOLERclothes",
+    "category": "pants",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/pants/5.jpg",
+    "alt": "Super Cool Chinos",
+    "description": "Experience ultimate comfort and style in our tailored pants, meticulously crafted for a flattering fit and a polished look that effortlessly transitions from day to night.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt1": {
+    "id": "02fd762d-4811-472e-8465-78b05f363080",
+    "title": "Super Cool Blue",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/1.jpg",
+    "alt": "Super Cool Blue",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": true,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt2": {
+    "id": "e31c2eaa-d31b-42b8-8260-712f55e1c27e",
+    "title": "Super Cool Orange",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/2.jpg",
+    "alt": "Super Cool Orange",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": true,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt3": {
+    "id": "eb338b33-a03b-4958-8a25-e31190d68e77",
+    "title": "Always Sunny",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/3.jpg",
+    "alt": "Always Sunny",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt4": {
+    "id": "5b829607-a50b-4368-9889-ba439d31281a",
+    "title": "Viewtify",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/4.jpg",
+    "alt": "Viewtify",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt5": {
+    "id": "98b2b917-5504-4bc0-ab9d-e06848b8a6ad",
+    "title": "Chilling Vibes",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/5.jpg",
+    "alt": "Chilling Vibes",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt6": {
+    "id": "f6627137-6728-4591-bb5a-22a798617d1d",
+    "title": "Too Cool",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/6.jpg",
+    "alt": "Too Cool",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "shirt7": {
+    "id": "f461dc4e-1681-4225-82a2-d3deb3793789",
+    "title": "SUPER Cool Shirt",
+    "brand": "COOLERclothes",
+    "category": "shirts",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/shirts/7.jpg",
+    "alt": "SUPER Cool Shirt",
+    "description": "Cozy up in our luxurious shirt, crafted with the finest materials for a soft touch and timeless elegance - a must-have addition to your wardrobe for a versatile and stylish look.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc1": {
+    "id": "54bb5283-12fa-4326-addd-0b55a3765f95",
+    "title": "Patches Cap",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/1.jpg",
+    "alt": "Patches Cap",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc2": {
+    "id": "38318eb0-92d2-46ef-853a-b7caab4f1c21",
+    "title": "Dark Cool Cap",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/2.jpg",
+    "alt": "Dark Cool Cap",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc3": {
+    "id": "4772d698-9155-474e-9391-468c539e2d4c",
+    "title": "Cool B&R Cap",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/3.jpg",
+    "alt": "Cool B&R Cap",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc4": {
+    "id": "9d788cd8-ec04-4df7-8a99-b4ea0378c8bf",
+    "title": "Deluxe Sun Glasses",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/4.jpg",
+    "alt": "Deluxe Sun Glasses",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc5": {
+    "id": "a0478f43-a215-4731-9995-661ef899ebe2",
+    "title": "Vacay Shades",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/5.jpg",
+    "alt": "Vacay Shades",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc6": {
+    "id": "6a248487-d6e7-4713-8267-e14d237590e0",
+    "title": "Casual Cool Glasses",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/6.jpg",
+    "alt": "Casual Cool Glasses",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc7": {
+    "id": "2c910e02-352f-493f-b724-232edac24799",
+    "title": "Sharp Hat",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/7.jpg",
+    "alt": "Sharp Hat",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc8": {
+    "id": "83a687a3-d196-41fd-8fc7-37b6a99a4dd6",
+    "title": "Agent Hat",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/8.jpg",
+    "alt": "Agent Hat",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc9": {
+    "id": "592845f9-ffee-4af0-ba86-041db6ab2cac",
+    "title": "Vacay Vibes Hat",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/9.jpg",
+    "alt": "Vacay Vibes Hat",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  },
+  "acc10": {
+    "id": "17aca893-d162-43be-8967-d4b2ccadf916",
+    "title": "Adventure Hat",
+    "brand": "COOLERclothes",
+    "category": "accessories",
+    "price": 500,
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "imgSrc": "src/assets/products/accessories/10.jpg",
+    "alt": "Explorer's Adventure Hat",
+    "description": "Complete your ensemble with our statement accessory - a perfect finishing touch that adds a touch of sophistication and personality to any outfit. *Beard not included.",
+    "bestSeller": false,
+    "inStock": true,
+    "moreImgs": [
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      },
+      {
+        "moreImgsSrc": "src/assets/img/originals/",
+        "moreAlt": ""
+      }
+    ]
+  }
+}
