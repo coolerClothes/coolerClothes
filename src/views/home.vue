@@ -99,7 +99,7 @@ filterForBestSellers(store.productsCatalogue);
   background-repeat: no-repeat;
 }
 #content1 {
-  background-image: url(assets/joshua-harris-ObIkGbVQY9M-unsplash.jpg);
+  background-image: url("assets/joshua-harris-ObIkGbVQY9M-unsplash.jpg");
   background-repeat: no-repeat;
 } /*
 #content2 {
@@ -115,7 +115,7 @@ filterForBestSellers(store.productsCatalogue);
   background-repeat: no-repeat;
 }*/
 #content4 {
-  background-image: url(src/assets/hero-slides/wp1895665.jpg);
+  background-image: url("assets/hero-slides/wp1895665.jpg");
   background-repeat: no-repeat;
 }
 </style>
