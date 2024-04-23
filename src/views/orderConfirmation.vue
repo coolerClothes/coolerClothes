@@ -144,7 +144,7 @@ watch(
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #bg-img {
-  background-image: url("src/assets/hero-slides/wp3115813.jpg");
+  background-image: url("/hero-slides/wp3115813.jpg");
 }
 @keyframes glow {
   from {
